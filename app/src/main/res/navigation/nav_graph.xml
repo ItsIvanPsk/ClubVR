@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenu">
+
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.itsydev.clubvr.presentation.main_menu.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_accesibilityFragment"
+            app:destination="@id/accesibilityFragment" />
+        <action
+            android:id="@+id/action_mainMenu_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainMenu_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainMenu_to_myClubFragment"
+            app:destination="@id/myClubFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accesibilityFragment"
+        android:name="com.itsydev.clubvr.presentation.accesibility.AccesibilityFragment"
+        android:label="AccesibilityFragment" />
+    <fragment
+        android:id="@+id/myClubFragment"
+        android:name="com.itsydev.clubvr.presentation.myclub.MyClubFragment"
+        android:label="MyClubFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.itsydev.clubvr.presentation.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.itsydev.clubvr.presentation.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+
+</navigation>
