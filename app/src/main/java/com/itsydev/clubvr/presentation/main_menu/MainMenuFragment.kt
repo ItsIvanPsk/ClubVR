@@ -2,13 +2,16 @@ package com.itsydev.clubvr.presentation.main_menu
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
 
-class MainMenuFragment : Fragment() {
+class MainMenuFragment : Fragment(){
 
     private lateinit var binding: FragmentMainMenuBinding
 
@@ -30,13 +33,8 @@ class MainMenuFragment : Fragment() {
 
     }
 
-    private fun goToLoginFragment(){
-        val directions = MainMenuFragmentDirections.actionMainMenuToLoginGraph()
-        findNavController().navigate(directions)
-    }
-
-
     private fun setupObservers(){
 
     }
+
 }
