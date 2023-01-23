@@ -1,19 +1,28 @@
 package com.itsydev.clubvr.presentation.main_menu
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.viewModels
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.navigation.NavigationView
+import com.itsydev.clubvr.AppViewModel
+import com.itsydev.clubvr.FragmentCustomNavs
+import com.itsydev.clubvr.MainActivity
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
 
-class MainMenuFragment : Fragment(){
+class MainMenuFragment : Fragment(),
+    NavigationView.OnNavigationItemSelectedListener{
 
     private lateinit var binding: FragmentMainMenuBinding
+    private val viewmodel: AppViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +44,12 @@ class MainMenuFragment : Fragment(){
 
     private fun setupObservers(){
 
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        Log.d("5cos", "pressed")
+        MainActivity().getDrawer().closeDrawer(GravityCompat.START)
+        return true
     }
 
 }
