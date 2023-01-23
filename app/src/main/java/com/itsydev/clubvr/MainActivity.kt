@@ -1,53 +1,58 @@
 package com.itsydev.clubvr
 
-
 import android.os.Bundle
-import android.util.Log
+import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
-import androidx.activity.viewModels
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
-import com.itsydev.clubvr.databinding.ActivityMainBinding
-import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.lifecycleScope
+import androidx.navigation.NavController
 import androidx.navigation.Navigation.findNavController
-import com.itsydev.clubvr.presentation.main_menu.MainMenuFragment
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.itsydev.clubvr.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity(),
-    NavigationView.OnNavigationItemSelectedListener{
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private var mNavDrawer: DrawerLayout = findViewById(R.id.drawLayout)
-
+    private lateinit var navController: NavController
+    private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        mNavDrawer = binding.drawLayout
-
-        setSupportActionBar(binding.toolbar)
-        val toggle = ActionBarDrawerToggle(
-            this, mNavDrawer, binding.toolbar,
-            R.string.open,
-            R.string.close
-        )
-        mNavDrawer.addDrawerListener(toggle)
-        toggle.syncState()
-        binding.navView.setNavigationItemSelectedListener(MainMenuFragment())
+        setupNavController()
+        setupToolbar()
     }
 
+    // Setup NavController with the NavHostFragment
+    private fun setupNavController() {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
+        navController = navHostFragment.navController
+    }
 
-    fun getDrawer(): DrawerLayout = mNavDrawer
+    // Setup the toolbar with navController and the config of the AppBar
+    private fun setupToolbar() {
+        setSupportActionBar(binding.toolbar)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.mainMenu))
+        setupActionBarWithNavController(navController, appBarConfiguration)
+    }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        MainActivity().getDrawer().closeDrawer(GravityCompat.START)
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp(appBarConfiguration)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.side_menu, menu)
         return true
     }
 
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return item.onNavDestinationSelected(
+            findNavController(binding.fragmentContainer)
+        ) || super.onOptionsItemSelected(item)
+    }
 }
