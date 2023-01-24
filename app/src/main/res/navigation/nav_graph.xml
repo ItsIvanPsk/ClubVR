@@ -5,7 +5,6 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainMenu">
 
-
     <fragment
         android:id="@+id/mainMenu"
         android:name="com.itsydev.clubvr.presentation.main_menu.MainMenuFragment"
@@ -24,6 +23,7 @@
             android:id="@+id/action_mainMenu_to_myClubFragment"
             app:destination="@id/myClubFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/accesibilityFragment"
         android:name="com.itsydev.clubvr.presentation.accesibility.AccesibilityFragment"

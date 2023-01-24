@@ -1,19 +1,19 @@
 package com.itsydev.clubvr
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.*
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.itsydev.clubvr.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
@@ -24,35 +24,36 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupNavController()
-        setupToolbar()
+        // setupBottomNavMenu(navController)
+
+        val navView: BottomNavigationView = binding.bottomNavigationView
+        setSupportActionBar(binding.toolbar)
+        appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.mainMenu, R.id.myClubFragment, R.id.profileFragment,
+            R.id.settingsFragment)
+        )
+
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+
+        binding.bottomNavigationView.background = null
+        binding.bottomNavigationView.menu.getItem(2).isEnabled = false
+        supportActionBar?.hide()
     }
 
     // Setup NavController with the NavHostFragment
     private fun setupNavController() {
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
         navController = navHostFragment.navController
     }
 
-    // Setup the toolbar with navController and the config of the AppBar
-    private fun setupToolbar() {
-        setSupportActionBar(binding.toolbar)
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.mainMenu))
-        setupActionBarWithNavController(navController, appBarConfiguration)
+    private fun setupBottomNavMenu(navController: NavController) {
+        binding.bottomAppBar.setupWithNavController(navController)
     }
 
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp(appBarConfiguration)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.side_menu, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return item.onNavDestinationSelected(
-            findNavController(binding.fragmentContainer)
-        ) || super.onOptionsItemSelected(item)
-    }
 }
