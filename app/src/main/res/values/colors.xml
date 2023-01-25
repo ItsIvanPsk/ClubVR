@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="lgray">#B3B3B3</color>
+    <color name="green">#7BFC03</color>
+    <color name="red">#FF0400</color>
+
 </resources>

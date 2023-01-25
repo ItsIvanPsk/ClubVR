@@ -1,0 +1,67 @@
+Index: app/src/main/java/com/itsydev/clubvr/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.itsydev.clubvr\n\n\nimport android.os.Bundle\nimport android.util.Log\nimport android.view.MenuItem\nimport androidx.activity.viewModels\nimport androidx.appcompat.app.ActionBarDrawerToggle\nimport androidx.appcompat.app.AppCompatActivity\nimport androidx.core.view.GravityCompat\nimport androidx.drawerlayout.widget.DrawerLayout\nimport com.google.android.material.navigation.NavigationView\nimport com.itsydev.clubvr.databinding.ActivityMainBinding\nimport androidx.fragment.app.activityViewModels\nimport androidx.lifecycle.lifecycleScope\nimport androidx.navigation.Navigation.findNavController\nimport com.itsydev.clubvr.presentation.main_menu.MainMenuFragment\n\n\nclass MainActivity : AppCompatActivity(),\n    NavigationView.OnNavigationItemSelectedListener{\n\n    private lateinit var binding: ActivityMainBinding\n    private var mNavDrawer: DrawerLayout = findViewById(R.id.drawLayout)\n\n\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        binding = ActivityMainBinding.inflate(layoutInflater)\n        setContentView(binding.root)\n        mNavDrawer = binding.drawLayout\n\n        setSupportActionBar(binding.toolbar)\n        val toggle = ActionBarDrawerToggle(\n            this, mNavDrawer, binding.toolbar,\n            R.string.open,\n            R.string.close\n        )\n        mNavDrawer.addDrawerListener(toggle)\n        toggle.syncState()\n        binding.navView.setNavigationItemSelectedListener(MainMenuFragment())\n    }\n\n\n    fun getDrawer(): DrawerLayout = mNavDrawer\n\n    override fun onNavigationItemSelected(item: MenuItem): Boolean {\n        MainActivity().getDrawer().closeDrawer(GravityCompat.START)\n        return true\n    }\n\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/itsydev/clubvr/MainActivity.kt b/app/src/main/java/com/itsydev/clubvr/MainActivity.kt
+--- a/app/src/main/java/com/itsydev/clubvr/MainActivity.kt	(revision 9a7ce06c1027c9a97babe8b38b0f14357f9da32a)
++++ b/app/src/main/java/com/itsydev/clubvr/MainActivity.kt	(date 1674474749470)
+@@ -17,8 +17,7 @@
+ import com.itsydev.clubvr.presentation.main_menu.MainMenuFragment
+ 
+ 
+-class MainActivity : AppCompatActivity(),
+-    NavigationView.OnNavigationItemSelectedListener{
++class MainActivity : AppCompatActivity(){
+ 
+     private lateinit var binding: ActivityMainBinding
+     private var mNavDrawer: DrawerLayout = findViewById(R.id.drawLayout)
+@@ -44,10 +43,4 @@
+ 
+     fun getDrawer(): DrawerLayout = mNavDrawer
+ 
+-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+-        MainActivity().getDrawer().closeDrawer(GravityCompat.START)
+-        return true
+-    }
+-
+-
+ }
+\ No newline at end of file
+Index: app/src/main/res/layout/nav_header.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.appcompat.widget.LinearLayoutCompat xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:layout_marginVertical=\"10dp\"\n    android:layout_marginHorizontal=\"10dp\"\n    android:orientation=\"vertical\">\n\n    <ImageView\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:src=\"@drawable/ic_launcher_foreground\"\n        android:layout_marginBottom=\"15dp\"/>\n\n    <TextView\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"IVAN FIGUEREDO\"\n        android:textStyle=\"bold\"\n        android:textSize=\"20dp\"/>\n\n    <TextView\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:textStyle=\"italic\"\n        android:text=\"VR_0429142952\"\n        android:textSize=\"14dp\"/>\n\n</androidx.appcompat.widget.LinearLayoutCompat>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/nav_header.xml b/app/src/main/res/layout/nav_header.xml
+--- a/app/src/main/res/layout/nav_header.xml	(revision 9a7ce06c1027c9a97babe8b38b0f14357f9da32a)
++++ b/app/src/main/res/layout/nav_header.xml	(date 1674548164561)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
++<androidx.appcompat.widget.LinearLayoutCompat
++    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_marginVertical="10dp"
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"testRunner\" value=\"GRADLE\" />\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n            <option value=\"$PROJECT_DIR$/app\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 9a7ce06c1027c9a97babe8b38b0f14357f9da32a)
++++ b/.idea/gradle.xml	(date 1674474547299)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>

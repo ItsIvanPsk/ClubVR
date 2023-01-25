@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/settings_app_header"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/lgray">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -55,13 +54,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/settings_app_name"
                 app:layout_constraintVertical_bias="0.333">
-                
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="v0.1"
                     android:layout_gravity="center"
-                    android:textStyle="bold"/>
+                    android:text="v0.1"
+                    android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
@@ -74,16 +73,41 @@
         android:id="@+id/settings_app_buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/settings_app_header"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
         android:layout_marginHorizontal="10dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_app_header">
 
         <androidx.cardview.widget.CardView
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.851"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settings_app_name"
+            app:layout_constraintVertical_bias="0.333">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_star_24" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:backgroundTint="@color/white"
             app:cardCornerRadius="20dp"
             app:cardElevation="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -91,14 +115,57 @@
             app:layout_constraintHorizontal_bias="0.851"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/settings_app_name"
-            app:layout_constraintVertical_bias="0.333"
-            android:backgroundTint="@color/lgray">
+            app:layout_constraintVertical_bias="0.333">
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_baseline_star_24"/>
+                android:src="@drawable/ic_baseline_star_24" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.851"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settings_app_name"
+            app:layout_constraintVertical_bias="0.333">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_star_24" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.851"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settings_app_name"
+            app:layout_constraintVertical_bias="0.333">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_star_24" />
 
         </androidx.cardview.widget.CardView>
 
@@ -110,10 +177,11 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_app_buttons"
-        android:backgroundTint="@color/lgray">
+        app:layout_constraintTop_toBottomOf="@id/settings_app_buttons">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -123,19 +191,19 @@
                 android:id="@+id/settings_app_accesibility_img"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/ic_baseline_accessibility_24"
+                android:layout_gravity="center_vertical"
                 android:layout_marginStart="20dp"
-                android:layout_gravity="center_vertical"/>
+                android:src="@drawable/ic_baseline_accessibility_24" />
 
             <TextView
                 android:id="@+id/settings_app_accesibility_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
                 android:text="About the App"
                 android:textSize="22dp"
-                android:textStyle="bold"
-                android:layout_marginStart="20dp"
-                android:layout_gravity="center_vertical"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -146,10 +214,10 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        android:backgroundTint="@color/lgray">
+        app:layout_constraintTop_toBottomOf="@id/settings_app_accesibility">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -169,6 +237,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.096" />
 
+
             <TextView
                 android:id="@+id/settings_app_permissions_title"
                 android:layout_width="wrap_content"
@@ -186,6 +255,78 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/settings_app_permissions_storage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="75dp">
+
+            <TextView
+                android:id="@+id/settings_app_permissions_storage_title"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Storage permission: " />
+
+            <ImageButton
+                android:id="@+id/settings_app_permissions_storage_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/green"
+                android:src="@drawable/ic_baseline_check_24"
+                android:text="Button"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/settings_app_permissions_internet"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="110dp">
+
+            <TextView
+                android:id="@+id/settings_app_permissions_internet_title"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Connection permission: " />
+
+            <ImageButton
+                android:id="@+id/settings_app_permissions_internet_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/green"
+                android:src="@drawable/ic_baseline_check_24"
+                android:text="Button"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/settings_app_permissions_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="145dp">
+
+            <TextView
+                android:id="@+id/settings_app_permissions_notifications_title"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Notification permission: " />
+
+            <ImageButton
+                android:id="@+id/settings_app_permissions_notifications_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/green"
+                android:src="@drawable/ic_baseline_check_24"
+                android:text="Button"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -193,10 +334,10 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_app_accesibility"
-        android:backgroundTint="@color/lgray">
+        app:layout_constraintTop_toBottomOf="@id/settings_app_permissions">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -206,19 +347,19 @@
                 android:id="@+id/settings_app_support_title"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
                 android:text="Tech Support"
                 android:textSize="22dp"
-                android:textStyle="bold"
-                android:layout_marginStart="20dp"
-                android:layout_gravity="center_vertical"/>
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/settings_app_support_img"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_gravity="center_vertical"
                 android:layout_marginStart="20dp"
-                android:layout_gravity="center_vertical"/>
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
 
         </LinearLayout>
 

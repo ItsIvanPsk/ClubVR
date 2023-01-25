@@ -1,0 +1,22 @@
+Index: app/src/main/java/com/itsydev/clubvr/presentation/main_menu/MainMenuFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.itsydev.clubvr.presentation.main_menu\n\nimport android.os.Bundle\nimport android.view.LayoutInflater\nimport android.view.View\nimport android.view.ViewGroup\nimport androidx.fragment.app.Fragment\nimport androidx.navigation.fragment.findNavController\nimport com.itsydev.clubvr.databinding.FragmentMainMenuBinding\n\nclass MainMenuFragment : Fragment() {\n\n    private lateinit var binding: FragmentMainMenuBinding\n\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        binding = FragmentMainMenuBinding.inflate(layoutInflater)\n    }\n\n    override fun onCreateView(\n        inflater: LayoutInflater, container: ViewGroup?,\n        savedInstanceState: Bundle?\n    ): View {\n        setupListeners()\n        setupObservers()\n        return binding.root\n    }\n\n    private fun setupListeners() = with(binding){\n\n    }\n\n    private fun goToLoginFragment(){\n        val directions = MainMenuFragmentDirections.actionMainMenuToLoginGraph()\n        findNavController().navigate(directions)\n    }\n\n\n    private fun setupObservers(){\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/itsydev/clubvr/presentation/main_menu/MainMenuFragment.kt b/app/src/main/java/com/itsydev/clubvr/presentation/main_menu/MainMenuFragment.kt
+--- a/app/src/main/java/com/itsydev/clubvr/presentation/main_menu/MainMenuFragment.kt	(revision 11e95a2fa7386822e92fb5f9f6f9abb9d66177a7)
++++ b/app/src/main/java/com/itsydev/clubvr/presentation/main_menu/MainMenuFragment.kt	(date 1674209428487)
+@@ -30,11 +30,6 @@
+ 
+     }
+ 
+-    private fun goToLoginFragment(){
+-        val directions = MainMenuFragmentDirections.actionMainMenuToLoginGraph()
+-        findNavController().navigate(directions)
+-    }
+-
+ 
+     private fun setupObservers(){
+ 
