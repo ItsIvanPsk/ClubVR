@@ -20,9 +20,19 @@ class ExperiencesViewModel : ViewModel(){
         db.collection("experiences")
             .get()
             .addOnSuccessListener { result ->
+                var experienceList = mutableListOf<ExperienceBo>()
                 for (document in result) {
                     Log.d("5cos", "${document.id} => ${document.data}")
+                    experienceList.add(
+                        ExperienceBo(
+                            document.id.toInt(),
+                            document.data.get("name").toString(),
+                            document.data.get("description").toString(),
+                            document.data.get("img").toString()
+                        )
+                    )
                 }
+                experiences.value = experienceList
             }
             .addOnFailureListener { exception ->
                 Log.w("5cos", "Error getting documents.", exception)

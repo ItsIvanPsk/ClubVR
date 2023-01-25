@@ -3,8 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:cardCornerRadius="15dp"
-    app:cardElevation="20dp">
+    app:cardElevation="20dp"
+    android:layout_marginVertical="5dp">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
@@ -15,7 +17,6 @@
             android:id="@+id/experience_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_baseline_person_24"
             android:contentDescription="TODO" />
 
         <LinearLayout
@@ -29,7 +30,7 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:text="EXPERIENCE GAME" />
+                tools:text="EXPERIENCE GAME" />
 
             <TextView
                 android:id="@+id/experience_category"
@@ -37,7 +38,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="10dp"
                 android:textSize="10dp"
-                android:text="SIMULATION"
+                tools:text="EXPERIENCE CATEGORY"
                 android:textStyle="italic" />
 
         </LinearLayout>
