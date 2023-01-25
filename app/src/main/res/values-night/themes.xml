@@ -13,4 +13,5 @@
     <style name="Theme.ActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorControlNormal">@color/white</item>
     </style>
+
 </resources>

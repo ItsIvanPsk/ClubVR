@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "785258061972",
+    "project_id": "clubvrapp-a0633",
+    "storage_bucket": "clubvrapp-a0633.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785258061972:android:108cc4fd15d013ddd45481",
+        "android_client_info": {
+          "package_name": "com.itsydev.clubvr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785258061972-evrm6ko28rkj2t2mk737asvapj0211ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlKtGkjDEtKpv_y88qk5Tqb19KIDMkNIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785258061972-evrm6ko28rkj2t2mk737asvapj0211ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
