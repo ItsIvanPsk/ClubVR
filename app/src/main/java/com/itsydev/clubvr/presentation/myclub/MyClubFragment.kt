@@ -32,4 +32,5 @@ class MyClubFragment : Fragment() {
     private fun setupObservers(){
 
     }
+
 }
