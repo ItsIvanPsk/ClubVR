@@ -1,0 +1,56 @@
+{
+    "1": {
+        "name": "Beat Saber",
+        "img": [
+            "",
+            "",
+            ""
+        ],
+        "description": [
+            "",
+            "Beat Saber es un juego rítmico de RV donde rebanas los ritmos de la palpitante música mientras vuelan hacia ti, rodeado de un mundo futurista.",
+            ""
+        ],
+        "warnings": [
+            "No apto para personas con mareos o problemas de vértigo",
+            "Puede causar fatiga visual",
+            "Se recomienda no utilizar durante más de 30 minutos seguidos"
+        ],
+        "rating": 4.5,
+        "categories": [
+            "Simulator",
+            "Rhythm game",
+            "Arcade"
+        ],
+        "headsets_compatible": [
+            "Oculus Quest 2",
+            "HTC Vive"
+        ]
+    },
+    "2": {
+        "name": "The Lab",
+        "img": [
+            "",
+            "",
+            ""
+        ],
+        "description":[
+            "",
+            "Nada con tiburones y otra vida marina en un entorno de realidad virtual.",
+            ""
+        ],
+        "warnings": [
+            "No apto para personas con miedo a los animales marinos",
+            "Puede causar fatiga visual",
+            "Se recomienda no utilizar durante más de 30 minutos seguidos"
+        ],
+        "rating": 3.5,
+        "categories": [
+            "Simulation",
+            "Arcade"
+        ],
+        "headsets_compatible": [
+            "HTC Vive"
+        ]
+    }
+}
