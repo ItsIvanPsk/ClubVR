@@ -2,14 +2,14 @@
     "1": {
         "name": "Beat Saber",
         "img": [
-            "",
-            "",
-            ""
+            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/beat_saber_1.jpeg",
+            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/beat_saber_2.jpeg",
+            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/beat_saber_3.jpeg"
         ],
         "description": [
-            "",
+            "Beat Saber is a VR rhythm game where you slice the beats out of pulsing music as they fly towards you, surrounded by a futuristic world.",
             "Beat Saber es un juego rítmico de RV donde rebanas los ritmos de la palpitante música mientras vuelan hacia ti, rodeado de un mundo futurista.",
-            ""
+            "Beat Saber és un joc rítmic de RV on llesques els ritmes de la palpitant música mentre volen cap a tu, envoltat d'un món futurista."
         ],
         "warnings": [
             "No apto para personas con mareos o problemas de vértigo",
@@ -30,14 +30,14 @@
     "2": {
         "name": "The Lab",
         "img": [
-            "",
-            "",
-            ""
+            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/the_lab_1.jpeg",
+            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/the_lab_2.jpeg",
+            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/the_lab_3.jpeg"
         ],
         "description":[
-            "",
-            "Nada con tiburones y otra vida marina en un entorno de realidad virtual.",
-            ""
+            "Welcome to The Lab, a compilation of Valve’s room-scale VR experiments set in a pocket universe within Aperture Science. Fix a robot, defend a castle, adopt a mechanical dog, and more.",
+            "Bienvenido a The Lab, una compilación de experimentos de realidad virtual a escala de habitación de Valve ambientados en un universo de bolsillo dentro de Aperture Science. Arregla un robot, defiende un castillo, adopta un perro mecánico y más.",
+            "Benvingut a The Lab, una recopilació d'experiments de realitat virtual a escala de sala de Valve ambientats en un univers de butxaca dins d'Aperture Science. Arregla un robot, defensa un castell, adopta un gos mecànic i molt més."
         ],
         "warnings": [
             "No apto para personas con miedo a los animales marinos",
