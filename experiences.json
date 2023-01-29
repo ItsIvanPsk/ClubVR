@@ -2,9 +2,9 @@
     "1": {
         "name": "Beat Saber",
         "img": [
-            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/beat_saber_1.jpeg",
-            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/beat_saber_2.jpeg",
-            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/beat_saber_3.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR_Assets/assets/images/experiences/beat_saber_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR_Assets/assets/images/experiences/beat_saber_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR_Assets/assets/images/experiences/beat_saber_3.jpeg"
         ],
         "description": [
             "Beat Saber is a VR rhythm game where you slice the beats out of pulsing music as they fly towards you, surrounded by a futuristic world.",
@@ -30,9 +30,9 @@
     "2": {
         "name": "The Lab",
         "img": [
-            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/the_lab_1.jpeg",
-            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/the_lab_2.jpeg",
-            "https://raw.githubusercontent.com/itsivanpsk/clubvr/assets/images/experiences/the_lab_3.jpeg"
+            "https://raw.githubusercontent.com/itsivanpsk/clubvr_assets/main/images/experiences/the_lab_1.jpeg",
+            "https://raw.githubusercontent.com/itsivanpsk/clubvr_assets/main/images/experiences/the_lab_2.jpeg",
+            "https://raw.githubusercontent.com/itsivanpsk/clubvr_assets/main/images/experiences/the_lab_3.jpeg"
         ],
         "description":[
             "Welcome to The Lab, a compilation of Valve’s room-scale VR experiments set in a pocket universe within Aperture Science. Fix a robot, defend a castle, adopt a mechanical dog, and more.",
