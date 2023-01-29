@@ -1,16 +1,19 @@
 package com.itsydev.clubvr.presentation.experiences
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.CircleCropTransformation
+import com.bumptech.glide.Glide
 import com.itsydev.clubvr.databinding.LayoutExperienceItemBinding
 import com.itsydev.clubvr.utils.ExperienceBo
 
-class ExperiencesAdapter : ListAdapter<ExperienceBo, ExperiencesAdapter.ExperiencesViewHolder>
+class ExperiencesAdapter(private val context: Context) : ListAdapter<ExperienceBo, ExperiencesAdapter.ExperiencesViewHolder>
     (ExperiencesDiffCallBack)
 {
 
@@ -26,12 +29,10 @@ class ExperiencesAdapter : ListAdapter<ExperienceBo, ExperiencesAdapter.Experien
     inner class ExperiencesViewHolder(private val binding: LayoutExperienceItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: ExperienceBo){
-            binding.experienceImage.load(item.img){
-                crossfade(true)
-                transformations(CircleCropTransformation())
-            }
+            Glide.with(context)
+                .load(item.img.get(0).url.toString())
+                .into(binding.experienceImage)
             binding.experienceName.text = item.name
-            binding.experienceCategory.text = item.category
         }
     }
 }

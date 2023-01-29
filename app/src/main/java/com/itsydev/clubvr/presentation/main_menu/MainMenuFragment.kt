@@ -5,11 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
+import com.itsydev.clubvr.presentation.experiences.ExperiencesViewModel
 
 class MainMenuFragment : Fragment(){
 
     private lateinit var binding: FragmentMainMenuBinding
+    private val viewmodel: ExperiencesViewModel by viewModels()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +30,9 @@ class MainMenuFragment : Fragment(){
     }
 
     private fun setupListeners() = with(binding){
-
+        addFirebase.setOnClickListener {
+            viewmodel.loadExperiences(requireContext(), "json/experiences.json")
+        }
     }
 
     private fun setupObservers(){
