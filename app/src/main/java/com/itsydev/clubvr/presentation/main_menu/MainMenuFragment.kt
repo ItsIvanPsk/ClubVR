@@ -30,9 +30,7 @@ class MainMenuFragment : Fragment(){
     }
 
     private fun setupListeners() = with(binding){
-        addFirebase.setOnClickListener {
-            viewmodel.loadExperiences(requireContext(), "json/experiences.json")
-        }
+
     }
 
     private fun setupObservers(){

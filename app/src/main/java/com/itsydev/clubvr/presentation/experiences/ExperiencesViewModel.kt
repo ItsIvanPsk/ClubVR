@@ -20,20 +20,20 @@ class ExperiencesViewModel : ViewModel(){
 
     fun getExperiencies(): LiveData<List<ExperienceBo>> = experiences
 
-    fun loadExperiences(_context: Context, _fileName: String) {
+    fun updateExperiences(_context: Context, _fileName: String) {
         val inputStream = _context.assets.open(_fileName)
         val json = inputStream.bufferedReader().use { it.readText() }
         val jsonObject = JSONObject(json)
-
         val experienceList = mutableListOf<ExperienceBo>()
-        val imageList = mutableListOf<ExperienceImages>()
-        val warningList = mutableListOf<Warning>()
-        val categoryList = mutableListOf<Category>()
-        val headsetList = mutableListOf<CompatibleHeadset>()
-        val descriptionList = mutableListOf<String>()
+
 
         for (key in jsonObject.keys()) {
             val itemJson = jsonObject.getJSONObject(key)
+            val imageList = mutableListOf<ExperienceImages>()
+            val warningList = mutableListOf<Warning>()
+            val categoryList = mutableListOf<Category>()
+            val headsetList = mutableListOf<CompatibleHeadset>()
+            val descriptionList = mutableListOf<String>()
 
             for (i in 0 until itemJson.getJSONArray("img").length()) {
                 val image = itemJson.getJSONArray("img").get(i)
@@ -50,23 +50,26 @@ class ExperiencesViewModel : ViewModel(){
             }
 
             for (i in 0 until itemJson.getJSONArray("warnings").length()) {
-                val warning = itemJson.getJSONArray("warnings").get(i)
+                val warning = itemJson.getJSONArray("warnings").get(i).toString()
                 warningList.add(
-                    Warning(i, warning.toString(), "")
+                    Warning(
+                        id = warning.toInt()
+                    )
                 )
+                Log.d("5coos", warning)
             }
 
             for (i in 0 until itemJson.getJSONArray("categories").length()) {
-                val category = itemJson.getJSONArray("categories").get(i)
+                val category = itemJson.getJSONArray("categories").get(i).toString()
                 categoryList.add(
-                    Category(i, category.toString(), "")
+                    Category(category.toInt())
                 )
             }
 
             for (i in 0 until itemJson.getJSONArray("headsets_compatible").length()) {
-                val compatibleHeadset = itemJson.getJSONArray("headsets_compatible").get(i)
+                val compatibleHeadset = itemJson.getJSONArray("headsets_compatible").get(i).toString()
                 headsetList.add(
-                    CompatibleHeadset(i, compatibleHeadset.toString())
+                    CompatibleHeadset(compatibleHeadset.toInt())
                 )
             }
 

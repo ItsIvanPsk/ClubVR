@@ -1,20 +1,24 @@
 package com.itsydev.clubvr.presentation.experiences
 
 import android.content.Context
+import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.res.TypedArrayUtils.getString
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.CircleCropTransformation
-import com.bumptech.glide.Glide
 import com.itsydev.clubvr.databinding.LayoutExperienceItemBinding
+import com.itsydev.clubvr.utils.ExperienceConstants
 import com.itsydev.clubvr.utils.ExperienceBo
+import io.grpc.internal.JsonUtil.getString
 
-class ExperiencesAdapter(private val context: Context) : ListAdapter<ExperienceBo, ExperiencesAdapter.ExperiencesViewHolder>
-    (ExperiencesDiffCallBack)
+class ExperiencesAdapter(
+    private val context: Context,
+    private val experienceListeners: ExperienceListeners
+) : ListAdapter<ExperienceBo, ExperiencesAdapter.ExperiencesViewHolder> (ExperiencesDiffCallBack)
 {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExperiencesViewHolder {
@@ -29,10 +33,25 @@ class ExperiencesAdapter(private val context: Context) : ListAdapter<ExperienceB
     inner class ExperiencesViewHolder(private val binding: LayoutExperienceItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: ExperienceBo){
-            Glide.with(context)
-                .load(item.img.get(0).url.toString())
-                .into(binding.experienceImage)
+            if(item.img.isNotEmpty()){
+                binding.experienceImage.load(item.img[0].url){
+                    crossfade(true)
+                    transformations(CircleCropTransformation())
+            }
             binding.experienceName.text = item.name
+            var expCategory = ""
+            for (i in 0 until item.categories.size) {
+                if(i == item.categories.size - 1){
+                    expCategory += context.resources.getString(ExperienceConstants.CATEGORY.get(item.categories[i].id))
+                    break
+                }
+                expCategory += context.resources.getString(ExperienceConstants.CATEGORY.get(item.categories[i].id)) + ", "
+            }
+            binding.experienceCategory.text = expCategory
+            binding.experienceBg.setOnClickListener {
+                experienceListeners.experienceClicked()
+            }
+        }
         }
     }
 }
@@ -45,4 +64,8 @@ object ExperiencesDiffCallBack : DiffUtil.ItemCallback<ExperienceBo>() {
     override fun areContentsTheSame(oldItem: ExperienceBo, newItem: ExperienceBo): Boolean {
         return false
     }
+}
+
+interface ExperienceListeners{
+    fun experienceClicked()
 }

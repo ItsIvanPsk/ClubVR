@@ -1,15 +1,18 @@
 package com.itsydev.clubvr.presentation.experiences
 
+import android.content.res.Resources
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentExperiencesBinding
 
-class ExperiencesFragment : Fragment() {
+class ExperiencesFragment : Fragment(), experienceListeners {
 
     private lateinit var binding: FragmentExperiencesBinding
     private val viewmodel: ExperiencesViewModel by viewModels()
@@ -27,11 +30,13 @@ class ExperiencesFragment : Fragment() {
         setupListeners()
         setupObservers()
         setupExperienceAdapter()
+
+        viewmodel.updateExperiences(requireContext(), "json/experiences.json")
         return binding.root
     }
 
     private fun setupExperienceAdapter() {
-        adapter = ExperiencesAdapter(requireContext())
+        adapter = ExperiencesAdapter(requireContext(), this)
         val recyclerView: RecyclerView = binding.experiencesRecycler
         recyclerView.adapter = adapter
     }
@@ -41,6 +46,12 @@ class ExperiencesFragment : Fragment() {
     }
 
     private fun setupObservers() = with(viewmodel){
+        getExperiencies().observe(viewLifecycleOwner){
+            adapter.submitList(it)
+        }
+    }
+
+    override fun experienceClicked() {
 
     }
 
