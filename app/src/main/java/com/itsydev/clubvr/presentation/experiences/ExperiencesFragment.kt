@@ -6,16 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentExperiencesBinding
 
-class ExperiencesFragment : Fragment(), experienceListeners {
+class ExperiencesFragment : Fragment(), ExperienceListeners {
 
     private lateinit var binding: FragmentExperiencesBinding
-    private val viewmodel: ExperiencesViewModel by viewModels()
+    private val viewmodel: ExperiencesViewModel by activityViewModels()
     private lateinit var adapter: ExperiencesAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
