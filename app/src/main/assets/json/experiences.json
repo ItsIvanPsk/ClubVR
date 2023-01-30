@@ -75,12 +75,172 @@
             0,
             1,
             2,
-            3,
+            3
+        ],
+        "headsets_compatible": [
+            0,
+            1
+        ]
+    },
+    "4": {
+        "name": "VTOL VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_3.jpeg"
+        ],
+        "description": [
+            "VTOL VR is a near-futuristic combat flight game built for Virtual Reality. Pilot advanced multi-role jets, using your hands to flip switches, press buttons, and manipulate the virtual flight controls.",
+            "VTOL VR es un juego de vuelo de combate casi futurista creado para realidad virtual. Pilote aviones multiusos avanzados, use solo siete botones para girar interruptores, presione botones y manipule los controles de vuelo virtuales.",
+            "VTOL VR és un joc de vol de combat gairebé futurista creat per a la realitat virtual. Pilot advanced multi-role jets, usant les seves eines per flip switches, press buttons, i manipular els controls de vol virtuals."
+        ],
+        "warnings": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            1,
+            2
+        ],
+        "headsets_compatible": [
+            0
+        ]
+    },
+    "5": {
+        "name": "Atlantis VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_3.jpeg"
+        ],
+        "description": [
+            "Enter the underwater world thriving with life! Let the aquatic beings guide you trough the mystery deeps and explore nooks and crannies of beautiful ocean landscape!",
+            "¡Entra en el mundo submarino lleno de vida! ¡Deja que los seres acuáticos te guíen a través de las misteriosas profundidades y explora los rincones y grietas del hermoso paisaje marino!",
+            "Entra al món submarí prosperant amb vida! Deixeu que els éssers aquàtics us guiïn a través de les profunditats misterioses i exploreu els racons i els racons del bell paisatge oceànic!"
+        ],
+        "warnings": [
+            0,
+            4
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            4
+        ],
+        "headsets_compatible": [
+            0
+        ]
+    },
+    "6": {
+        "name": "Pavlov",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_3.jpeg"
+        ],
+        "description": [
+            "Pavlov vr is a multiplayer shooter in VR with heavy focus on community features. Realistic reloading features and fast paced combat as part of the core experience.",
+            "Pavlov vr es un juego de disparos multijugador en realidad virtual con un gran enfoque en las características de la comunidad. Funciones de recarga realistas y combate de ritmo rápido como parte de la experiencia principal.",
+            "Pavlov vr es un juego de disparos multijugador en realidad virtual con un gran enfoque en las características de la comunidad. Funciones de recarga realistas y combate de ritmo rápido como parte de la experiencia principal."    
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 4,
+        "categories": [
+            1,
             4
         ],
         "headsets_compatible": [
             0,
             1
+        ]
+    },
+    "7": {
+        "name": "Lightblade VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_3.jpeg"
+        ],
+        "description": [
+            "Lightblade VR is a virtual reality training simulation for self-illumintated plasma blades. This is a childhood dream come true! Get trained by your personal robot and deflect all incoming laser beams!",
+            "Lightblade VR es una simulación de entrenamiento de realidad virtual para cuchillas de plasma autoiluminadas. ¡Este es un sueño de la infancia hecho realidad! ¡Entrena con tu robot personal y desvía todos los rayos láser entrantes!",
+            "Lightblade VR és una simulació d'entrenament de realitat virtual per a fulles de plasma autoil·luminades. Aquest és un somni infantil fet realitat! Entrena amb el teu robot personal i desvia tots els raigs làser entrants!"
+        ],
+        "warnings": [
+            0,
+            2,
+            3
+        ],
+        "rating": 4,
+        "categories": [
+            0,
+            3,
+            4
+        ],
+        "headsets_compatible": [
+            0
+        ]
+    },
+    "8": {
+        "name": "Superhot",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/superhot_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/superhot_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/superhot_3.jpeg"
+        ],
+        "description": [
+            "",
+            "",
+            ""    
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 4,
+        "categories": [
+            0,
+            1,
+            3,
+            4
+        ],
+        "headsets_compatible": [
+            0
+        ]
+    },
+    "9": {
+        "name": "Emily Wants to play",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_3.jpeg"
+        ],
+        "description": [
+            "Emily Wants To play is a horror and survival game with elements of strategy. You play as a pizza delivery boy who gets trapped by Emily and her three dolls. The dolls are alive and walking around the house with you.",
+            "Emily Quiere Jugar es un juego de terror y supervivencia con elementos de estrategia. Usted juega como un repartidor de pizza que queda atrapado por Emily y sus tres muñecas. Las muñecas están vivas y deambulan por la casa con usted.",
+            "Emily Quiere Jugar és un joc de terror i supervivència amb elements d'estratègia. Usted juega como un repartidor de pizza que queda atrapado por Emily y sus tres muñecas. Las muñecas estan vivas y deambulan por la casa con usted."    
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 4,
+        "categories": [
+            0,
+            4
+        ],
+        "headsets_compatible": [
+            0
         ]
     }
 }

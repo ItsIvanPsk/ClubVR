@@ -2,6 +2,7 @@ package com.itsydev.clubvr.utils
 
 import com.itsydev.clubvr.R
 
+
 class ExperienceConstants {
     companion object {
 
