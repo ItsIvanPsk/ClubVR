@@ -21,10 +21,12 @@
     <string name="category_arcade">Arcade</string>
     <string name="category_adventure">Adventure</string>
     <string name="category_inmersive">Inmersive</string>
+    <string name="terror">Terror</string>
 
     <string name="headsets_htc">HTC Vive</string>
     <string name="headsets_oculus">Oculus Quest 2</string>
     <string name="headsets_pico">Pico Neo 3</string>
+    <string name="reverb">HP Reverb G2</string>
 
     <string name="recent_news">Recent News</string>
     <string name="my_profile">My Profile</string>
@@ -41,8 +43,15 @@
     <string name="notification_permission">Notification permission:</string>
     <string name="tech_support">Tech Support</string>
 
-    <string name="english">Inglés</string>
-    <string name="spanish">Español</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
     <string name="catalan">Catalan</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="user_success_login">The user has been logged in!</string>
+
 
 </resources>

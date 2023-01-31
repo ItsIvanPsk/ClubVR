@@ -17,6 +17,7 @@ class ExperiencesViewModel : ViewModel(){
     val db = Firebase.firestore
 
     private var experiences = MutableLiveData<List<ExperienceBo>>()
+    private var rememberMe = MutableLiveData<List<ExperienceBo>>()
 
     fun getExperiencies(): LiveData<List<ExperienceBo>> = experiences
 
