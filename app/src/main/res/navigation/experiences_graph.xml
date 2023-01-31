@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/experiences_graph"
-    app:startDestination="@id/experiencesFragment2">
+    app:startDestination="@id/experiencesFragment">
 
     <fragment
-        android:id="@+id/experiencesFragment2"
+        android:id="@+id/experiencesFragment"
         android:name="com.itsydev.clubvr.presentation.experiences.ExperiencesFragment"
-        android:label="ExperiencesFragment" />
+        android:label="ExperiencesFragment" >
+
+        <action
+            android:id="@+id/action_experiencesFragment_to_experienceDetail"
+            app:destination="@id/experienceDetail" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/experienceDetail"
+        android:name="com.itsydev.clubvr.ExperienceDetail"
+        android:label="fragment_experience_detail"
+        tools:layout="@layout/fragment_experience_detail" />
+
 </navigation>

@@ -33,7 +33,7 @@
                 android:id="@+id/settings_app_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Club VR - IETI"
+                android:text="@string/app_settings_name"
                 android:textSize="22dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -201,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="20dp"
-                android:text="About the App"
+                android:text="@string/about_the_app"
                 android:textSize="22dp"
                 android:textStyle="bold" />
 
@@ -243,7 +243,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_gravity="center_vertical"
-                android:text="Permissions"
+                android:text="@string/permissions"
                 android:textSize="22dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -267,7 +267,7 @@
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:text="Storage permission: " />
+                android:text="@string/storage_permission" />
 
             <ImageButton
                 android:id="@+id/settings_app_permissions_storage_status"
@@ -315,7 +315,7 @@
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:text="Notification permission: " />
+                android:text="@string/notification_permission" />
 
             <ImageButton
                 android:id="@+id/settings_app_permissions_notifications_status"
@@ -349,7 +349,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="20dp"
-                android:text="Tech Support"
+                android:text="@string/tech_support"
                 android:textSize="22dp"
                 android:textStyle="bold" />
 

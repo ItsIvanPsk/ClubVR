@@ -1,0 +1,54 @@
+{
+  "1": {
+    "name": "HTC Vive",
+    "img": [
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_1.jpeg",
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_2.jpeg",
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_3.jpeg"
+    ],
+    "description": [
+      "Beat Saber is a VR rhythm game where you slice the beats out of pulsing music as they fly towards you, surrounded by a futuristic world.",
+      "Beat Saber es un juego rítmico de RV donde rebanas los ritmos de la palpitante música mientras vuelan hacia ti, rodeado de un mundo futurista.",
+      "Beat Saber és un joc rítmic de RV on llesques els ritmes de la palpitant música mentre volen cap a tu, envoltat d'un món futurista."
+    ]
+  },
+  "2": {
+    "name": "Oculus Quest 2",
+    "img": [
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_1.jpeg",
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_2.jpeg",
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_3.jpeg"
+    ],
+    "description": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "3": {
+    "name": "Pico Neo 3",
+    "img": [
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_1.jpeg",
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_2.jpeg",
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_3.jpeg"
+    ],
+    "description": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "4": {
+    "name": "HP G2 Reverb",
+    "img": [
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_1.jpeg",
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_2.jpeg",
+      "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_3.jpeg"
+    ],
+    "description": [
+      "",
+      "",
+      ""
+    ]
+  }
+}

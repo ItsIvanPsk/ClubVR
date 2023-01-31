@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity(){
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private var userMail: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +49,13 @@ class MainActivity : AppCompatActivity(){
         binding.mainFloatingButton.setOnClickListener {
             startActivity(Intent(this, ExperiencesActivity()::class.java))
         }
+
+        var bundle = intent.extras
+        userMail = bundle?.getString("mail").toString()
+
     }
+
+    fun getUserMail() : String? {return userMail}
 
     // Setup NavController with the NavHostFragment
     private fun setupNavController() {

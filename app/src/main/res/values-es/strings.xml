@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="home">Home</string>
+    <string name="home">Página principal</string>
     <string name="myclub">My Club</string>
     <string name="myprofile">My Profile</string>
     <string name="LogOut">Log Out</string>
