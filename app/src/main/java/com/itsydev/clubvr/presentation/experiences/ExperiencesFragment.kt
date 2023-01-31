@@ -31,7 +31,6 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
         setupListeners()
         setupObservers()
         setupExperienceAdapter()
-
         viewmodel.updateExperiences(requireContext(), "json/experiences.json")
         return binding.root
     }
