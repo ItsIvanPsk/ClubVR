@@ -11,7 +11,6 @@ class BearEncrypt {
             en += input.get(i) + 5
         }
         en = en.reversed()
-        Log.d("encrypted", en)
         return en
     }
 
@@ -21,7 +20,6 @@ class BearEncrypt {
             des += input.get(i) - 5
         }
         des = des.reversed()
-        Log.d("decrypt", des)
         return des
     }
 

@@ -21,6 +21,7 @@ class MyClubViewModel @Inject constructor(
 
     private var activeUser: MutableLiveData<UserEntity> = MutableLiveData<UserEntity>()
     private var username: MutableLiveData<String> = MutableLiveData<String>()
+    private var bear = BearEncrypt()
 
     fun getActiveUser() = activeUser
 
@@ -32,8 +33,8 @@ class MyClubViewModel @Inject constructor(
             .addOnSuccessListener { result ->
                 for (document in result) {
                     val data = document.data
-                    Log.d("5cos", data["username"].toString())
-                    if(_username == data["username"]){
+                    Log.d("5cos", bear.decrypt(data["username"].toString()))
+                    if(_username == bear.decrypt(data["username"].toString())){
                         activeUser.value = UserEntity(
                             id = data["id"].toString(),
                             username = data["username"].toString(),

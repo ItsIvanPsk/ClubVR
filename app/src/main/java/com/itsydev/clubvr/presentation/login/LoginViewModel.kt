@@ -9,6 +9,7 @@ import com.itsydev.clubvr.utils.BearEncrypt
 import com.itsydev.clubvr.data.models.users.UserEntity
 import com.itsydev.clubvr.domain.users.UserRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -28,6 +29,14 @@ class LoginViewModel @Inject constructor(
                 .addOnCompleteListener { task ->
                     loggedIn.value = task.isSuccessful
                 }
+        }
+    }
+
+    fun checkAutoLogin(){
+        viewModelScope.launch {
+            repository.getAllUsers.collect{
+                loggedIn.value = true
+            }
         }
     }
 
@@ -59,7 +68,8 @@ class LoginViewModel @Inject constructor(
                                 telf = data["telf"].toString(),
                                 lenguage = data["len"].toString(),
                                 userLevel = data["userLeve"].toString(),
-                                userPoints = data["userPoints"].toString()
+                                userPoints = data["userPoints"].toString(),
+                                admin = data["admin"].toString()
                             )
                         )
                         break

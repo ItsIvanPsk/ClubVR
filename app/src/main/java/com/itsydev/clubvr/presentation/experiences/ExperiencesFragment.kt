@@ -67,9 +67,9 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
         }
     }
 
-    override fun experienceClicked(view: View, position: Int){
+    override fun experienceClicked(view: View, name: String){
         view.findNavController().navigate(R.id.action_experiencesFragment_to_experienceDetail)
-        viewmodel.setExperienceDetail(position-1)
+        viewmodel.setExperienceDetail(name)
     }
 
 }

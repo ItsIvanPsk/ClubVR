@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.itsydev.clubvr.data.models.users.UserEntity
 import com.itsydev.clubvr.domain.users.UserRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -27,7 +28,10 @@ class ProfileViewModel @Inject constructor(
     fun getUsers() = users
 
     fun logout() {
-        repository.deleteUser()
+        viewModelScope.launch{
+            delay(1000)
+            repository.deleteUser()
+        }
     }
 
 }

@@ -1,5 +1,4 @@
 <resources>
-
     <string name="home">Home</string>
     <string name="myclub">My Club</string>
     <string name="myprofile">My Profile</string>
@@ -9,25 +8,21 @@
     <string name="accessibillity">Accessibillity</string>
     <string name="main_menu">MainMenu</string>
     <string name="user_icon">User icon</string>
-
     <string name="warning_epilepsia">Not suitable for people with epilepsy</string>
     <string name="warning_vertigo">Not suitable for people with dizziness or vertigo problems</string>
     <string name="warning_visual">It can cause visual fatigue</string>
     <string name="warning_delay">It is recommended not to use for more than 30 minutes in a row</string>
     <string name="warning_phobia">If you suffer from any fear or phobia, it is recommended to be extremely careful when using virtual reality viewers</string>
-
     <string name="category_simulation">Simulation</string>
     <string name="category_action">Action</string>
     <string name="category_arcade">Arcade</string>
     <string name="category_adventure">Adventure</string>
     <string name="category_inmersive">Inmersive</string>
     <string name="terror">Terror</string>
-
     <string name="headsets_htc">HTC Vive</string>
     <string name="headsets_oculus">Oculus Quest 2</string>
     <string name="headsets_pico">Pico Neo 3</string>
     <string name="reverb">HP Reverb G2</string>
-
     <string name="recent_news">Recent News</string>
     <string name="my_profile">My Profile</string>
     <string name="popular_games">Popular Games</string>
@@ -42,11 +37,9 @@
     <string name="storage_permission">Storage permission:</string>
     <string name="notification_permission">Notification permission:</string>
     <string name="tech_support">Tech Support</string>
-
     <string name="english">English</string>
     <string name="spanish">Spanish</string>
     <string name="catalan">Catalan</string>
-
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="remember_me">Remember me</string>
@@ -56,6 +49,8 @@
     <string name="dialog_logout_title">Log Out</string>
     <string name="dialog_logout_message">Do you wanna logout?</string>
     <string name="description">DESCRIPTION</string>
-
-
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="change_password">Change password</string>
 </resources>
