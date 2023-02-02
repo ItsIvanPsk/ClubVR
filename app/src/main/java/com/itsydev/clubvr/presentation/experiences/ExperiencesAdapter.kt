@@ -3,6 +3,7 @@ package com.itsydev.clubvr.presentation.experiences
 import android.content.Context
 import android.content.res.Resources
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.TypedArrayUtils.getString
 import androidx.recyclerview.widget.DiffUtil
@@ -13,7 +14,6 @@ import coil.transform.CircleCropTransformation
 import com.itsydev.clubvr.databinding.LayoutExperienceItemBinding
 import com.itsydev.clubvr.utils.ExperienceConstants
 import com.itsydev.clubvr.utils.ExperienceBo
-import io.grpc.internal.JsonUtil.getString
 
 class ExperiencesAdapter(
     private val context: Context,
@@ -49,7 +49,7 @@ class ExperiencesAdapter(
             }
             binding.experienceCategory.text = expCategory
             binding.experienceBg.setOnClickListener {
-                experienceListeners.experienceClicked()
+                experienceListeners.experienceClicked(it)
             }
         }
         }
@@ -67,5 +67,5 @@ object ExperiencesDiffCallBack : DiffUtil.ItemCallback<ExperienceBo>() {
 }
 
 interface ExperienceListeners{
-    fun experienceClicked()
+    fun experienceClicked(view: View)
 }

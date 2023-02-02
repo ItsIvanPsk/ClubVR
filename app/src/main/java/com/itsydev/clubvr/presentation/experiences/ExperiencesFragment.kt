@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.itsydev.clubvr.R
@@ -51,8 +52,12 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
         }
     }
 
-    override fun experienceClicked() {
-
+    override fun experienceClicked(view: View){
+        view.findNavController().navigate(R.id.action_experiencesFragment_to_experienceDetail, Bundle())
+        /*
+        val directions = PokemonToDetailDirections.actionPokemonToDetailToPokemonCamera()
+        findNavController().navigate(directions)
+         */
     }
 
 }
