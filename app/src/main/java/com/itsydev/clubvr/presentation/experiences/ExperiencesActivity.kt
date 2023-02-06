@@ -15,7 +15,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.ActivityExperiencesBinding
 import com.itsydev.clubvr.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ExperiencesActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityExperiencesBinding
@@ -59,14 +61,22 @@ class ExperiencesActivity : AppCompatActivity(){
         }
     }
 
+    // Setup NavController with the NavHostFragment
     private fun setupNavController() {
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
         navController = navHostFragment.navController
+    }
+
+    // Setup the toolbar with navController and the config of the AppBar
+    private fun setupToolbar() {
+        setSupportActionBar(binding.toolbar)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.experiencesFragment))
+        setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp(appBarConfiguration)
     }
+
 
 }

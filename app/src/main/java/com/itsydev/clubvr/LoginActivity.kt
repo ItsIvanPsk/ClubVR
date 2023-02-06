@@ -3,7 +3,9 @@ package com.itsydev.clubvr
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.itsydev.clubvr.databinding.ActivityLoginBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 

@@ -204,16 +204,16 @@
                 "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/superhot_3.jpeg"
             ],
             "description": [
-                "",
-                "",
-                ""
+                "SUPERHOT is the first person shooter where time moves only if you do. No health bars that regenerate. No conveniently located ammunition caches. There's only you, outnumbered and outgunned, though you'll be able to grab the weapons of downed enemies",
+                "SUPERHOT es el primer shooter en primera persona donde el tiempo se mueve solo si tú lo haces. Sin barras de salud que se regeneren. Ni alijos de municiones convenientemente situados. Solo estás tú, superado en número y armamento, aunque podrás agarrar las armas de los enemigos abatido",
+                "SUPERHOT és el primer shooter a primera persona on el temps es mou sol si tu ho fas. Sense barres de salut que es regenerin. Ni partidas de municions convenientment situats. Només estàs tu, superat en nombre i armament, encara que podràs agafar les armes dels enemics abatut"
             ],
             "warnings": [
                 0,
                 2,
                 3
             ],
-            "rating": 0,
+            "rating": 5,
             "categories": [
                 0,
                 1,
@@ -236,7 +236,7 @@
             ],
             "description": [
                 "Emily Wants To play is a horror and survival game with elements of strategy. You play as a pizza delivery boy who gets trapped by Emily and her three dolls. The dolls are alive and walking around the house with you.",
-                "Emily Quiere Jugar es un juego de terror y supervivencia con elementos de estrategia. Usted juega como un repartidor de pizza que queda atrapado por Emily y sus tres muñecas. Las muñecas están vivas y deambulan por la casa con usted.",
+                "    Quiere Jugar es un juego de terror y supervivencia con elementos de estrategia. Usted juega como un repartidor de pizza que queda atrapado por Emily y sus tres muñecas. Las muñecas están vivas y deambulan por la casa con usted.",
                 "Emily Quiere Jugar és un joc de terror i supervivència amb elements d'estratègia. Usted juega como un repartidor de pizza que queda atrapado por Emily y sus tres muñecas. Las muñecas estan vivas y deambulan por la casa con usted."
             ],
             "warnings": [
@@ -262,8 +262,8 @@
                 "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_3.jpeg"
             ],
             "description": [
-                "",
-                "",
+                "Contractors is a team-based competitive multiplayer shooter game for virtual reality devices. Experience the next level virtual warfare with hardcore controls, lethal weapons, customizable load-outs, and intense firefights. BECOME AN OPERATOR.",
+                "Contractors es un juego de disparos multijugador competitivo basado en equipos para dispositivos de realidad virtual. Experimenta el siguiente nivel de la guerra virtual con controles duros, armas letales, cargas personalizables e intensos tiroteos. CONVIÉRTETE EN OPERADOR.",
                 ""
             ],
             "warnings": [
@@ -738,7 +738,7 @@
             ]
         },
         "30": {
-            "name": "Tenis League VR",
+            "name": "Tennis League VR",
             "img": [
                 "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_1.jpeg",
                 "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_2.jpeg",

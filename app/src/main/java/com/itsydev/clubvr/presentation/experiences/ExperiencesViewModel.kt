@@ -9,8 +9,6 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.itsydev.clubvr.utils.*
 import org.json.JSONObject
-import java.io.BufferedReader
-import java.io.InputStreamReader
 
 class ExperiencesViewModel : ViewModel(){
 
