@@ -10,7 +10,9 @@ import androidx.fragment.app.viewModels
 import com.itsydev.clubvr.databinding.FragmentExperienceDetailBinding
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
 import com.itsydev.clubvr.presentation.experiences.ExperiencesViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ExperienceDetail : Fragment(){
 
     private lateinit var binding: FragmentExperienceDetailBinding

@@ -15,7 +15,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.ActivityExperiencesBinding
 import com.itsydev.clubvr.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ExperiencesActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityExperiencesBinding

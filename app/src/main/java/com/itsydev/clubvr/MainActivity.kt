@@ -2,6 +2,7 @@ package com.itsydev.clubvr
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
@@ -13,8 +14,9 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.itsydev.clubvr.databinding.ActivityMainBinding
 import com.itsydev.clubvr.presentation.experiences.ExperiencesActivity
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityMainBinding
@@ -27,7 +29,8 @@ class MainActivity : AppCompatActivity(){
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupNavController()
-
+        userMail = savedInstanceState?.getString("mail").toString()
+        Log.d("5cos", userMail)
         val navView: BottomNavigationView = binding.bottomNavigationView
         setSupportActionBar(binding.toolbar)
         appBarConfiguration = AppBarConfiguration(
@@ -50,12 +53,9 @@ class MainActivity : AppCompatActivity(){
             startActivity(Intent(this, ExperiencesActivity()::class.java))
         }
 
-        var bundle = intent.extras
-        userMail = bundle?.getString("mail").toString()
-
     }
 
-    fun getUserMail() : String? {return userMail}
+    fun getUserMail() : String { return userMail }
 
     // Setup NavController with the NavHostFragment
     private fun setupNavController() {

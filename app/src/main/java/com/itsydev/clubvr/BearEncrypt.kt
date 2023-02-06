@@ -1,18 +1,31 @@
 package com.itsydev.clubvr
 
+import android.util.Log
 import java.nio.charset.Charset
-import java.util.*
 import javax.crypto.Cipher
 import javax.crypto.spec.SecretKeySpec
 
+
 class BearEncrypt {
 
-    fun encryptAES(plainText: String, secretKey: String): String {
-        val cipher = Cipher.getInstance("AES")
-        val secretKeySpec = SecretKeySpec(secretKey.toByteArray(Charset.defaultCharset()), "AES")
-        cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec)
-        val encryptedBytes = cipher.doFinal(plainText.toByteArray(Charset.defaultCharset()))
-        return Base64.getEncoder().encodeToString(encryptedBytes)
+    fun encrypt(input: String): String{
+        var en = ""
+        for (i in input.indices){
+            en += input.get(i) + 5
+        }
+        en = en.reversed()
+        Log.d("encrypted", en)
+        return en
+    }
+
+    fun decrypt(input: String): String{
+        var des = ""
+        for (i in input.indices){
+            des += input.get(i) - 5
+        }
+        des = des.reversed()
+        Log.d("decrypt", des)
+        return des
     }
 
 }

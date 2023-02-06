@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.itsydev.clubvr.databinding.FragmentAccesibilityBinding
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AccesibilityFragment : Fragment() {
 
     private lateinit var binding: FragmentAccesibilityBinding
