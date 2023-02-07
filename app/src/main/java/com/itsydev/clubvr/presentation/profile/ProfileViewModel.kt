@@ -1,22 +1,32 @@
 package com.itsydev.clubvr.presentation.profile
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.itsydev.clubvr.UserEntity
+import com.itsydev.clubvr.BearEncrypt
+import com.itsydev.clubvr.UserDto
+import com.itsydev.clubvr.domain.users.UserDao
+import com.itsydev.clubvr.toDto
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ProfileViewModel @Inject constructor() : ViewModel() {
+class ProfileViewModel @Inject constructor(
+    private val userDao: UserDao
+) : ViewModel() {
 
-    private var _userLiveData = MutableLiveData<UserEntity>()
+    private val users = MutableLiveData<List<UserDto>>()
+    private val bear = BearEncrypt()
 
-    fun updateUser(){  }
+    fun updateUsers() {
+        viewModelScope.launch {
+            users.value = userDao.getAllUsers().map {
+                it.toDto()
+            }
+        }
+    }
 
-    fun getUser(): LiveData<UserEntity> = _userLiveData
+    fun getUsers() = users
 
 }

@@ -29,7 +29,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        viewmodel.updateUser()
+        viewmodel.updateUsers()
         setupListeners()
         setupObservers()
         return binding.root
@@ -40,18 +40,15 @@ class ProfileFragment : Fragment() {
     }
 
     private fun setupObservers() = with(viewmodel){
-        getUser().observe(viewLifecycleOwner){
-            /*
-            Log.d("userEn", it.toString())
-            if(it.id.isNotEmpty()){
-                binding.profileIdValue.text = "VR_" + bear.decrypt(it.id)
-                binding.profileUsernameValue.text = bear.decrypt(it.username)
-                binding.profileSurnnameValue.text = bear.decrypt(it.surname)
-                binding.profileNameValue.text = bear.decrypt(it.name)
-                binding.profileContactTelfValue.text = bear.decrypt(it.telf.toString())
-                binding.profileMailValue.text = bear.decrypt(it.mail)
+        getUsers().observe(viewLifecycleOwner){
+            if(it.isNotEmpty()){
+                binding.profileIdValue.text = "VR_" + bear.decrypt(it[0].id)
+                binding.profileUsernameValue.text = bear.decrypt(it[0].username)
+                binding.profileSurnnameValue.text = bear.decrypt(it[0].surname)
+                binding.profileNameValue.text = bear.decrypt(it[0].name)
+                binding.profileContactTelfValue.text = bear.decrypt(it[0].telf.toString())
+                binding.profileMailValue.text = bear.decrypt(it[0].mail)
             }
-             */
         }
     }
 }

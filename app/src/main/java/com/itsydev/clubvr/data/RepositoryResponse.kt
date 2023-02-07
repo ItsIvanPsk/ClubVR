@@ -1,4 +1,4 @@
-package com.itsydev.clubvr
+package com.itsydev.clubvr.data
 
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.flow.Flow

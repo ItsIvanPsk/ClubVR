@@ -1,5 +1,6 @@
 package com.itsydev.clubvr.presentation.login
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,13 +10,16 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.itsydev.clubvr.BearEncrypt
 import com.itsydev.clubvr.UserEntity
+import com.itsydev.clubvr.domain.users.UserDao
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class LoginViewModel @Inject constructor() : ViewModel() {
+class LoginViewModel @Inject constructor(
+    private val userDao: UserDao
+) : ViewModel() {
 
     private var loggedIn: MutableLiveData<Boolean> = MutableLiveData<Boolean>()
     private val mAuth: FirebaseAuth = FirebaseAuth.getInstance()
@@ -36,7 +40,9 @@ class LoginViewModel @Inject constructor() : ViewModel() {
         return loggedIn
     }
 
-    private fun logUser(userEntity: UserEntity) {}
+    private fun logUser(userEntity: UserEntity) {
+        userDao.addUser(userEntity)
+    }
 
     fun getUsernameByMail(mail: String){
         val database = Firebase.firestore
