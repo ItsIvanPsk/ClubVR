@@ -27,6 +27,7 @@ class LoginViewModel @Inject constructor(
     private val bear = BearEncrypt()
 
     private val users = MutableLiveData<List<UserEntity>>()
+    private val rememberMe = MutableLiveData<Boolean>()
 
     fun checkUsername(_username: String, _passowrd: String) {
         mAuth.signInWithEmailAndPassword(_username, _passowrd)
@@ -35,66 +36,51 @@ class LoginViewModel @Inject constructor(
             }
     }
 
-    fun changeRememberMe() {
 
+    private fun addUser(_user : UserEntity){
+        viewModelScope.launch {
+            repository.addUser(_user)
+        }
     }
 
     fun getLoggedIn(): LiveData<Boolean>{
         return loggedIn
     }
 
-    fun addUser(userEntity: UserEntity){
-        viewModelScope.launch {
-
-        }
-    }
-
-    fun updateUsers(){
-        viewModelScope.launch {
-           repository.getAllUsers().collect{
-               users.value = it
-           }
-        }
-    }
-
     fun getUsers(): LiveData<List<UserEntity>> {
         return users
     }
 
-
-
     fun getUsernameByMail(mail: String){
+        Log.d("5cos", "enter Username")
         val database = Firebase.firestore
         val collectionReference = database.collection("profiles")
-
         collectionReference.get()
             .addOnSuccessListener { result ->
                 for (document in result) {
                     val data = document.data
-                    if(data["mail"] == mail){
-                        var us = UserEntity(
-                            id = data["id"].toString(),
-                            username = data["username"].toString(),
-                            name = data["name"].toString(),
-                            surname = data["surname"].toString(),
-                            mail = data["mail"].toString(),
-                            telf = data["telf"].toString(),
-                            lenguage = data["len"].toString(),
-                            userLevel = data["userLeve"].toString(),
-                            userPoints = data["userPoints"].toString(),
+                    Log.d("5cos", data["username"].toString())
+                    if(data["mail"] == bear.encrypt(mail)){
+                        addUser(
+                            UserEntity(
+                                id = data["id"].toString(),
+                                username = data["username"].toString(),
+                                name = data["name"].toString(),
+                                surname = data["surname"].toString(),
+                                mail = data["mail"].toString(),
+                                telf = data["telf"].toString(),
+                                lenguage = data["len"].toString(),
+                                userLevel = data["userLeve"].toString(),
+                                userPoints = data["userPoints"].toString()
+                            )
                         )
-                        Log.d("5cos", us.username)
-                        addUser(us)
                         break
                     }
                 }
             }
-            .addOnFailureListener {  }
-        println("back")
-        viewModelScope.launch {
-            delay(5000)
-        }
+            .addOnFailureListener {
+                Log.d("5cos", "Listener failed!!")
+            }
     }
-
 
 }

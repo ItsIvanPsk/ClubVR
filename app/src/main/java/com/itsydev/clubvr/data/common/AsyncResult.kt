@@ -1,4 +1,4 @@
-package com.itsydev.clubvr.data
+package com.itsydev.clubvr.data.common
 
 sealed class AsyncResult<out T>(open val data: T?) {
     data class Success<out T>(override val data: T?) : AsyncResult<T>(data)

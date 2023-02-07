@@ -1,5 +1,6 @@
 package com.itsydev.clubvr.domain.users
 
+import com.google.firebase.firestore.auth.User
 import com.itsydev.clubvr.UserEntity
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
@@ -8,12 +9,14 @@ class UserRepository @Inject constructor(
     private val userDao: UserDao
 ) {
 
-    fun getAllUsers(): Flow<List<UserEntity>> {
-        return userDao.getAllUsers()
+    val getAllUsers : Flow<List<UserEntity>> get() = userDao.getAllUsers()
+
+    fun addUser(user : UserEntity){
+        userDao.addUser(user)
     }
 
-    suspend fun addUser(task: UserEntity) {
-        userDao.addUser(task)
+    fun deleteUser() {
+        userDao.deleteUser()
     }
 
 

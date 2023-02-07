@@ -1,5 +1,8 @@
 package com.itsydev.clubvr.presentation.profile
 
+import android.app.AlertDialog
+import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,6 +11,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.itsydev.clubvr.BearEncrypt
+import com.itsydev.clubvr.LoginActivity
+import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
 import com.itsydev.clubvr.databinding.FragmentProfileBinding
 import com.itsydev.clubvr.presentation.main_menu.MainMenuViewModel
@@ -36,7 +41,9 @@ class ProfileFragment : Fragment() {
     }
 
     private fun setupListeners() = with(binding){
-
+        profileLogout.setOnClickListener {
+            showLogoutDialog().show()
+        }
     }
 
     private fun setupObservers() = with(viewmodel){
@@ -51,4 +58,27 @@ class ProfileFragment : Fragment() {
             }
         }
     }
+
+    private fun showLogoutDialog() : AlertDialog{
+        return activity.let {
+            val builder = AlertDialog.Builder(it)
+            builder.apply {
+                builder.setTitle(R.string.dialog_logout_title)
+                builder.setMessage(R.string.dialog_logout_message)
+                setPositiveButton(
+                    R.string.logout
+                ) { _, _ ->
+                    viewmodel.logout()
+                    startActivity(Intent(requireContext(), LoginActivity::class.java))
+                }
+                setNegativeButton(R.string.cancel
+                ) { dialog, _ ->
+                    dialog.dismiss()
+                }
+            }
+
+            builder.create()
+        }
+    }
+
 }

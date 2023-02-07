@@ -52,6 +52,9 @@
     <string name="remember_me">Remember me</string>
     <string name="login">Login</string>
     <string name="user_success_login">The user has been logged in!</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_logout_title">Log Out</string>
+    <string name="dialog_logout_message">Do you wanna logout?</string>
 
 
 </resources>
