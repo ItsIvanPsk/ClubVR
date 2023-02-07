@@ -1,25 +1,33 @@
 package com.itsydev.clubvr.presentation.login
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import android.util.Log
+import androidx.lifecycle.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.itsydev.clubvr.BearEncrypt
+import com.itsydev.clubvr.UserDto
 import com.itsydev.clubvr.UserEntity
+import com.itsydev.clubvr.domain.users.UserDao
+import com.itsydev.clubvr.domain.users.UserRepository
+import com.itsydev.clubvr.toDto
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class LoginViewModel @Inject constructor() : ViewModel() {
+class LoginViewModel @Inject constructor(
+    private val repository: UserRepository
+) : ViewModel() {
 
     private var loggedIn: MutableLiveData<Boolean> = MutableLiveData<Boolean>()
     private val mAuth: FirebaseAuth = FirebaseAuth.getInstance()
     private val bear = BearEncrypt()
+
+    private val users = MutableLiveData<List<UserEntity>>()
+    private val rememberMe = MutableLiveData<Boolean>()
 
     fun checkUsername(_username: String, _passowrd: String) {
         mAuth.signInWithEmailAndPassword(_username, _passowrd)
@@ -28,47 +36,51 @@ class LoginViewModel @Inject constructor() : ViewModel() {
             }
     }
 
-    fun changeRememberMe() {
 
+    private fun addUser(_user : UserEntity){
+        viewModelScope.launch {
+            repository.addUser(_user)
+        }
     }
 
     fun getLoggedIn(): LiveData<Boolean>{
         return loggedIn
     }
 
-    private fun logUser(userEntity: UserEntity) {}
+    fun getUsers(): LiveData<List<UserEntity>> {
+        return users
+    }
 
     fun getUsernameByMail(mail: String){
+        Log.d("5cos", "enter Username")
         val database = Firebase.firestore
         val collectionReference = database.collection("profiles")
-
         collectionReference.get()
             .addOnSuccessListener { result ->
                 for (document in result) {
                     val data = document.data
-                    if(data.get("mail") == mail){
-                        logUser(
+                    Log.d("5cos", data["username"].toString())
+                    if(data["mail"] == bear.encrypt(mail)){
+                        addUser(
                             UserEntity(
-                                id = bear.decrypt(data.get("id").toString()),
-                                username = bear.decrypt(data.get("username").toString()),
-                                name = bear.decrypt(data.get("name").toString()),
-                                surname = bear.decrypt(data.get("surname").toString()),
-                                mail = bear.decrypt(data.get("mail").toString()),
-                                telf = bear.decrypt(data.get("telf").toString()),
-                                lenguage = bear.decrypt(data.get("len").toString()),
-                                userLevel = bear.decrypt(data.get("userLevel").toString()),
-                                userPoints = bear.decrypt(data.get("userPoints").toString()),
+                                id = data["id"].toString(),
+                                username = data["username"].toString(),
+                                name = data["name"].toString(),
+                                surname = data["surname"].toString(),
+                                mail = data["mail"].toString(),
+                                telf = data["telf"].toString(),
+                                lenguage = data["len"].toString(),
+                                userLevel = data["userLeve"].toString(),
+                                userPoints = data["userPoints"].toString()
                             )
                         )
                         break
                     }
                 }
             }
-            .addOnFailureListener {  }
-        println("back")
-        viewModelScope.launch {
-            delay(5000)
-        }
+            .addOnFailureListener {
+                Log.d("5cos", "Listener failed!!")
+            }
     }
 
 }

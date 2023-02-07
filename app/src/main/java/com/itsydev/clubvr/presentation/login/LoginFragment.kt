@@ -38,6 +38,7 @@ class LoginFragment : Fragment(){
     ): View {
         setupListeners()
         setupObservers()
+
         return binding.root
     }
 
@@ -48,9 +49,6 @@ class LoginFragment : Fragment(){
                 binding.passwordInput.text.toString()
             )
         }
-        rememberMeCheckbox.setOnClickListener {
-            viewmodel.changeRememberMe()
-        }
     }
 
     private fun setupObservers() = with(viewmodel){
@@ -60,7 +58,6 @@ class LoginFragment : Fragment(){
                 viewmodel.getUsernameByMail(binding.usernameInput.text.toString())
                 startActivity(Intent(context, MainActivity::class.java))
             } else if (!it) {
-                Toast.makeText(context, R.string.user_success_login, Toast.LENGTH_LONG).show()
                 binding.passwordInput.setText("")
             }
         }

@@ -1,5 +1,8 @@
 package com.itsydev.clubvr.presentation.profile
 
+import android.app.AlertDialog
+import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,6 +11,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.itsydev.clubvr.BearEncrypt
+import com.itsydev.clubvr.LoginActivity
+import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
 import com.itsydev.clubvr.databinding.FragmentProfileBinding
 import com.itsydev.clubvr.presentation.main_menu.MainMenuViewModel
@@ -29,29 +34,51 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        viewmodel.updateUser()
+        viewmodel.updateUsers()
         setupListeners()
         setupObservers()
         return binding.root
     }
 
     private fun setupListeners() = with(binding){
-
+        profileLogout.setOnClickListener {
+            showLogoutDialog().show()
+        }
     }
 
     private fun setupObservers() = with(viewmodel){
-        getUser().observe(viewLifecycleOwner){
-            /*
-            Log.d("userEn", it.toString())
-            if(it.id.isNotEmpty()){
-                binding.profileIdValue.text = "VR_" + bear.decrypt(it.id)
-                binding.profileUsernameValue.text = bear.decrypt(it.username)
-                binding.profileSurnnameValue.text = bear.decrypt(it.surname)
-                binding.profileNameValue.text = bear.decrypt(it.name)
-                binding.profileContactTelfValue.text = bear.decrypt(it.telf.toString())
-                binding.profileMailValue.text = bear.decrypt(it.mail)
+        getUsers().observe(viewLifecycleOwner){
+            if(it.isNotEmpty()){
+                binding.profileIdValue.text = "VR_" + bear.decrypt(it[0].id)
+                binding.profileUsernameValue.text = bear.decrypt(it[0].username)
+                binding.profileSurnnameValue.text = bear.decrypt(it[0].surname)
+                binding.profileNameValue.text = bear.decrypt(it[0].name)
+                binding.profileContactTelfValue.text = bear.decrypt(it[0].telf.toString())
+                binding.profileMailValue.text = bear.decrypt(it[0].mail)
             }
-             */
         }
     }
+
+    private fun showLogoutDialog() : AlertDialog{
+        return activity.let {
+            val builder = AlertDialog.Builder(it)
+            builder.apply {
+                builder.setTitle(R.string.dialog_logout_title)
+                builder.setMessage(R.string.dialog_logout_message)
+                setPositiveButton(
+                    R.string.logout
+                ) { _, _ ->
+                    viewmodel.logout()
+                    startActivity(Intent(requireContext(), LoginActivity::class.java))
+                }
+                setNegativeButton(R.string.cancel
+                ) { dialog, _ ->
+                    dialog.dismiss()
+                }
+            }
+
+            builder.create()
+        }
+    }
+
 }
