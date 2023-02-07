@@ -1,5 +1,6 @@
 package com.itsydev.clubvr.domain.users
 
+import android.support.annotation.WorkerThread
 import androidx.room.*
 import com.itsydev.clubvr.UserEntity
 import com.itsydev.clubvr.data.AsyncResult
@@ -8,11 +9,12 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface UserDao {
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun addUser(user: UserEntity)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @WorkerThread
+    suspend fun addUser(user: UserEntity)
 
     @Query("SELECT * FROM UserEntity ORDER BY id ASC")
-    fun getAllUsers() : List<UserEntity>
+    fun getAllUsers() : Flow<List<UserEntity>>
 
     /*
     @Query("SELECT * FROM UserEntity ORDER BY photoId ASC")

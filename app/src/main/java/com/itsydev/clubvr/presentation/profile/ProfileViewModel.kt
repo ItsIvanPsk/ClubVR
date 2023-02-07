@@ -20,11 +20,7 @@ class ProfileViewModel @Inject constructor(
     private val bear = BearEncrypt()
 
     fun updateUsers() {
-        viewModelScope.launch {
-            users.value = userDao.getAllUsers().map {
-                it.toDto()
-            }
-        }
+
     }
 
     fun getUsers() = users
