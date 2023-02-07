@@ -52,11 +52,7 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
     }
 
     override fun experienceClicked(view: View){
-        view.findNavController().navigate(R.id.action_experiencesFragment_to_experienceDetail, Bundle())
-        /*
-        val directions = PokemonToDetailDirections.actionPokemonToDetailToPokemonCamera()
-        findNavController().navigate(directions)
-         */
+        view.findNavController().navigate(R.id.action_experiencesFragment_to_experienceDetail)
     }
 
 }

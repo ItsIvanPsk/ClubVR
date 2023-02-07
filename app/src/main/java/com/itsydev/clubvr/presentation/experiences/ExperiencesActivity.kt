@@ -52,7 +52,6 @@ class ExperiencesActivity : AppCompatActivity(){
         binding.bottomNavigationView.menu.getItem(4).isEnabled = false
         supportActionBar?.hide()
 
-
     }
 
     private fun setupListeners(){
@@ -65,13 +64,6 @@ class ExperiencesActivity : AppCompatActivity(){
     private fun setupNavController() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
         navController = navHostFragment.navController
-    }
-
-    // Setup the toolbar with navController and the config of the AppBar
-    private fun setupToolbar() {
-        setSupportActionBar(binding.toolbar)
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.experiencesFragment))
-        setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
     override fun onSupportNavigateUp(): Boolean {
