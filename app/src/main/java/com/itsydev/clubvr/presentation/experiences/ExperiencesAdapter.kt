@@ -49,7 +49,7 @@ class ExperiencesAdapter(
             }
             binding.experienceCategory.text = expCategory
             binding.experienceBg.setOnClickListener {
-                experienceListeners.experienceClicked(it)
+                experienceListeners.experienceClicked(it, item.id)
             }
         }
         }
@@ -67,5 +67,5 @@ object ExperiencesDiffCallBack : DiffUtil.ItemCallback<ExperienceBo>() {
 }
 
 interface ExperienceListeners{
-    fun experienceClicked(view: View)
+    fun experienceClicked(view: View, position:Int)
 }
