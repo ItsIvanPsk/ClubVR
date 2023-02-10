@@ -3,7 +3,9 @@ package com.itsydev.clubvr.presentation.experiences
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
@@ -52,7 +54,6 @@ class ExperiencesActivity : AppCompatActivity(){
         binding.bottomNavigationView.menu.getItem(4).isEnabled = false
         supportActionBar?.hide()
 
-
     }
 
     private fun setupListeners(){
@@ -65,13 +66,6 @@ class ExperiencesActivity : AppCompatActivity(){
     private fun setupNavController() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
         navController = navHostFragment.navController
-    }
-
-    // Setup the toolbar with navController and the config of the AppBar
-    private fun setupToolbar() {
-        setSupportActionBar(binding.toolbar)
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.experiencesFragment))
-        setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
     override fun onSupportNavigateUp(): Boolean {

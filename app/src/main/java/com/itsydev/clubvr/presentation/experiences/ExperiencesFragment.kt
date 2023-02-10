@@ -51,12 +51,9 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
         }
     }
 
-    override fun experienceClicked(view: View){
-        view.findNavController().navigate(R.id.action_experiencesFragment_to_experienceDetail, Bundle())
-        /*
-        val directions = PokemonToDetailDirections.actionPokemonToDetailToPokemonCamera()
-        findNavController().navigate(directions)
-         */
+    override fun experienceClicked(view: View, position: Int){
+        view.findNavController().navigate(R.id.action_experiencesFragment_to_experienceDetail)
+        viewmodel.setExperienceDetail(position-1)
     }
 
 }

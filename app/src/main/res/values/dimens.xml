@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="experience_detail_title">20dp</dimen>
+    <dimen name="experience_detail_text">16dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_corner_elevation">10dp</dimen>
+</resources>

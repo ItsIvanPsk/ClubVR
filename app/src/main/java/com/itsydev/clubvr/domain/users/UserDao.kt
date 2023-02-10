@@ -2,7 +2,7 @@ package com.itsydev.clubvr.domain.users
 
 import android.support.annotation.WorkerThread
 import androidx.room.*
-import com.itsydev.clubvr.UserEntity
+import com.itsydev.clubvr.data.models.users.UserEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

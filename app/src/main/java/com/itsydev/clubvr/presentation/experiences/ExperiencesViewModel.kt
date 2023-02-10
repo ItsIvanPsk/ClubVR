@@ -5,17 +5,13 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
-import com.itsydev.clubvr.utils.*
+import com.itsydev.clubvr.data.models.experiences.*
 import org.json.JSONObject
 
 class ExperiencesViewModel : ViewModel(){
 
-    val db = Firebase.firestore
-
     private var experiences = MutableLiveData<List<ExperienceBo>>()
-    private var rememberMe = MutableLiveData<List<ExperienceBo>>()
+    private var experienceToDetail = MutableLiveData<ExperienceBo>()
 
     fun getExperiencies(): LiveData<List<ExperienceBo>> = experiences
 
@@ -86,5 +82,22 @@ class ExperiencesViewModel : ViewModel(){
             )
         }
         experiences.value = experienceList
+    }
+
+    fun setExperienceDetail(position: Int){
+        experienceToDetail.value = ExperienceBo(
+            experiences.value?.get(position)?.id!!,
+            experiences.value?.get(position)?.name!!,
+            experiences.value?.get(position)?.description!!,
+            experiences.value?.get(position)?.categories!!,
+            experiences.value?.get(position)?.img!!,
+            experiences.value?.get(position)?.rating!!,
+            experiences.value?.get(position)?.warnings!!,
+            experiences.value?.get(position)?.headsets_compatible!!,
+        )
+    }
+
+    fun getExperienceData() : LiveData<ExperienceBo>{
+        return experienceToDetail
     }
 }

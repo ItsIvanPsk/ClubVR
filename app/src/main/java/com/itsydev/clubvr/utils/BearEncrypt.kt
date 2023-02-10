@@ -1,9 +1,6 @@
-package com.itsydev.clubvr
+package com.itsydev.clubvr.utils
 
 import android.util.Log
-import java.nio.charset.Charset
-import javax.crypto.Cipher
-import javax.crypto.spec.SecretKeySpec
 
 
 class BearEncrypt {

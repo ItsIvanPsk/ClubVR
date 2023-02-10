@@ -1,4 +1,4 @@
-package com.itsydev.clubvr
+package com.itsydev.clubvr.data.models.users
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -17,4 +17,3 @@ data class UserEntity(
     @SerializedName("userLevel") @ColumnInfo var userLevel: String = "",
     @SerializedName("userPoints") @ColumnInfo var userPoints: String = "",
 )
-

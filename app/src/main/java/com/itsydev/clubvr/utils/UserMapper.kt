@@ -1,6 +1,7 @@
 package com.itsydev.clubvr
 
-import com.google.firebase.firestore.auth.User
+import com.itsydev.clubvr.data.models.users.UserDto
+import com.itsydev.clubvr.data.models.users.UserEntity
 
 fun UserEntity.toDto() = UserDto(
     id = id,

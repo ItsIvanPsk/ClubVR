@@ -5,15 +5,10 @@ import androidx.lifecycle.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.itsydev.clubvr.BearEncrypt
-import com.itsydev.clubvr.UserDto
-import com.itsydev.clubvr.UserEntity
-import com.itsydev.clubvr.domain.users.UserDao
+import com.itsydev.clubvr.utils.BearEncrypt
+import com.itsydev.clubvr.data.models.users.UserEntity
 import com.itsydev.clubvr.domain.users.UserRepository
-import com.itsydev.clubvr.toDto
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

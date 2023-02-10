@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/experienceDetail"
-        android:name="com.itsydev.clubvr.ExperienceDetail"
+        android:name="com.itsydev.clubvr.presentation.experience_detail.ExperienceDetail"
         android:label="fragment_experience_detail"
         tools:layout="@layout/fragment_experience_detail" />
 
