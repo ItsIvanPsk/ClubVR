@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.itsydev.clubvr.UserEntity
+import com.itsydev.clubvr.data.models.users.UserEntity
 import com.itsydev.clubvr.domain.users.UserDao
 
 @Database(entities = [UserEntity::class], version = 1, exportSchema = false)

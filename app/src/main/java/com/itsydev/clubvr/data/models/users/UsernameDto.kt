@@ -1,4 +1,4 @@
-package com.itsydev.clubvr.utils
+package com.itsydev.clubvr.data.models.users
 
 data class UsernameDto(
     val name: String,

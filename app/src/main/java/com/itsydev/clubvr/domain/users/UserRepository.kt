@@ -1,7 +1,7 @@
 package com.itsydev.clubvr.domain.users
 
 import com.google.firebase.firestore.auth.User
-import com.itsydev.clubvr.UserEntity
+import com.itsydev.clubvr.data.models.users.UserEntity
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

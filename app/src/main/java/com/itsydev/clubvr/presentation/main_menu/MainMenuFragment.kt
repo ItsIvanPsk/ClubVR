@@ -6,12 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.itsydev.clubvr.BearEncrypt
-import com.itsydev.clubvr.MainActivity
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
-import com.itsydev.clubvr.presentation.experiences.ExperiencesViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import java.nio.charset.Charset
 
 @AndroidEntryPoint
 class MainMenuFragment : Fragment(){

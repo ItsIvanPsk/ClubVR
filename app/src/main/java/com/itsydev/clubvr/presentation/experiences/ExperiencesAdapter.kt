@@ -1,19 +1,17 @@
 package com.itsydev.clubvr.presentation.experiences
 
 import android.content.Context
-import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.res.TypedArrayUtils.getString
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.CircleCropTransformation
 import com.itsydev.clubvr.databinding.LayoutExperienceItemBinding
-import com.itsydev.clubvr.utils.ExperienceConstants
-import com.itsydev.clubvr.utils.ExperienceBo
+import com.itsydev.clubvr.data.models.experiences.ExperienceConstants
+import com.itsydev.clubvr.data.models.experiences.ExperienceBo
 
 class ExperiencesAdapter(
     private val context: Context,

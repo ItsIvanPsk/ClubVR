@@ -5,9 +5,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
-import com.itsydev.clubvr.utils.*
+import com.itsydev.clubvr.data.models.experiences.*
 import org.json.JSONObject
 
 class ExperiencesViewModel : ViewModel(){
