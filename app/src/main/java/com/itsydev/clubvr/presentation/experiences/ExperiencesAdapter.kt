@@ -12,6 +12,8 @@ import coil.transform.CircleCropTransformation
 import com.itsydev.clubvr.databinding.LayoutExperienceItemBinding
 import com.itsydev.clubvr.data.models.experiences.ExperienceConstants
 import com.itsydev.clubvr.data.models.experiences.ExperienceBo
+import com.itsydev.clubvr.presentation.main_menu.ExperienceListeners
+import com.itsydev.clubvr.presentation.main_menu.ExperiencesDiffCallBack
 
 class ExperiencesAdapter(
     private val context: Context,

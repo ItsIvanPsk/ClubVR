@@ -10,7 +10,6 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="58dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,7 +17,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -46,7 +46,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/recent_news"
-                        android:textSize="24dp"
+                        android:textSize="@dimen/main_item_header_size"
                         android:textStyle="bold" />
 
                     <TextView

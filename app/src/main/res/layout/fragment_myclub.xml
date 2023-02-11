@@ -9,11 +9,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -22,8 +23,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginVertical="15dp"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -49,28 +50,28 @@
                         android:id="@+id/myclub_points_user_title"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:gravity="center_horizontal"
                         android:layout_marginVertical="10dp"
+                        android:gravity="center_horizontal"
                         android:text="@string/your_vr_points"
-                        app:layout_constraintHorizontal_bias="0.2"
-                        app:layout_constraintTop_toBottomOf="@id/myclub_points"
-                        app:layout_constraintStart_toStartOf="parent"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintHorizontal_bias="0.2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/myclub_points" />
 
                     <TextView
                         android:id="@+id/myclub_points_user"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:gravity="center_horizontal"
                         android:layout_marginVertical="10dp"
+                        android:gravity="center_horizontal"
                         android:text="7"
-                        app:layout_constraintTop_toBottomOf="@id/myclub_points"
-                        app:layout_constraintStart_toEndOf="@id/myclub_points_user_title"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintStart_toEndOf="@id/myclub_points_user_title"
+                        app:layout_constraintTop_toBottomOf="@id/myclub_points" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -82,8 +83,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginVertical="20dp"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -154,12 +155,12 @@
                         android:layout_width="250dp"
                         android:layout_height="20dp"
                         android:layout_marginTop="20dp"
-                        android:progress="7"
                         android:max="10"
-                        app:layout_constraintTop_toBottomOf="@id/myclub_points_to_next_level"
-                        app:layout_constraintStart_toStartOf="parent"
+                        android:progress="7"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/myclub_points_to_next_level" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
