@@ -9,10 +9,11 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.CircleCropTransformation
-import com.itsydev.clubvr.data.models.experiences.ExperienceBo
+import com.itsydev.clubvr.databinding.LayoutExperienceItemBinding
 import com.itsydev.clubvr.data.models.experiences.ExperienceConstants
-import com.itsydev.clubvr.databinding.ItemLayoutExperienceBinding
-import com.itsydev.clubvr.databinding.ItemMainMenuBinding
+import com.itsydev.clubvr.data.models.experiences.ExperienceBo
+import com.itsydev.clubvr.presentation.main_menu.ExperienceListeners
+import com.itsydev.clubvr.presentation.main_menu.ExperiencesDiffCallBack
 
 class ExperiencesAdapter(
     private val context: Context,
@@ -21,7 +22,7 @@ class ExperiencesAdapter(
 {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExperiencesViewHolder {
-        val binding = ItemLayoutExperienceBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = LayoutExperienceItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ExperiencesViewHolder(binding)
     }
 
@@ -29,7 +30,7 @@ class ExperiencesAdapter(
         holder.bind(getItem(position))
     }
 
-    inner class ExperiencesViewHolder(private val binding: ItemLayoutExperienceBinding) :
+    inner class ExperiencesViewHolder(private val binding: LayoutExperienceItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: ExperienceBo){
             if(item.img.isNotEmpty()){
