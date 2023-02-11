@@ -1,6 +1,7 @@
 package com.itsydev.clubvr.presentation.main_menu
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +12,7 @@ import com.itsydev.clubvr.utils.BearEncrypt
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainMenuFragment : Fragment(){
+class MainMenuFragment : Fragment(), MainMenuItemListener{
 
     private lateinit var binding: FragmentMainMenuBinding
     private val viewmodel: MainMenuViewModel by viewModels()
@@ -37,6 +38,10 @@ class MainMenuFragment : Fragment(){
 
     private fun setupObservers(){
 
+    }
+
+    override fun newPressed(view: View, itemId: Int) {
+        Log.d("5cos", itemId.toString())
     }
 
 }

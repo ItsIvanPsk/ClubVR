@@ -1,4 +1,4 @@
-package com.itsydev.clubvr.data.users
+package com.itsydev.clubvr.data.room
 
 import android.content.Context
 import androidx.room.Database

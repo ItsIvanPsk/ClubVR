@@ -2,7 +2,7 @@ package com.itsydev.clubvr.di
 
 import android.content.Context
 import androidx.room.Room
-import com.itsydev.clubvr.data.users.UserDatabase
+import com.itsydev.clubvr.data.room.UserDatabase
 import com.itsydev.clubvr.domain.users.UserDao
 import dagger.Module
 import dagger.Provides
