@@ -7,48 +7,47 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
-import coil.transform.CircleCropTransformation
-import com.itsydev.clubvr.databinding.LayoutExperienceItemBinding
-import com.itsydev.clubvr.data.models.experiences.ExperienceConstants
-import com.itsydev.clubvr.data.models.experiences.ExperienceBo
-import com.itsydev.clubvr.data.models.news.NewsBo
-import com.itsydev.clubvr.presentation.experiences.ExperienceListeners
-import com.itsydev.clubvr.presentation.experiences.ExperiencesAdapter
-import com.itsydev.clubvr.presentation.experiences.ExperiencesDiffCallBack
+import com.itsydev.clubvr.data.models.main_menu.MainMenuItemBo
+import com.itsydev.clubvr.databinding.ItemMainMenuBinding
 
 class MainMenuAdapter(
-    private val context: Context
-) : ListAdapter<NewsBo, MainMenuAdapter.NewsViewHolder> (NewDiffCallback)
+    private val context: Context,
+    private val mainMenuItemListener: MainMenuItemListener
+) : ListAdapter<MainMenuItemBo, MainMenuAdapter.MainMenuItemViewHolder> (MainMenuItemDiffCallBack)
 {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
-        val binding = LayoutExperienceItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return NewsViewHolder(binding)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainMenuItemViewHolder {
+        val binding = ItemMainMenuBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return MainMenuItemViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MainMenuItemViewHolder, position: Int) {
         holder.bind(getItem(position))
     }
 
-    inner class NewsViewHolder(private val binding: LayoutExperienceItemBinding) :
+    inner class MainMenuItemViewHolder(private val binding: ItemMainMenuBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: ExperienceBo){
-
+        fun bind(item: MainMenuItemBo) = with(binding){
+            mmItemTitle.text = item.main_title[0]
+            mmItemSubtitle.text = item.main_subtitle[0]
+            mmItemDescription.text = item.sections[0].description[0]
+            mmItemBg.setOnClickListener {
+                mainMenuItemListener.newPressed(it, item.id)
+            }
         }
     }
 }
 
-object NewDiffCallback : DiffUtil.ItemCallback<ExperienceBo>() {
-    override fun areItemsTheSame(oldItem: ExperienceBo, newItem: ExperienceBo): Boolean {
+object MainMenuItemDiffCallBack : DiffUtil.ItemCallback<MainMenuItemBo>() {
+    override fun areItemsTheSame(oldItem: MainMenuItemBo, newItem: MainMenuItemBo): Boolean {
         return oldItem.id == newItem.id
     }
 
-    override fun areContentsTheSame(oldItem: ExperienceBo, newItem: ExperienceBo): Boolean {
+    override fun areContentsTheSame(oldItem: MainMenuItemBo, newItem: MainMenuItemBo): Boolean {
         return false
     }
 }
 
-interface NewsListeners{
-    fun newPressed(view: View, position:Int)
+interface MainMenuItemListener{
+    fun newPressed(view: View, itemId:Int)
 }

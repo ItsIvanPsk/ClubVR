@@ -52,7 +52,7 @@ class LoginFragment : Fragment(){
                 binding.loginProgressBar.visibility = View.VISIBLE
                 // Toast.makeText(context, R.string.user_success_login, Toast.LENGTH_LONG).show()
                 viewmodel.getUsernameByMail(binding.usernameInput.text.toString())
-                startActivity(Intent(context, MainActivity::class.java))
+            //startActivity(Intent(context, MainActivity::class.java))
             } else if (!it) {
                 binding.passwordInput.setText("")
             }

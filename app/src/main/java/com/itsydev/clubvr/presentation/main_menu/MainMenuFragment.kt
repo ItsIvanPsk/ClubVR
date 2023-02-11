@@ -47,4 +47,8 @@ class MainMenuFragment : Fragment(), MainMenuItemListener{
         Log.d("5cos", itemId.toString())
     }
 
+    override fun newPressed(view: View, itemId: Int) {
+        Log.d("5cos", itemId.toString())
+    }
+
 }
