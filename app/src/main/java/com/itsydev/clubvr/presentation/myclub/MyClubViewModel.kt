@@ -19,8 +19,10 @@ class MyClubViewModel @Inject constructor(
     private val userRepository: UserRepository
 ) : ViewModel() {
 
+    private var userPoints: MutableLiveData<Int> = MutableLiveData<Int>()
     private var activeUser: MutableLiveData<UserEntity> = MutableLiveData<UserEntity>()
     private var username: MutableLiveData<String> = MutableLiveData<String>()
+    private var bear: BearEncrypt = BearEncrypt()
 
     fun getActiveUser() = activeUser
 
