@@ -47,14 +47,12 @@ class LoginViewModel @Inject constructor(
     }
 
     fun getUsernameByMail(mail: String){
-        Log.d("5cos", "enter Username")
         val database = Firebase.firestore
         val collectionReference = database.collection("profiles")
         collectionReference.get()
             .addOnSuccessListener { result ->
                 for (document in result) {
                     val data = document.data
-                    Log.d("5cos", data["username"].toString())
                     if(data["mail"] == bear.encrypt(mail)){
                         addUser(
                             UserEntity(

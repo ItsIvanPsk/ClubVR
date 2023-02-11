@@ -19,7 +19,6 @@ class LoginFragment : Fragment(){
 
     private lateinit var binding: FragmentLoginBinding
     private val viewmodel: LoginViewModel by activityViewModels()
-    private val bear: BearEncrypt = BearEncrypt()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +29,7 @@ class LoginFragment : Fragment(){
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        binding.loginAppIcon.background = null
         setupListeners()
         setupObservers()
 
@@ -38,9 +38,10 @@ class LoginFragment : Fragment(){
 
     private fun setupListeners() = with(binding){
         loginButton.setOnClickListener {
+            loginProgressBar.visibility = View.VISIBLE
             viewmodel.checkUsername(
-                binding.usernameInput.text.toString(),
-                binding.passwordInput.text.toString()
+                usernameInput.text.toString(),
+                passwordInput.text.toString()
             )
         }
     }
@@ -48,7 +49,8 @@ class LoginFragment : Fragment(){
     private fun setupObservers() = with(viewmodel){
         getLoggedIn().observe(viewLifecycleOwner){
             if(it){
-                Toast.makeText(context, R.string.user_success_login, Toast.LENGTH_LONG).show()
+                binding.loginProgressBar.visibility = View.VISIBLE
+                // Toast.makeText(context, R.string.user_success_login, Toast.LENGTH_LONG).show()
                 viewmodel.getUsernameByMail(binding.usernameInput.text.toString())
                 startActivity(Intent(context, MainActivity::class.java))
             } else if (!it) {

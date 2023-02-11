@@ -149,6 +149,7 @@
                         app:layout_constraintVertical_bias="0.677" />
 
                     <ProgressBar
+                        android:id="@+id/myclub_points_bar_value"
                         style="?android:attr/progressBarStyleHorizontal"
                         android:layout_width="250dp"
                         android:layout_height="20dp"
