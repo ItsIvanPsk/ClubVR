@@ -29,6 +29,7 @@ class MainMenuFragment : Fragment(), MainMenuItemListener{
     ): View {
         setupListeners()
         setupObservers()
+        viewmodel.updateMainMenuItems()
         return binding.root
     }
 
@@ -37,7 +38,9 @@ class MainMenuFragment : Fragment(), MainMenuItemListener{
     }
 
     private fun setupObservers(){
-
+        viewmodel.getMainMenuItems().observe(viewLifecycleOwner){
+            Log.d("5cos", it.toString())
+        }
     }
 
     override fun newPressed(view: View, itemId: Int) {
