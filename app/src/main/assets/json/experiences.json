@@ -47,6 +47,11 @@
         "categories": [
             0,
             2,
+            4,
+            0,
+            1,
+            2,
+            3,
             4
         ],
         "headsets_compatible": [
@@ -553,7 +558,7 @@
         ],
         "description": [
             "In a world where robots have replaced all human jobs, step into the 'Job Simulator' to learn what it was like 'to job'.",
-            "\nEn un mundo donde los robots han sustituido todos los trabajos humanos, vais al 'Job Simulator' para aprender como era 'trabajar'.",
+            "En un mundo donde los robots han sustituido todos los trabajos humanos, vais al 'Job Simulator' para aprender como era 'trabajar'.",
             "En un món on els robots han substituït tots els treballs humans, aneu al 'Job Simulator' per aprendre com era 'treballar'."
         ],
         "warnings": [
