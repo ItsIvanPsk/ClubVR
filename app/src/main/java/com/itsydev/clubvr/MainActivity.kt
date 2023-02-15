@@ -22,15 +22,12 @@ class MainActivity : AppCompatActivity(){
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
-    private var userMail: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupNavController()
-        userMail = savedInstanceState?.getString("mail").toString()
-        Log.d("5cos", userMail)
         val navView: BottomNavigationView = binding.bottomNavigationView
         setSupportActionBar(binding.toolbar)
         appBarConfiguration = AppBarConfiguration(
@@ -55,7 +52,6 @@ class MainActivity : AppCompatActivity(){
 
     }
 
-    fun getUserMail() : String { return userMail }
 
     // Setup NavController with the NavHostFragment
     private fun setupNavController() {
@@ -64,8 +60,6 @@ class MainActivity : AppCompatActivity(){
         navController = navHostFragment.navController
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp(appBarConfiguration)
-    }
+    override fun onSupportNavigateUp(): Boolean { return navController.navigateUp(appBarConfiguration) }
 
 }
