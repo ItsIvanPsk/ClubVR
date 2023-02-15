@@ -44,7 +44,6 @@ class MyClubFragment : Fragment() {
             updateUserPoints(it)
         }
         getActiveUser().observe(viewLifecycleOwner){
-            binding.myclubPointsUserValue.text = bear.decrypt(it.userPoints)
             binding.myclubPointsBarValue.progress = bear.decrypt(it.userPoints).toInt()
             Log.d("5cos", "MyClub points updated")
         }

@@ -61,7 +61,7 @@
                         app:layout_constraintTop_toBottomOf="@id/myclub_points" />
 
                     <TextView
-                        android:id="@+id/myclub_points_user"
+                        android:id="@+id/myclub_points_user_value"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"

@@ -12,4 +12,12 @@
     <color name="green">#7BFC03</color>
     <color name="red">#FF0400</color>
 
+    <color name="Yale_Blue">#013281</color>
+    <color name="Gunmetal">#1F2D3A</color>
+    <color name="Powder_blue">#A9BFD3</color>
+    <color name="Onyx">#3D4045</color>
+    <color name="Black">#000000</color>
+    <color name="Blue_Gray">#6297C1</color>
+    <color name="White">#FFFFFF</color>
+
 </resources>
