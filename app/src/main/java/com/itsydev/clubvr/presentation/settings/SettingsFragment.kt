@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
 import com.itsydev.clubvr.utils.ApplicationConstants
 import dagger.hilt.android.AndroidEntryPoint
@@ -31,7 +33,9 @@ class SettingsFragment : Fragment() {
     }
 
     private fun setupListeners() = with(binding){
-
+        settingsAppAccesibility.setOnClickListener {
+            it.findNavController().navigate(R.id.action_settingsFragment_to_accesibilityFragment)
+        }
     }
 
     private fun setupObservers(){

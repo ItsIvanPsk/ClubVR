@@ -19,7 +19,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/Blue_Gray">
 
             <ImageView
                 android:id="@+id/profile_logout"
@@ -40,7 +41,7 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="4dp"
                 android:contentDescription="@string/user_icon"
-                android:src="@drawable/ic_baseline_person_24"
+                android:src="@drawable/ieti_logo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.023"
                 app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +69,6 @@
                 android:layout_marginStart="8dp"
                 android:gravity="center_vertical"
                 android:text="VR_55555"
-                android:textColor="@color/lgray"
                 android:textSize="16dp"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"

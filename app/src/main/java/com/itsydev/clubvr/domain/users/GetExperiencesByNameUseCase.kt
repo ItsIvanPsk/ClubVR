@@ -1,29 +1,32 @@
-package com.itsydev.clubvr.presentation.experiences
+package com.itsydev.clubvr.domain.users
 
 import android.content.Context
 import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.itsydev.clubvr.data.models.experiences.*
-import com.itsydev.clubvr.domain.users.GetExperiencesByNameUseCase
-import com.itsydev.clubvr.domain.users.GetExperiencesByNameUseCaseImpl
-import kotlinx.coroutines.launch
 import org.json.JSONObject
-import javax.inject.Inject
-import kotlin.coroutines.coroutineContext
 
-class ExperiencesViewModel @Inject constructor(
-) : ViewModel() {
+interface GetExperiencesByNameUseCase {
+    fun getExperiencesByName(name:CharSequence,context: Context): List<ExperienceBo>
+}
 
-    private var experiences = MutableLiveData<List<ExperienceBo>>()
-    private var experienceToDetail = MutableLiveData<ExperienceBo>()
+class GetExperiencesByNameUseCaseImpl : GetExperiencesByNameUseCase{
 
-    fun getExperiencies(): LiveData<List<ExperienceBo>> = experiences
+    override fun getExperiencesByName(name: CharSequence, context: Context): List<ExperienceBo> {
+        val experiences = loadExperienceJson(context)
+        val filteredList = mutableListOf<ExperienceBo>()
 
-    fun updateExperiences(_context: Context, _fileName: String) {
-        val inputStream = _context.assets.open(_fileName)
+        for (key in experiences) {
+            if(key.name.contains(name)){
+                filteredList.add(key)
+            }
+        }
+
+        return filteredList
+
+    }
+
+    private fun loadExperienceJson(_context: Context) : List<ExperienceBo> {
+        val inputStream = _context.assets.open("json/experiences.json")
         val json = inputStream.bufferedReader().use { it.readText() }
         val jsonObject = JSONObject(json)
         val experienceList = mutableListOf<ExperienceBo>()
@@ -88,29 +91,7 @@ class ExperiencesViewModel @Inject constructor(
                 )
             )
         }
-        experiences.value = experienceList
+        return experienceList
     }
 
-    fun setExperienceDetail(position: Int){
-        experienceToDetail.value = ExperienceBo(
-            experiences.value?.get(position)?.id!!,
-            experiences.value?.get(position)?.name!!,
-            experiences.value?.get(position)?.description!!,
-            experiences.value?.get(position)?.categories!!,
-            experiences.value?.get(position)?.img!!,
-            experiences.value?.get(position)?.rating!!,
-            experiences.value?.get(position)?.warnings!!,
-            experiences.value?.get(position)?.headsets_compatible!!,
-        )
-    }
-
-    fun getExperienceData() : LiveData<ExperienceBo>{
-        return experienceToDetail
-    }
-
-    fun filterByName(s: CharSequence, context: Context) {
-        viewModelScope.launch {
-            experiences.value = GetExperiencesByNameUseCaseImpl().getExperiencesByName(s, context)
-        }
-    }
 }

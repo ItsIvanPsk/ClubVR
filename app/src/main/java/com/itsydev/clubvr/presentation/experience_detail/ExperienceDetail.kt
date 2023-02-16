@@ -1,9 +1,11 @@
 package com.itsydev.clubvr.presentation.experience_detail
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.view.marginLeft
@@ -19,6 +21,7 @@ import com.itsydev.clubvr.databinding.FragmentExperienceDetailBinding
 import com.itsydev.clubvr.presentation.experiences.ExperiencesViewModel
 import com.itsydev.clubvr.utils.ApplicationConstants
 import dagger.hilt.android.AndroidEntryPoint
+import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
 
 @AndroidEntryPoint
 class ExperienceDetail : Fragment(){
@@ -53,9 +56,6 @@ class ExperienceDetail : Fragment(){
                     CircleCropTransformation()
                 )
             }
-            binding.experienceDetailHeaderImage.load(it.img[1].url){
-                crossfade(true)
-            }
             binding.experienceDetailDescriptionValue.text = it.description[0]
 
             for(item in it.categories.indices){
@@ -72,10 +72,32 @@ class ExperienceDetail : Fragment(){
                 binding.experienceDetailCategoriesContainer.addView(cardContainer)
 
                 val layoutParams = cardContainer.layoutParams as ViewGroup.MarginLayoutParams
-                layoutParams.setMargins(20, 10, 20, 10)
+                layoutParams.setMargins(30, 20, 30, 20)
                 cardContainer.layoutParams = layoutParams
-
             }
+
+            binding.experienceDetailCategoryScroll.isHorizontalScrollBarEnabled = false;
+            Log.d("5cos", it.rating.toString())
+            var ratingStar: ImageView
+            for(item in 1..it.rating.toInt()){
+                ratingStar = ImageView(requireContext())
+                ratingStar.setImageDrawable(resources.getDrawable(R.drawable.ic_round_star_24))
+                ratingStar.maxHeight = 75
+                ratingStar.maxWidth = 75
+                binding.experienceDetailRatingContainer.addView(ratingStar)
+            }
+
+            val photoList = mutableListOf<CarouselItem>()
+            it.img.forEach { experiencePhoto ->
+                photoList.add(
+                    CarouselItem(
+                        experiencePhoto.url,
+                        ""
+                    )
+                )
+            }
+
+            binding.experienceDetailImagesCarousel.setData(photoList)
         }
     }
 

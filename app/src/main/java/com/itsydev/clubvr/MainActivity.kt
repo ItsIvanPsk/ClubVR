@@ -2,10 +2,8 @@ package com.itsydev.clubvr
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
@@ -13,15 +11,15 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.itsydev.clubvr.databinding.ActivityMainBinding
-import com.itsydev.clubvr.presentation.experiences.ExperiencesActivity
+import com.itsydev.clubvr.presentation.ExperiencesActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity(){
 
-    private lateinit var binding: ActivityMainBinding
-    private lateinit var navController: NavController
-    private lateinit var appBarConfiguration: AppBarConfiguration
+    lateinit var binding: ActivityMainBinding
+    lateinit var navController: NavController
+    lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,5 +59,9 @@ class MainActivity : AppCompatActivity(){
     }
 
     override fun onSupportNavigateUp(): Boolean { return navController.navigateUp(appBarConfiguration) }
+
+    fun getActivityBinding(): ActivityMainBinding {
+        return binding
+    }
 
 }

@@ -5,4 +5,5 @@
     <dimen name="card_corner_radius">10dp</dimen>
     <dimen name="card_corner_elevation">10dp</dimen>
     <dimen name="main_item_header_size">24dp</dimen>
+    <dimen name="settings_item_margin_horizontal">20dp</dimen>
 </resources>
