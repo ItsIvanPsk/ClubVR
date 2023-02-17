@@ -1,4 +1,4 @@
-package com.itsydev.clubvr.presentation
+package com.itsydev.clubvr
 
 import android.os.Bundle
 import android.util.Log

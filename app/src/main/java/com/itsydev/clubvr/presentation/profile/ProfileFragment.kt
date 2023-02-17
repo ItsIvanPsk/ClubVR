@@ -8,8 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.itsydev.clubvr.ExperiencesActivity
 import com.itsydev.clubvr.utils.BearEncrypt
 import com.itsydev.clubvr.LoginActivity
+import com.itsydev.clubvr.MainActivity
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentProfileBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -33,6 +35,8 @@ class ProfileFragment : Fragment() {
         viewmodel.updateUsers()
         setupListeners()
         setupObservers()
+        (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.visibility = View.VISIBLE
+        (requireActivity() as MainActivity).getActivityBinding().bottomAppBar.visibility = View.VISIBLE
         return binding.root
     }
 

@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.itsydev.clubvr.ExperiencesActivity
+import com.itsydev.clubvr.MainActivity
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
 import com.itsydev.clubvr.utils.BearEncrypt
 import dagger.hilt.android.AndroidEntryPoint
@@ -30,6 +32,9 @@ class MainMenuFragment : Fragment(), MainMenuItemListener{
         setupListeners()
         setupObservers()
         viewmodel.updateMainMenuItems()
+        (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.visibility = View.VISIBLE
+        (requireActivity() as MainActivity).getActivityBinding().bottomAppBar.visibility = View.VISIBLE
+
         return binding.root
     }
 

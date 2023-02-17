@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import coil.load
 import coil.transform.CircleCropTransformation
+import com.itsydev.clubvr.ExperiencesActivity
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.data.models.experiences.ExperienceConstants
 import com.itsydev.clubvr.databinding.FragmentExperienceDetailBinding
@@ -40,6 +41,9 @@ class ExperienceDetail : Fragment(){
     ): View {
         setupListeners()
         setupObservers()
+        (requireActivity() as ExperiencesActivity).getActivityBinding().experiencesFloatingButton.visibility = View.GONE
+        (requireActivity() as ExperiencesActivity).getActivityBinding().bottomAppBar.visibility = View.GONE
+
         return binding.root
     }
 

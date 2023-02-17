@@ -3,7 +3,6 @@ package com.itsydev.clubvr.presentation.experiences
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +12,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentExperiencesBinding
-import com.itsydev.clubvr.presentation.ExperiencesActivity
+import com.itsydev.clubvr.ExperiencesActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

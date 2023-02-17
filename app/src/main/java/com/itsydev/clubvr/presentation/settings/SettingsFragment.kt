@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.itsydev.clubvr.ExperiencesActivity
+import com.itsydev.clubvr.MainActivity
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentMainMenuBinding
 import com.itsydev.clubvr.utils.ApplicationConstants
@@ -29,6 +31,8 @@ class SettingsFragment : Fragment() {
         setupListeners()
         setupObservers()
         binding.settingsAppVersion.text = ApplicationConstants.version
+        (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.visibility = View.VISIBLE
+        (requireActivity() as MainActivity).getActivityBinding().bottomAppBar.visibility = View.VISIBLE
         return binding.root
     }
 

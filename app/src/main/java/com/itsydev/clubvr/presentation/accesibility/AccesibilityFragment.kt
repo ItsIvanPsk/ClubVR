@@ -28,7 +28,7 @@ class AccesibilityFragment : Fragment() {
     ): View {
         setupListeners()
         setupObservers()
-        (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.hide()
+        (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.visibility = View.GONE
         (requireActivity() as MainActivity).getActivityBinding().bottomAppBar.visibility = View.GONE
         return binding.root
     }

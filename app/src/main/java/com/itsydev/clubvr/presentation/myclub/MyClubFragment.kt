@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import com.itsydev.clubvr.ExperiencesActivity
+import com.itsydev.clubvr.MainActivity
 import com.itsydev.clubvr.databinding.FragmentMyclubBinding
 import com.itsydev.clubvr.presentation.login.LoginViewModel
 import com.itsydev.clubvr.utils.BearEncrypt
@@ -32,6 +34,8 @@ class MyClubFragment : Fragment() {
         setupListeners()
         setupObservers()
         viewmodel.updateRoomUsername()
+        (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.visibility = View.VISIBLE
+        (requireActivity() as MainActivity).getActivityBinding().bottomAppBar.visibility = View.VISIBLE
         return binding.root
     }
 
