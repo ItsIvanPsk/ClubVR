@@ -109,8 +109,13 @@ class ExperiencesViewModel @Inject constructor(
     }
 
     fun filterByName(s: CharSequence, context: Context) {
-        viewModelScope.launch {
-            experiences.value = GetExperiencesByNameUseCaseImpl().getExperiencesByName(s, context)
+        if(s == ""){
+            updateExperiences(context, "json/experiences.json")
+
+        } else {
+            viewModelScope.launch {
+                experiences.value = GetExperiencesByNameUseCaseImpl().getExperiencesByName(s, context)
+            }
         }
     }
 }

@@ -20,17 +20,16 @@ class LoginViewModel @Inject constructor(
     private var loggedIn: MutableLiveData<Boolean> = MutableLiveData<Boolean>()
     private val mAuth: FirebaseAuth = FirebaseAuth.getInstance()
     private val bear = BearEncrypt()
-
     private val users = MutableLiveData<List<UserEntity>>()
-    private val rememberMe = MutableLiveData<Boolean>()
 
     fun checkUsername(_username: String, _passowrd: String) {
-        mAuth.signInWithEmailAndPassword(_username, _passowrd)
-            .addOnCompleteListener { task ->
-                loggedIn.value = task.isSuccessful
-            }
+        if(_username.isNotEmpty()){
+            mAuth.signInWithEmailAndPassword(_username, _passowrd)
+                .addOnCompleteListener { task ->
+                    loggedIn.value = task.isSuccessful
+                }
+        }
     }
-
 
     private fun addUser(_user : UserEntity){
         viewModelScope.launch {
@@ -40,10 +39,6 @@ class LoginViewModel @Inject constructor(
 
     fun getLoggedIn(): LiveData<Boolean>{
         return loggedIn
-    }
-
-    fun getUsers(): LiveData<List<UserEntity>> {
-        return users
     }
 
     fun getUsernameByMail(mail: String){

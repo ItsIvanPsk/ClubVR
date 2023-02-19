@@ -82,6 +82,7 @@
         app:layout_constraintTop_toBottomOf="@id/settings_app_header">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/settings_items_edit"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:backgroundTint="@color/white"
@@ -101,7 +102,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_baseline_delete_24" />
+                android:src="@drawable/ic_round_edit_24" />
 
         </androidx.cardview.widget.CardView>
 
@@ -124,7 +125,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_baseline_star_24" />
+                android:src="@drawable/ic_round_star_24" />
 
         </androidx.cardview.widget.CardView>
 
@@ -153,6 +154,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/settings_items_discord"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginVertical="15dp"
@@ -171,7 +173,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_round_code_24" />
+                android:src="@drawable/discord_logo" />
 
         </androidx.cardview.widget.CardView>
 
