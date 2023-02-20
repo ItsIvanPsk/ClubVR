@@ -1,4 +1,4 @@
-package com.itsydev.clubvr.presentation.experiences
+package com.itsydev.clubvr
 
 import android.os.Bundle
 import android.util.Log
@@ -22,9 +22,9 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class ExperiencesActivity : AppCompatActivity(){
 
-    private lateinit var binding: ActivityExperiencesBinding
-    private lateinit var navController: NavController
-    private lateinit var appBarConfiguration: AppBarConfiguration
+    lateinit var binding: ActivityExperiencesBinding
+    lateinit var navController: NavController
+    lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,11 +47,6 @@ class ExperiencesActivity : AppCompatActivity(){
         navView.setupWithNavController(navController)
 
         binding.bottomNavigationView.background = null
-        binding.bottomNavigationView.menu.getItem(0).isEnabled = false
-        binding.bottomNavigationView.menu.getItem(1).isEnabled = false
-        binding.bottomNavigationView.menu.getItem(2).isEnabled = false
-        binding.bottomNavigationView.menu.getItem(3).isEnabled = false
-        binding.bottomNavigationView.menu.getItem(4).isEnabled = false
         supportActionBar?.hide()
 
     }
@@ -70,6 +65,10 @@ class ExperiencesActivity : AppCompatActivity(){
 
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp(appBarConfiguration)
+    }
+
+    fun getActivityBinding(): ActivityExperiencesBinding {
+        return binding
     }
 
 

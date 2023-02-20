@@ -5,10 +5,17 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.itsydev.clubvr.data.models.experiences.*
+import com.itsydev.clubvr.domain.users.GetExperiencesByNameUseCase
+import com.itsydev.clubvr.domain.users.GetExperiencesByNameUseCaseImpl
+import kotlinx.coroutines.launch
 import org.json.JSONObject
+import javax.inject.Inject
+import kotlin.coroutines.coroutineContext
 
-class ExperiencesViewModel : ViewModel(){
+class ExperiencesViewModel @Inject constructor(
+) : ViewModel() {
 
     private var experiences = MutableLiveData<List<ExperienceBo>>()
     private var experienceToDetail = MutableLiveData<ExperienceBo>()
@@ -99,5 +106,16 @@ class ExperiencesViewModel : ViewModel(){
 
     fun getExperienceData() : LiveData<ExperienceBo>{
         return experienceToDetail
+    }
+
+    fun filterByName(s: CharSequence, context: Context) {
+        if(s == ""){
+            updateExperiences(context, "json/experiences.json")
+
+        } else {
+            viewModelScope.launch {
+                experiences.value = GetExperiencesByNameUseCaseImpl().getExperiencesByName(s, context)
+            }
+        }
     }
 }

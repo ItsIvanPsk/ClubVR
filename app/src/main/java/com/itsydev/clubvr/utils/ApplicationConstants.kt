@@ -6,6 +6,7 @@ class ApplicationConstants {
     companion object{
 
         const val version: String = "v0.2"
+        const val discordLink: String = "https://discord.gg/pNXMwEsaCW"
 
         val languajes = listOf(
             R.string.english,

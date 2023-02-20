@@ -1,6 +1,8 @@
 package com.itsydev.clubvr.presentation.experiences
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,14 +12,15 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentExperiencesBinding
+import com.itsydev.clubvr.ExperiencesActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class ExperiencesFragment : Fragment(), ExperienceListeners {
 
-    private lateinit var binding: FragmentExperiencesBinding
-    private val viewmodel: ExperiencesViewModel by activityViewModels()
-    private lateinit var adapter: ExperiencesAdapter
+    lateinit var binding: FragmentExperiencesBinding
+    val viewmodel: ExperiencesViewModel by activityViewModels()
+    lateinit var adapter: ExperiencesAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +35,8 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
         setupObservers()
         setupExperienceAdapter()
         viewmodel.updateExperiences(requireContext(), "json/experiences.json")
+        (requireActivity() as ExperiencesActivity).getActivityBinding().experiencesFloatingButton.visibility = View.GONE
+        (requireActivity() as ExperiencesActivity).getActivityBinding().bottomAppBar.visibility = View.GONE
         return binding.root
     }
 
@@ -42,7 +47,18 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
     }
 
     private fun setupListeners() = with(binding){
+        experienceSearchValue.addTextChangedListener(object : TextWatcher {
 
+            override fun afterTextChanged(s: Editable) { }
+
+            override fun beforeTextChanged(s: CharSequence, start: Int,
+                                           count: Int, after: Int) {
+                viewmodel.filterByName(s, requireContext())
+            }
+
+            override fun onTextChanged(s: CharSequence, start: Int,
+                                       before: Int, count: Int) { }
+        })
     }
 
     private fun setupObservers() = with(viewmodel){

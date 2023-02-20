@@ -56,6 +56,7 @@
     <string name="dialog_logout_title">Log Out</string>
     <string name="dialog_logout_message">Do you wanna logout?</string>
     <string name="description">DESCRIPTION</string>
+    <string name="user_failed_login">The password is not correct.</string>
 
 
 </resources>
