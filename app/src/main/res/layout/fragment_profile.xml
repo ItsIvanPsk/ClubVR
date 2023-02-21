@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/profile_main_cardview"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="170dp"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="20dp"
         app:cardCornerRadius="10dp"
@@ -81,7 +81,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/profile_user_name"
                 android:layout_width="100dp"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginVertical="10dp"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
@@ -97,7 +97,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/profile_name_value"
                 android:layout_width="250dp"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Marcos"
                 android:textSize="17dp"
@@ -111,7 +111,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/profile_surnname_value"
                 android:layout_width="250dp"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginVertical="10dp"
                 android:gravity="center"
                 android:text="García"
@@ -126,7 +126,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/profile_user_surname"
                 android:layout_width="100dp"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
                 android:gravity="center"
                 android:text="Surname:"

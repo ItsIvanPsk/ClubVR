@@ -16,4 +16,5 @@ data class UserEntity(
     @SerializedName("len") @ColumnInfo var lenguage: String = "",
     @SerializedName("userLevel") @ColumnInfo var userLevel: String = "",
     @SerializedName("userPoints") @ColumnInfo var userPoints: String = "",
+    @SerializedName("admin") @ColumnInfo var admin: String = "",
 )

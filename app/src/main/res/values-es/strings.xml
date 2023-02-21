@@ -1,61 +1,56 @@
 <resources>
-
-    <string name="home">Página principal</string>
-    <string name="myclub">My Club</string>
-    <string name="myprofile">My Profile</string>
-    <string name="LogOut">Log Out</string>
-    <string name="logout">Log Out</string>
-    <string name="settings">Settings</string>
-    <string name="accessibillity">Accessibillity</string>
-    <string name="main_menu">MainMenu</string>
-    <string name="user_icon">User icon</string>
-
-    <string name="warning_epilepsia">Not suitable for people with epilepsy</string>
-    <string name="warning_vertigo">Not suitable for people with dizziness or vertigo problems</string>
-    <string name="warning_visual">It can cause visual fatigue</string>
-    <string name="warning_delay">It is recommended not to use for more than 30 minutes in a row</string>
-    <string name="warning_phobia">If you suffer from any fear or phobia, it is recommended to be extremely careful when using virtual reality viewers</string>
-
-    <string name="category_simulation">Simulation</string>
-    <string name="category_action">Action</string>
+    <string name="home">Inicio</string>
+    <string name="myclub">Mi Club</string>
+    <string name="myprofile">Mi Perfil</string>
+    <string name="LogOut">Cerrar sesión</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="settings">Configuración</string>
+    <string name="accessibillity">Accesibilidad</string>
+    <string name="main_menu">Menú principal</string>
+    <string name="user_icon">Icono de usuario</string>
+    <string name="warning_epilepsia">No apto para personas con epilepsia</string>
+    <string name="warning_vertigo">No apto para personas con problemas de mareo o vértigo</string>
+    <string name="warning_visual">Puede causar fatiga visual</string>
+    <string name="warning_delay">Se recomienda no usar por más de 30 minutos seguidos</string>
+    <string name="warning_phobia">Si sufres de algún miedo o fobia, se recomienda tener extremo cuidado al usar visores de realidad virtual</string>
+    <string name="category_simulation">Simulación</string>
+    <string name="category_action">Acción</string>
     <string name="category_arcade">Arcade</string>
-    <string name="category_adventure">Adventure</string>
-    <string name="category_inmersive">Inmersive</string>
+    <string name="category_adventure">Aventura</string>
+    <string name="category_inmersive">Inmersivo</string>
     <string name="terror">Terror</string>
-
     <string name="headsets_htc">HTC Vive</string>
     <string name="headsets_oculus">Oculus Quest 2</string>
     <string name="headsets_pico">Pico Neo 3</string>
     <string name="reverb">HP Reverb G2</string>
-
-    <string name="recent_news">Recent News</string>
-    <string name="my_profile">My Profile</string>
-    <string name="popular_games">Popular Games</string>
-    <string name="club_points">Club Points</string>
-    <string name="your_vr_points">Your VR Points</string>
-    <string name="next_points_steps">Next Points Steps</string>
-    <string name="contact">Contact</string>
-    <string name="e_mail">E-Mail</string>
+    <string name="recent_news">Noticias recientes</string>
+    <string name="my_profile">Mi Perfil</string>
+    <string name="popular_games">Juegos populares</string>
+    <string name="club_points">Puntos del club</string>
+    <string name="your_vr_points">Tus puntos de realidad virtual</string>
+    <string name="next_points_steps">Siguientes pasos de puntos</string>
+    <string name="contact">Contacto</string>
+    <string name="e_mail">Correo electrónico</string>
     <string name="app_settings_name">Club VR - IETI</string>
-    <string name="about_the_app">About the App</string>
-    <string name="permissions">Permissions</string>
-    <string name="storage_permission">Storage permission:</string>
-    <string name="notification_permission">Notification permission:</string>
-    <string name="tech_support">Tech Support</string>
-
-    <string name="english">English</string>
-    <string name="spanish">Spanish</string>
-    <string name="catalan">Catalan</string>
-
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="remember_me">Remember me</string>
-    <string name="login">Login</string>
-    <string name="user_success_login">The user has been logged in!</string>
-    <string name="cancel">Cancel</string>
-    <string name="dialog_logout_title">Log Out</string>
-    <string name="dialog_logout_message">Do you wanna logout?</string>
-    <string name="description">DESCRIPTION</string>
-
-
+    <string name="about_the_app">Acerca de la aplicación</string>
+    <string name="permissions">Permisos</string>
+    <string name="storage_permission">Permiso de almacenamiento:</string>
+    <string name="notification_permission">Permiso de notificación:</string>
+    <string name="tech_support">Soporte técnico</string>
+    <string name="english">Inglés</string>
+    <string name="spanish">Español</string>
+    <string name="catalan">Catalán</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="remember_me">Recordarme</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="user_success_login">¡El usuario ha iniciado sesión!</string>
+    <string name="cancel">Cancelar</string>
+    <string name="dialog_logout_title">Cerrar sesión</string>
+    <string name="dialog_logout_message">¿Quieres cerrar sesión?</string>
+    <string name="description">DESCRIPCIÓN</string>
+    <string name="current_password">Contraseña actual</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="repeat_password">Repite la contraseña</string>
+    <string name="change_password">Cambiar contraseña</string>
 </resources>

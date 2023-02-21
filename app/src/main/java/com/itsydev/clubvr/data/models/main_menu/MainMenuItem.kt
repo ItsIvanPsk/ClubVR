@@ -10,6 +10,7 @@ data class MainMenuItem(
     1 MainMenuItem has 1 or N Title, Subtitle
     1 MainMenuItem has 1 or N Sections
  */
+
 data class MainMenuItemDto(
     val id: Int,
     val main_title: List<String>,

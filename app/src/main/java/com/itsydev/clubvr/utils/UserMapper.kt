@@ -12,5 +12,6 @@ fun UserEntity.toDto() = UserDto(
     telf = telf,
     len = lenguage,
     userLevel = userLevel,
-    userPoints = userPoints
+    userPoints = userPoints,
+    admin = admin
 )

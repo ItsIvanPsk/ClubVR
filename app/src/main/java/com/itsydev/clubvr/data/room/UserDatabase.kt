@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.itsydev.clubvr.data.models.users.UserEntity
 import com.itsydev.clubvr.domain.users.UserDao
 
-@Database(entities = [UserEntity::class], version = 1, exportSchema = false)
+@Database(entities = [UserEntity::class], version = 3, exportSchema = false)
 abstract class UserDatabase : RoomDatabase() {
 
     abstract fun userDao(): UserDao

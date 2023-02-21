@@ -47,9 +47,21 @@
         <action
             android:id="@+id/action_settingsFragment_to_accesibilityFragment"
             app:destination="@id/accesibilityFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_changelog"
+            app:destination="@id/changelog" />
     </fragment>
     <fragment
         android:id="@+id/experiencesFragment"
         android:name="com.itsydev.clubvr.presentation.experiences.ExperiencesFragment"
         android:label="ExperiencesFragment" />
+    <fragment
+        android:id="@+id/changelog"
+        android:name="com.itsydev.clubvr.presentation.profile.ChangelogFragment"
+        android:label="fragment_changelog"
+        tools:layout="@layout/fragment_changelog" >
+        <action
+            android:id="@+id/action_changelog_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
 </navigation>

@@ -13,7 +13,8 @@ data class UserBo(
     val telf: String,
     val len: String,
     val userLevel: Int,
-    val userPoints: Int
+    val userPoints: Int,
+    val admin: Boolean
 )
 
 data class UserDto(
@@ -25,5 +26,6 @@ data class UserDto(
     val telf: String,
     val len: String,
     val userLevel: String,
-    val userPoints: String
+    val userPoints: String,
+    val admin: String
 )

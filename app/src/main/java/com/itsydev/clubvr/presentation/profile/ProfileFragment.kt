@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.google.firebase.firestore.FirebaseFirestore
 import com.itsydev.clubvr.ExperiencesActivity
 import com.itsydev.clubvr.utils.BearEncrypt
 import com.itsydev.clubvr.LoginActivity
@@ -15,6 +16,7 @@ import com.itsydev.clubvr.MainActivity
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentProfileBinding
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.CoroutineScope
 
 @AndroidEntryPoint
 class ProfileFragment : Fragment() {
@@ -37,6 +39,7 @@ class ProfileFragment : Fragment() {
         setupObservers()
         (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.visibility = View.VISIBLE
         (requireActivity() as MainActivity).getActivityBinding().bottomAppBar.visibility = View.VISIBLE
+
         return binding.root
     }
 
@@ -53,7 +56,7 @@ class ProfileFragment : Fragment() {
                 binding.profileUsernameValue.text = bear.decrypt(it[0].username)
                 binding.profileSurnnameValue.text = bear.decrypt(it[0].surname)
                 binding.profileNameValue.text = bear.decrypt(it[0].name)
-                binding.profileContactTelfValue.text = bear.decrypt(it[0].telf.toString())
+                binding.profileContactTelfValue.text = bear.decrypt(it[0].telf)
                 binding.profileMailValue.text = bear.decrypt(it[0].mail)
             }
         }

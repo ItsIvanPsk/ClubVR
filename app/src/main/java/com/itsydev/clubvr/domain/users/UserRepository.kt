@@ -1,5 +1,6 @@
 package com.itsydev.clubvr.domain.users
 
+import android.util.Log
 import com.google.firebase.firestore.auth.User
 import com.itsydev.clubvr.data.models.users.UserEntity
 import kotlinx.coroutines.flow.Flow
@@ -17,6 +18,7 @@ class UserRepository @Inject constructor(
 
     fun deleteUser() {
         userDao.deleteUser()
+        Log.d("5cos", "user deleted")
     }
 
 

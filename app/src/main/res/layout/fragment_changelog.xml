@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/changelog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Changelog"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        android:elevation="@dimen/card_corner_elevation"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintTop_toBottomOf="@id/changelog_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:text="• A user-based permission system has been added."
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:text="• An e-mail and password login system has been added."
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:text="• The user system is personal, in the profile section will show all the data that the app has about the user."
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:text="• A list of available experiences has been added."
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:text="• Clicking on an experience will move to a section with all the information of the experience."
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:text="• The functionality to filter experiences has been added by name"
+                android:textSize="14dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/changelog_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_round_arrow_back_24"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

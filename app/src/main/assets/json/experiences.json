@@ -18,7 +18,8 @@
         ],
         "rating": 5,
         "categories": [
-            0
+            0,
+            3
         ],
         "headsets_compatible": [
             0,
@@ -43,15 +44,10 @@
             1,
             3
         ],
-        "rating": 4,
+        "rating": 5,
         "categories": [
             0,
             2,
-            4,
-            0,
-            1,
-            2,
-            3,
             4
         ],
         "headsets_compatible": [
@@ -77,12 +73,11 @@
             2,
             3
         ],
-        "rating": 3,
+        "rating": 5,
         "categories": [
             0,
             1,
-            2,
-            3
+            2
         ],
         "headsets_compatible": [
             0,
@@ -108,7 +103,7 @@
             2,
             3
         ],
-        "rating": 2,
+        "rating": 5,
         "categories": [
             0,
             1,
@@ -135,7 +130,7 @@
             0,
             4
         ],
-        "rating": 2,
+        "rating": 3,
         "categories": [
             0,
             4
@@ -162,7 +157,7 @@
             1,
             3
         ],
-        "rating": 1,
+        "rating": 5,
         "categories": [
             1,
             4
@@ -190,7 +185,7 @@
             2,
             3
         ],
-        "rating": 4.5,
+        "rating": 5,
         "categories": [
             0,
             3,
@@ -218,7 +213,7 @@
             2,
             3
         ],
-        "rating": 0,
+        "rating": 5,
         "categories": [
             0,
             1,
@@ -249,7 +244,7 @@
             1,
             3
         ],
-        "rating": 0,
+        "rating": 4,
         "categories": [
             4,
             5
@@ -272,11 +267,15 @@
             "Contractors és un joc de tir multijugador competitiu basat en equips per a dispositius de realitat virtual. Experimenteu la guerra virtual del següent nivell amb controls més durs, armes letals, càrregues personalitzables i intensos tirs. CONVERTIR-SE EN UN OPERADOR."
         ],
         "warnings": [
-
+            0,
+            1,
+            3
         ],
-        "rating": 0,
+        "rating": 4,
         "categories": [
-
+            0,
+            1,
+            4
         ],
         "headsets_compatible": [
             0,
@@ -297,11 +296,15 @@
             "Desenvolupat per a la RV, Arizona Sunshine® te situa mitjà d'una apocalipsi zombi. Maneja armes con moviments realistes, explora un món taula-apocalíptic i posa a prova tus habilitats de supervivència en la RV - retornar al seu descans als no morts mai ha estat tan emocionant."
         ],
         "warnings": [
-
+            0,
+            1,
+            3,
+            4
         ],
-        "rating": 0,
+        "rating": 4,
         "categories": [
-
+            1,
+            5
         ],
         "headsets_compatible": [
             0,
@@ -322,11 +325,13 @@
             "En el paper d'un valent i intel·ligent soldat, la teva missió és protegir la muralla dels atacs enemics fins al teu últim alè amb un arc com a arma principal. Els enemics es tornen cada vegada més perillosos amb cada onada, així que has de continuar concentrant-te en cada tret per a assegurar-te que cap enemic travessi la muralla."
         ],
         "warnings": [
-
+            1,
+            3
         ],
-        "rating": 0,
+        "rating": 4,
         "categories": [
-
+            0,
+            3
         ],
         "headsets_compatible": [
             0,
@@ -346,11 +351,13 @@
             "Age-Old Cities VR (de l'exposició de París) retorna a la vida a sis monuments emblemàtics. Passegi per aquests antics llocs reviscuts i senti la majestuosa esplendor de llocs la conservació dels quals es considera un deure mundial. No sigui un espectador, sigui un explorador!"
         ],
         "warnings": [
-
+            0,
+            1
         ],
-        "rating": 0,
+        "rating": 3,
         "categories": [
-
+            0,
+            4
         ],
         "headsets_compatible": [
             0,
@@ -370,11 +377,12 @@
             "Short Circuit VR és un simulador de laboratori d'electrònica en Realitat Virtual. Pots construir els teus propis circuits electrònics amb els components proporcionats, aprendre electrònica bàsica completant desafiaments i simplement divertir-te mentre experimentes i crees projectes increïbles."
         ],
         "warnings": [
-
+            0,
+            3
         ],
-        "rating": 0,
+        "rating": 5,
         "categories": [
-
+            0
         ],
         "headsets_compatible": [
             0,
@@ -394,11 +402,14 @@
             "Alguna vegada s'ha preguntat com veuen el món els daltònics? Ara pots experimentar-ho tu mateix. Deixa't guiar en manera narrativa, explora 3 entorns immersius, prova de comprar fruita o a pintar. També s'inclouen proves de visió cromàtica"
         ],
         "warnings": [
-
+            0,
+            1,
+            2
         ],
-        "rating": 0,
+        "rating": 4,
         "categories": [
-
+            0,
+            4
         ],
         "headsets_compatible": [
             0,
@@ -418,11 +429,14 @@
             "TankVR és un joc arcade de tancs de món obert, on has de destruir tots els tancs hostils. L'objectiu és destruir tots els tancs del mapa. Una vegada finalitzat el joc, la teva puntuació es mostrarà en la taula de classificació. Desafia als teus amics, si ets prou valent."
         ],
         "warnings": [
-
+            0,
+            1,
+            3
         ],
-        "rating": 0,
+        "rating": 3,
         "categories": [
-
+            0,
+            1
         ],
         "headsets_compatible": [
             0,
@@ -442,11 +456,13 @@
             "DEFCON VR us permet veure els jocs DE DEFCON en la comoditat de la vostra pròpia sala de guerra virtual. Uneix-te a altres i meravella-te per l'anihilació global total quan els míssils nuclears s'arrisquen per tot el món en el seu camí cap a la destrucció. Mira com es desplega Armageddon mentre tothom mor..."
         ],
         "warnings": [
-
+            0,
+            2
         ],
-        "rating": 0,
+        "rating": 2,
         "categories": [
-
+            0,
+            4
         ],
         "headsets_compatible": [
             0,
@@ -454,11 +470,11 @@
         ]
     },
     "18": {
-        "name": "Experience: Colorblindness",
+        "name": "Basic Car: Repair garage VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_1.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_2.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_3.jpeg"
+            "",
+            "",
+            ""
         ],
         "description": [
             "",
@@ -490,14 +506,18 @@
             "Explora el món des de perspectives totalment noves. Tireu els carrers de Tòquio, feu un salt sobre Yosemite o teletransporteu-vos per tot el món."
         ],
         "warnings": [
-
+            0,
+            1,
+            2
         ],
-        "rating": 0,
+        "rating": 5,
         "categories": [
-
+            0,
+            4
         ],
         "headsets_compatible": [
             0,
+            1,
             3
         ]
     },
@@ -514,11 +534,13 @@
             "PC Virtual Lab és un videojoc per a millorar l'aprenentatge en conceptes d'informàtica bàsica."
         ],
         "warnings": [
-
+            2,
+            3
         ],
-        "rating": 0,
+        "rating": 2,
         "categories": [
-
+            0,
+            4
         ],
         "headsets_compatible": [
             0,
@@ -533,16 +555,20 @@
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/weeb_3.jpeg"
         ],
         "description": [
-            "TankVR is an open world arcade tank game, where you have to destroy all hostile tanks. The goal is to destroy all tanks on the map. After finishing the game, your score will be displayed on the leaderboard. Challenge your friends, if you are brave enough.",
+            "Join the James Webb Space Telescope in its orbit beyond the Moon and explore the universe from its perspective. In front of your eyes, planetary systems will be born, galaxies will form and stars will emerge from colorful nebulae.",
             "Únete al telescopio espacial James Webb en su órbita más allá de la Luna y explora el universo desde su perspectiva. Ante tus ojos, nacerán sistemas planetarios, se formarán galaxias y emergerán estrellas desde coloridas nebulosas.",
-            "TankVR és un joc arcade de tancs de món obert, on has de destruir tots els tancs hostils. L'objectiu és destruir tots els tancs del mapa. Una vegada finalitzat el joc, la teva puntuació es mostrarà en la taula de classificació. Desafia als teus amics, si ets prou valent."
+            "\nUneix-te al telescopi espacial James Webb en la seva òrbita més enllà de la Lluna i explora l'univers des de la seva perspectiva. Davant els teus ulls, naixeran sistemes planetaris, es formaran galàxies i emergiran estrelles des d'acolorides nebuloses."
         ],
         "warnings": [
-
+            0,
+            1,
+            2,
+            3
         ],
-        "rating": 0,
+        "rating": 5,
         "categories": [
-
+            0,
+            4
         ],
         "headsets_compatible": [
             0,
@@ -562,11 +588,15 @@
             "En un món on els robots han substituït tots els treballs humans, aneu al 'Job Simulator' per aprendre com era 'treballar'."
         ],
         "warnings": [
-
+            1,
+            3
         ],
         "rating": 0,
         "categories": [
-
+            0,
+            1,
+            4,
+            5
         ],
         "headsets_compatible": [
             0,
@@ -586,11 +616,14 @@
             "En Star Wars: Droid Repair Bay per ILMxLAB, el company de Poe Dameron necessita la vostra ajuda. Repareu BB-8 i els seus amics droides astromeques, cadascun amb les seves pròpies personalitats úniques, de manera que puguin tornar a la lluita contra la Primera Ordre."
         ],
         "warnings": [
-
+            0,
+            2
         ],
-        "rating": 0,
+        "rating": 4,
         "categories": [
-
+            0,
+            1,
+            2
         ],
         "headsets_compatible": [
             0,
@@ -610,11 +643,15 @@
             "Ets un científic que estava treballant en el desenvolupament d'una màquina del temps. Quan va començar l'experiment, es va formar un forat de cuc i va desaparèixer la humanitat i la major part de la vida silvestre. Ara ets l'última esperança de la humanitat perquè ets l'últim home viu. La teva missió és trobar la màquina del temps i salvar a la humanitat"
         ],
         "warnings": [
-
+            0,
+            1,
+            4
         ],
-        "rating": 0,
+        "rating": 5,
         "categories": [
-
+            1,
+            2,
+            4
         ],
         "headsets_compatible": [
             0,
@@ -634,14 +671,19 @@
             "The Thrill of the Fight és un joc de boxa VR de tipus realista centrat en l'autenticitat. Entra en un gimnàs virtual i lluita contra una sèrie d'aspirants únics amb els seus propis estils i tècniques. Utilitza el temps i l'habilitat per a aterrar el cop d'efecte. L'Evade es balanceja, terra i bloqueja els cops per convertir-se en el rei del ring!"
         ],
         "warnings": [
-
+            1,
+            2,
+            3
         ],
-        "rating": 0,
+        "rating": 5,
         "categories": [
-
+            0,
+            1,
+            4
         ],
         "headsets_compatible": [
             0,
+            1,
             3
         ]
     },
@@ -658,11 +700,14 @@
             "Les zones de les porteries s'il·luminen. La multitud rugeix. Un meca dissenyat a la perfecció entra a la sorra sota el teu control. Ultimechs és un joc de VR gratis que et permet pilotar mecas d'alt rendiment de manera remota. Aquests mecas competeixen en un esport futurista en el qual envesteixen, bloquegen i llancen cops de puny per a alçar-se amb la victòria."
         ],
         "warnings": [
-
+            0,
+            1,
+            3
         ],
-        "rating": 0,
+        "rating": 4,
         "categories": [
-
+            0,
+            1
         ],
         "headsets_compatible": [
             0,
@@ -683,11 +728,11 @@
             "Agafeu la feina d'un treballador de línia que treu arbres problemàtics! Surt de la serra i utilitza les palanques de control per maniobrar la galleda d'utilitat en totes direccions, però vigila el cap!"
         ],
         "warnings": [
-
+            1
         ],
-        "rating": 0,
+        "rating": 3,
         "categories": [
-
+            0
         ],
         "headsets_compatible": [
             0,
@@ -707,11 +752,15 @@
             "L'entrenador FPS #1 triat per a més de 20M jugadors ja està disponible a VR! Salta a entorns d'entrenament d'objectiu immersiu amb tasques populars, una experiència exclusiva d'Arcane, objectius de supervivència del terror i un repte del ritme musical."
         ],
         "warnings": [
-
+            1,
+            2,
+            3
         ],
-        "rating": 0,
+        "rating": 3,
         "categories": [
-
+            0,
+            1,
+            3
         ],
         "headsets_compatible": [
             0,
@@ -726,16 +775,18 @@
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_3.jpeg"
         ],
         "description": [
-            "Throw yourself into the void 250 miles above Earth in this award-winning VR spacewalk inspired by NASA's training program and the astonishing experiences of its astronauts. Home - A VR Spacewalk puts you at the centre of the story, taking you on an emotional journey while delivering beautiful, heart-stopping, and memorable moments.",
+            "Throw yourself into the void 250 miles above Earth in this award-winning VR spacewalk inspired by NASA's training program and the astonishing experiences of it's astronauts. Home - A VR Spacewalk puts you at the centre of the story, taking you on an emotional journey while delivering beautiful, heart-stopping, and memorable moments.",
             "Lanzaos al vacío a 250 millas por encima de la Tierra en este galardonado paseo espacial VR inspirado en el programa de entrenamiento de la NASA y las sorprendentes experiencias de sus astronautas. Hombre - Un paseo espacial de RV te sitúa en el centro de la historia, llevándote en un viaje emocional mientras ofrece momentos bonitos, parados y memorables.",
             "Llanceu-vos al buit a 250 milles per sobre de la Terra en aquest guardonat passeig espacial VR inspirat en el programa d'entrenament de la NASA i les sorprenents experiències dels seus astronautes. Home - Un passeig espacial de RV et situa al centre de la història, portant-te en un viatge emocional mentre ofereix moments bonics, aturats i memorables."
         ],
         "warnings": [
-
+            1,
+            3
         ],
-        "rating": 0,
+        "rating": 4,
         "categories": [
-
+            1,
+            2
         ],
         "headsets_compatible": [
             0,
@@ -755,9 +806,10 @@
             "Dissenyat per a fans casuals o aspirants a professionals, la Lliga de Tennis de la RV lliura l'emoció de les intenses manifestacions i el triomf de l'as perfecte. Utilitzeu tècniques de tennis reals per dominar les taules de classificació i trencar la competició."
         ],
         "warnings": [
-
+            1,
+            3
         ],
-        "rating": 0,
+        "rating": 3,
         "categories": [
             0,
             1
