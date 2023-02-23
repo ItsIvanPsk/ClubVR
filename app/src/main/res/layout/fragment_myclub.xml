@@ -84,7 +84,8 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginVertical="20dp"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="20dp">
+                app:cardElevation="20dp"
+                android:visibility="gone">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -172,13 +173,15 @@
                 android:text="Avaiable Bundles"
                 android:textSize="24dp"
                 android:textStyle="bold"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/myclub_bundles"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:visibility="gone"/>
 
         </LinearLayout>
 

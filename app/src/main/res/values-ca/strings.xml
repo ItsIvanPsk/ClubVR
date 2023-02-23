@@ -41,8 +41,8 @@
     <string name="english">English</string>
     <string name="spanish">Spanish</string>
     <string name="catalan">Catalan</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
+    <string name="username">Usuari</string>
+    <string name="password">Contrasenya</string>
     <string name="remember_me">Remember me</string>
     <string name="login">Login</string>
     <string name="user_success_login">The user has been logged in!</string>
