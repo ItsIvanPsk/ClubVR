@@ -5,6 +5,7 @@
     <application
         android:name=".VRApplication"
         android:allowBackup="true"
+        android:forceDarkAllowed="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/app_logo"

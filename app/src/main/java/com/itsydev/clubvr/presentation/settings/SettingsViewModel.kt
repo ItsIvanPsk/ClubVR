@@ -103,7 +103,7 @@ class SettingsViewModel @Inject constructor(
                     "len" to bear.encrypt("en"),
                     "userLevel" to bear.encrypt("1"),
                     "userPoints" to bear.encrypt("1"),
-                    "admin" to bear.encrypt("0")
+                    "admin" to bear.encrypt("false")
                 )
 
                 val db = FirebaseFirestore.getInstance()

@@ -54,6 +54,8 @@
     <string name="new_password">New password</string>
     <string name="repeat_password">Repeat password</string>
     <string name="change_password">Change password</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="experience_detail_rating">"Rating: "</string>
+    <string name="images">Images</string>
+    <string name="about_the_app_value">This is the app of the virtual reality club of the high school IES Esteve Terradas I Illa. The aim of the app is to help the students of the center to have updated information about the virtual reality club, as well as to have knowledge about the improvements of the club, which experiences are available.</string>
+    <string name="change_your_password_below">Change your password below:</string>
 </resources>

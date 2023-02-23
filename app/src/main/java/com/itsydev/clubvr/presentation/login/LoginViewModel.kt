@@ -1,17 +1,18 @@
 package com.itsydev.clubvr.presentation.login
 
+import android.content.SharedPreferences
 import android.util.Log
 import androidx.lifecycle.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.itsydev.clubvr.utils.BearEncrypt
 import com.itsydev.clubvr.data.models.users.UserEntity
 import com.itsydev.clubvr.domain.users.UserRepository
+import com.itsydev.clubvr.utils.BearEncrypt
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+
 
 @HiltViewModel
 class LoginViewModel @Inject constructor(
@@ -57,6 +58,8 @@ class LoginViewModel @Inject constructor(
             .addOnSuccessListener { result ->
                 for (document in result) {
                     val data = document.data
+                    Log.d("5cos", bear.decrypt(data["mail"].toString()))
+                    Log.d("5cos", mail)
                     if(data["mail"] == bear.encrypt(mail)){
                         addUser(
                             UserEntity(
@@ -67,11 +70,12 @@ class LoginViewModel @Inject constructor(
                                 mail = data["mail"].toString(),
                                 telf = data["telf"].toString(),
                                 lenguage = data["len"].toString(),
-                                userLevel = data["userLeve"].toString(),
+                                userLevel = data["userLevel"].toString(),
                                 userPoints = data["userPoints"].toString(),
                                 admin = data["admin"].toString()
                             )
                         )
+                        LoginFragment().setupUserPreferences(data["len"].toString())
                         break
                     }
                 }
@@ -80,5 +84,7 @@ class LoginViewModel @Inject constructor(
                 Log.d("5cos", "Listener failed!!")
             }
     }
+
+
 
 }

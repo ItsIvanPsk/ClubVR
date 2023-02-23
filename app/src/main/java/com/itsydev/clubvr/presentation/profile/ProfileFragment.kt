@@ -3,6 +3,7 @@ package com.itsydev.clubvr.presentation.profile
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,9 +35,9 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        viewmodel.updateUsers()
         setupListeners()
         setupObservers()
+        viewmodel.updateUsers()
         (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.visibility = View.VISIBLE
         (requireActivity() as MainActivity).getActivityBinding().bottomAppBar.visibility = View.VISIBLE
 
@@ -51,6 +52,7 @@ class ProfileFragment : Fragment() {
 
     private fun setupObservers() = with(viewmodel){
         getUsers().observe(viewLifecycleOwner){
+            Log.d("5cos", it.toString())
             if(it.isNotEmpty()){
                 binding.profileIdValue.text = "VR_" + bear.decrypt(it[0].id)
                 binding.profileUsernameValue.text = bear.decrypt(it[0].username)

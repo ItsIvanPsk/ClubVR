@@ -29,6 +29,7 @@
     <string name="club_points">Puntos del club</string>
     <string name="your_vr_points">Tus puntos de realidad virtual</string>
     <string name="next_points_steps">Siguientes pasos de puntos</string>
+    <string name="user_failed_login">The password is not correct.</string>
     <string name="contact">Contacto</string>
     <string name="e_mail">Correo electrónico</string>
     <string name="app_settings_name">Club VR - IETI</string>
@@ -53,4 +54,8 @@
     <string name="new_password">Nueva contraseña</string>
     <string name="repeat_password">Repite la contraseña</string>
     <string name="change_password">Cambiar contraseña</string>
+    <string name="experience_detail_rating">"Valoración: "</string>
+    <string name="images">Imágenes</string>
+    <string name="about_the_app_value">Esta es la app del club de realidad virtual del instituto IES Esteve Terradas I Illa. El objetivo de la app es ayudar a los alumnos del centro a poder tener información actualizada del club de realidad virtual, asi como tener conocimiento sobre las mejoras del club, que experiencias están disponibles.</string>
+    <string name="change_your_password_below">Change your password below:</string>
 </resources>

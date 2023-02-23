@@ -1,5 +1,6 @@
 package com.itsydev.clubvr.presentation.profile
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -21,6 +22,7 @@ class ProfileViewModel @Inject constructor(
         viewModelScope.launch {
            repository.getAllUsers.collect{
                users.value = it
+               Log.d("5cos", it.toString())
            }
         }
     }

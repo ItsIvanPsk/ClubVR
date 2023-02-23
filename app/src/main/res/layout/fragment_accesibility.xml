@@ -52,7 +52,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/LoremIpsum"
+                    android:text="@string/about_the_app_value"
                     app:layout_constraintTop_toBottomOf="@id/changelog_version"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>

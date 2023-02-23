@@ -56,6 +56,7 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
 
     private fun setupObservers() = with(viewmodel){
         getExperienceData().observe(viewLifecycleOwner){ it ->
+            var len = 0
             binding.experienceDetailHeaderGameName.text = it.name
             binding.experienceDetailHeaderGameIcon.load(it.img[0].url) {
                 crossfade(true)
@@ -63,8 +64,7 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
                     CircleCropTransformation()
                 )
             }
-            binding.experienceDetailDescriptionValue.text = it.description[0]
-
+            binding.experienceDetailDescriptionValue.text = it.description[len]
             for(item in it.categories.indices){
                 val cardContainer = CardView(requireContext())
                 cardContainer.elevation = resources.getDimension(com.itsydev.clubvr.R.dimen.card_corner_elevation)
@@ -84,7 +84,6 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
             }
 
             binding.experienceDetailCategoryScroll.isHorizontalScrollBarEnabled = false;
-            Log.d("5cos", it.rating.toString())
             var ratingStar: ImageView
             for(item in 1..it.rating.toInt()){
                 ratingStar = ImageView(requireContext())
@@ -95,7 +94,6 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
             }
 
             binding.experienceDetailHeadsetsScroll.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-
             val adapter = HeadSetsAdapter(requireContext(), this@ExperienceDetail)
             val recyclerView: RecyclerView = binding.experienceDetailHeadsetsScroll
             recyclerView.adapter = adapter
