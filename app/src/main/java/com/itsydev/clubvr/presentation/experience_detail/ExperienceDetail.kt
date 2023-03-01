@@ -106,18 +106,23 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
 
             val photoList = mutableListOf<CarouselItem>()
             it.img.forEach { experiencePhoto ->
-                photoList.add(
-                    CarouselItem(
-                        experiencePhoto.url,
-                        ""
+
+            }
+
+            for (i in 0..it.img.size - 1) {
+                if (i != 0) {
+                    photoList.add(
+                        CarouselItem(
+                            it.img[i].url,
+                            ""
+                        )
                     )
-                )
+                }
             }
 
             binding.experienceDetailImagesCarousel.setData(photoList)
         }
     }
-
 
     override fun headsetsClicked(view: View, name: String) {
         Log.d("5cos", name)

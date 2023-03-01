@@ -9,15 +9,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.google.firebase.firestore.FirebaseFirestore
-import com.itsydev.clubvr.ExperiencesActivity
+import androidx.navigation.findNavController
 import com.itsydev.clubvr.utils.BearEncrypt
-import com.itsydev.clubvr.LoginActivity
 import com.itsydev.clubvr.MainActivity
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.databinding.FragmentProfileBinding
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.CoroutineScope
 
 @AndroidEntryPoint
 class ProfileFragment : Fragment() {
@@ -35,26 +32,22 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        setupListeners()
-        setupObservers()
-        viewmodel.updateUsers()
+        //setupListeners()
+        //setupObservers()
+        //viewmodel.updateUsers()
         (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.visibility = View.VISIBLE
         (requireActivity() as MainActivity).getActivityBinding().bottomAppBar.visibility = View.VISIBLE
-
+        showDialog("VR IETI App", "This functionality is not available in this version of the app.", "Okay", "",).show()
         return binding.root
     }
 
-    private fun setupListeners() = with(binding){
-        profileLogout.setOnClickListener {
-            showLogoutDialog().show()
-        }
-    }
+    private fun setupListeners() = with(binding){ }
 
     private fun setupObservers() = with(viewmodel){
         getUsers().observe(viewLifecycleOwner){
             Log.d("5cos", it.toString())
             if(it.isNotEmpty()){
-                binding.profileIdValue.text = "VR_" + bear.decrypt(it[0].id)
+                binding.profileIdValue.text = bear.decrypt(it[0].id)
                 binding.profileUsernameValue.text = bear.decrypt(it[0].username)
                 binding.profileSurnnameValue.text = bear.decrypt(it[0].surname)
                 binding.profileNameValue.text = bear.decrypt(it[0].name)
@@ -64,26 +57,18 @@ class ProfileFragment : Fragment() {
         }
     }
 
-    private fun showLogoutDialog() : AlertDialog{
-        return activity.let {
-            val builder = AlertDialog.Builder(it)
-            builder.apply {
-                builder.setTitle(R.string.dialog_logout_title)
-                builder.setMessage(R.string.dialog_logout_message)
-                setPositiveButton(
-                    R.string.logout
-                ) { _, _ ->
-                    viewmodel.logout()
-                    startActivity(Intent(requireContext(), LoginActivity::class.java))
-                }
-                setNegativeButton(R.string.cancel
-                ) { dialog, _ ->
-                    dialog.dismiss()
-                }
-            }
-
-            builder.create()
+    private fun showDialog(title: String, message: String, firstOpt: String, secondOpt: String) : AlertDialog {
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setTitle(title)
+        builder.setMessage(message)
+        builder.setPositiveButton(firstOpt) { dialog, which ->
+            dialog.dismiss()
+            view?.findNavController()?.navigate(R.id.action_profileFragment_to_mainMenu)
         }
+        builder.setNegativeButton(secondOpt) { dialog, which ->
+
+        }
+        return builder.create()
     }
 
 }

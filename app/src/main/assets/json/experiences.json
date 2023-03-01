@@ -2,11 +2,11 @@
     "1": {
         "name": "Beat Saber",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_4.jpg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_5.png"
         ],
         "description": [
             "Beat Saber is a VR rhythm game where you slice the beats out of pulsing music as they fly towards you, surrounded by a futuristic world.",
@@ -32,11 +32,11 @@
     "2": {
         "name": "The Lab",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_5.jpg"
         ],
         "description":[
             "Welcome to The Lab, a compilation of Valve’s room-scale VR experiments set in a pocket universe within Aperture Science. Fix a robot, defend a castle, adopt a mechanical dog, and more.",
@@ -62,11 +62,11 @@
     "3": {
         "name": "Blade and Sorcery",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_5.jpg"
         ],
         "description": [
             "Blade & Sorcery is a built-for-VR medieval fantasy sandbox with full physics driven melee, ranged and magic combat. Become a powerful warrior, ranger or sorcerer and devastate your enemies.",
@@ -95,11 +95,11 @@
     "4": {
         "name": "VTOL VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_5.jpg"
         ],
         "description": [
             "VTOL VR is a near-futuristic combat flight game built for Virtual Reality. Pilot advanced multi-role jets, using your hands to flip switches, press buttons, and manipulate the virtual flight controls.",
@@ -126,11 +126,10 @@
     "5": {
         "name": "Atlantis VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_4.jpeg"
         ],
         "description": [
             "Enter the underwater world thriving with life! Let the aquatic beings guide you trough the mystery deeps and explore nooks and crannies of beautiful ocean landscape!",
@@ -154,11 +153,9 @@
     "6": {
         "name": "Pavlov",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_2.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_3.jpeg"
         ],
         "description": [
             "Pavlov vr is a multiplayer shooter in VR with heavy focus on community features. Realistic reloading features and fast paced combat as part of the core experience.",
@@ -184,11 +181,10 @@
     "7": {
         "name": "Lightblade VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_4.jpeg"
         ],
         "description": [
             "Lightblade VR is a virtual reality training simulation for self-illumintated plasma blades. This is a childhood dream come true! Get trained by your personal robot and deflect all incoming laser beams!",
@@ -214,11 +210,11 @@
     "8": {
         "name": "Superhot",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/superhot_1.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/superhot_2.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/superhot_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/superhot_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/superhot_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_4.jpg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_5.jpg"
         ],
         "description": [
             "Lose track of reality. Surrender your body and mind. Face the evocative and elegantly brutal world of SUPERHOT VR. Enemies are coming in from all directions, a dozen bullets are flying across the room... just a moment. Here's something different...",
@@ -247,11 +243,10 @@
     "9": {
         "name": "Emily Wants to play",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_4.jpeg"
         ],
         "description": [
             "Emily Wants To play is a horror and survival game with elements of strategy. You play as a pizza delivery boy who gets trapped by Emily and her three dolls. The dolls are alive and walking around the house with you.",
@@ -276,11 +271,10 @@
     "10": {
         "name": "Contractors",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_4.jpeg"
         ],
         "description": [
             "Contractors is a team-based competitive multiplayer shooter game for virtual reality devices. Experience the next level virtual warfare with hardcore controls, lethal weapons, customizable load-outs, and intense firefights. BECOME AN OPERATOR.",
@@ -307,11 +301,11 @@
     "11": {
         "name": "Arizona Sunshine",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_1.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_2.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_4.jpg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_5.jpg"
         ],
         "description": [
             "Developed for VR, Arizona Sunshine® puts you in the middle of a zombie apocalypse. Wield weapons with realistic movement, explore a post-apocalyptic world and test your survival skills in VR - putting the undead back to rest has never been more exciting.",
@@ -338,11 +332,11 @@
     "12": {
         "name": "Funny Archery",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_5.jpg"
         ],
         "description": [
             "In the role of a brave and clever soldier, your mission is to protect the wall from enemy attacks till your last breath with a bow as the main weapon. The enemies become increasingly dangerous through each wave, so you must keep focusing on each shot to ensure no enemy will pass through the wall.",
@@ -366,11 +360,10 @@
     "13": {
         "name": "Age Old Cities",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_4.jpg"
         ],
         "description": [
             "Age-Old Cities VR (from the Paris exhibition) brings six iconic monuments back to life. Walk through these revived ancient sites and feel the majestic splendor of places considered as a global duty to preserve. Don’t be a spectator, be an explorer!",
@@ -398,7 +391,7 @@
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_5.jpg"
         ],
         "description": [
             "Short Circuit VR is an electronics lab simulator in Virtual Reality. You can build your own electronic circuits with the components provided, learn basic electronics by completing challenges and just have fun while experimenting and making awesome projects!",
@@ -421,11 +414,10 @@
     "15": {
         "name": "Experience: Colorblindness",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_4.jpeg"
         ],
         "description": [
             "Have you ever wondered how colorblind people see the world? Now you can experience it yourself. Let yourself be guided in narrative mode, explore 3 immersive environments, try fruit shopping or painting. Color vision tests also included",
@@ -450,11 +442,11 @@
     "16": {
         "name": "Tank VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_5.jpg"
         ],
         "description": [
             "TankVR is a open world arcade tank game, where you have to destroy all hostile tanks. The objective is to destroy all tanks on the map. After the game is finished, your score is now shown in the leaderboard. Challenge your friends, if you are brave enough.",
@@ -479,11 +471,10 @@
     "17": {
         "name": "Defcon VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_4.jpeg"
         ],
         "description": [
             "DEFCON VR allows you to spectate DEFCON games in the comfort of your own virtual War Room. Join others and marvel at total global annihilation as nuclear missiles arc over the globe on their path to destruction. Watch Armageddon unfold as everybody dies….",
@@ -529,11 +520,10 @@
     "19": {
         "name": "Google Earth VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/google_earth_1.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/google_earth_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/goggle_earth_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/goggle_earth_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/google_earth_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/google_earth_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/google_earth_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/google_earth_4.jpeg"
         ],
         "description": [
             "Explore the world from totally new perspectives. Stroll the streets of Tokyo, soar over Yosemite, or teleport across the globe.",
@@ -559,11 +549,10 @@
     "20": {
         "name": "PC Virtual Lab",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_4.jpeg"
         ],
         "description": [
             "Virtual Lab is a video game for improving learning in basic computing concepts.",
@@ -587,11 +576,11 @@
     "21": {
         "name": "Webb VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/weeb_1.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/weeb_2.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/weeb_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/weeb_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/weeb_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_5.jpg"
         ],
         "description": [
             "Join the James Webb Space Telescope in its orbit beyond the Moon and explore the universe from its perspective. In front of your eyes, planetary systems will be born, galaxies will form and stars will emerge from colorful nebulae.",
@@ -619,9 +608,7 @@
         "img": [
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/job_simulator_1.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/job_simulator_2.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/job_simulator_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/job_simulator_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/job_simulator_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/job_simulator_3.jpeg"
         ],
         "description": [
             "In a world where robots have replaced all human jobs, step into the 'Job Simulator' to learn what it was like 'to job'.",
@@ -647,7 +634,7 @@
     "23": {
         "name": "Star Wars: Droid Repair",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_4.jpeg",
@@ -676,11 +663,10 @@
     "24": {
         "name": "The Last Hope",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_4.jpeg"
         ],
         "description": [
             "You're a scientist who was working on the development of a time machine. When the experiment began, a wormhole formed and humanity and most of wildlife disappeared. Now you're humanity's last hope because you're the last man alive. Your mission is to find the weather machine and save humanity",
@@ -706,11 +692,11 @@
     "25": {
         "name": "Thrill of the Fight",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_5.png"
         ],
         "description": [
             "The Thrill of the Fight is a down-to-earth VR boxing game focused on authenticity. Enter a virtual gym and battle a series of unique challengers with their own styles and techniques. Use timing and skill to land the knockout blow. Evade swings, land jabs, and block punches to become the king of the ring!",
@@ -740,8 +726,8 @@
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_1.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_4.jpg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_5.jpg"
         ],
         "description": [
             "Porteries areas are illuminated. The crowd roars. A perfect mech enters the sand under your control. Ultimechs is a free VR game that allows you to pilot high performance machines remotely. These men compete in a futuristic sport in which they ram, block and punch to the victory.",
@@ -767,11 +753,10 @@
     "27": {
         "name": "Chop & Drop",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_3.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_4.jpeg"
         ],
         "description": [
             "Take on the job of a line worker removing troublesome trees! Get out your chainsaw and use your control levers to maneuver the utility bucket in all directions, but watch your head!",
@@ -793,11 +778,11 @@
     "28": {
         "name": "Aim Lab VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_5.jpg"
         ],
         "description": [
             "The #1 FPS Trainer of choice for over 20M players is now available in VR! Jump into immersive aim training environments featuring popular tasks, an exclusive Arcane experience, targets of terror survival & a music rhythm challenge.",
@@ -823,11 +808,11 @@
     "29": {
         "name": "Home VR Spacewalk",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_4.jpeg",
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_5.jpeg"
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_5.jpg"
         ],
         "description": [
             "Throw yourself into the void 250 miles above Earth in this award-winning VR spacewalk inspired by NASA's training program and the astonishing experiences of it's astronauts. VR Spacewalk puts you at the centre of the story, taking you on an emotional journey while delivering beautiful, heart-stopping, and memorable moments.",
@@ -851,7 +836,7 @@
     "30": {
         "name": "Tenis League VR",
         "img": [
-            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_1.png",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_2.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_3.jpeg",
             "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_4.jpeg",

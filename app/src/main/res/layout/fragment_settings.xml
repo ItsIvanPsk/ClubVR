@@ -107,6 +107,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/settings_items_star"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="@dimen/settings_item_margin_horizontal"

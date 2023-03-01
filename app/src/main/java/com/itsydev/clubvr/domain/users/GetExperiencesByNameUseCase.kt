@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import com.itsydev.clubvr.data.models.experiences.*
 import org.json.JSONObject
+import java.util.*
 
 interface GetExperiencesByNameUseCase {
     fun getExperiencesByName(name:CharSequence,context: Context): List<ExperienceBo>
@@ -16,13 +17,12 @@ class GetExperiencesByNameUseCaseImpl : GetExperiencesByNameUseCase{
         val filteredList = mutableListOf<ExperienceBo>()
 
         for (key in experiences) {
-            if(key.name.contains(name)){
+            if(key.name.lowercase().contains(name.toString().toLowerCase(Locale.ROOT))){
                 filteredList.add(key)
             }
         }
 
         return filteredList
-
     }
 
     private fun loadExperienceJson(_context: Context) : List<ExperienceBo> {
@@ -30,7 +30,6 @@ class GetExperiencesByNameUseCaseImpl : GetExperiencesByNameUseCase{
         val json = inputStream.bufferedReader().use { it.readText() }
         val jsonObject = JSONObject(json)
         val experienceList = mutableListOf<ExperienceBo>()
-
 
         for (key in jsonObject.keys()) {
             val itemJson = jsonObject.getJSONObject(key)

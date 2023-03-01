@@ -31,15 +31,26 @@
         <action
             android:id="@+id/action_accesibilityFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_accesibilityFragment_to_mainMenu"
+            app:destination="@id/mainMenu" />
     </fragment>
     <fragment
         android:id="@+id/myClubFragment"
         android:name="com.itsydev.clubvr.presentation.myclub.MyClubFragment"
-        android:label="MyClubFragment" />
+        android:label="MyClubFragment" >
+        <action
+            android:id="@+id/action_myClubFragment_to_mainMenu"
+            app:destination="@id/mainMenu" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.itsydev.clubvr.presentation.profile.ProfileFragment"
-        android:label="ProfileFragment" />
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_mainMenu"
+            app:destination="@id/mainMenu" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.itsydev.clubvr.presentation.settings.SettingsFragment"
@@ -50,11 +61,18 @@
         <action
             android:id="@+id/action_settingsFragment_to_changelog"
             app:destination="@id/changelog" />
+        <action
+            android:id="@+id/action_settingsFragment_to_mainMenu"
+            app:destination="@id/mainMenu" />
     </fragment>
     <fragment
         android:id="@+id/experiencesFragment"
         android:name="com.itsydev.clubvr.presentation.experiences.ExperiencesFragment"
-        android:label="ExperiencesFragment" />
+        android:label="ExperiencesFragment" >
+        <action
+            android:id="@+id/action_experiencesFragment_to_mainMenu"
+            app:destination="@id/mainMenu" />
+    </fragment>
     <fragment
         android:id="@+id/changelog"
         android:name="com.itsydev.clubvr.presentation.profile.ChangelogFragment"
@@ -63,5 +81,8 @@
         <action
             android:id="@+id/action_changelog_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_changelog_to_mainMenu"
+            app:destination="@id/mainMenu" />
     </fragment>
 </navigation>

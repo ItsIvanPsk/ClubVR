@@ -53,7 +53,11 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
 
             override fun beforeTextChanged(s: CharSequence, start: Int,
                                            count: Int, after: Int) {
-                viewmodel.filterByName(s, requireContext())
+                if (s.length == 0) {
+                    viewmodel.updateExperiences(requireContext(), "json/experiences.json")
+                } else {
+                    viewmodel.filterByName(s, requireContext())
+                }
             }
 
             override fun onTextChanged(s: CharSequence, start: Int,

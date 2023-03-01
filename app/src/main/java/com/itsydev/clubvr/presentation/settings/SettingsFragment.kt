@@ -1,5 +1,6 @@
 package com.itsydev.clubvr.presentation.settings
 
+import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
@@ -54,10 +55,14 @@ class SettingsFragment : Fragment() {
             startActivity(intent)
         }
         settingsItemsEdit.setOnClickListener {
-            showChangePasswordDialog()
+            //showChangePasswordDialog()
+            showDialog("VR IETI App", "This functionality is not available in this version of the app.", "Okay", "",).show()
         }
         settingsFabCreateUser.setOnClickListener {
-            showCreateUserDialog()
+            //showCreateUserDialog()
+        }
+        settingsItemsStar.setOnClickListener {
+            showDialog("VR IETI App", "This functionality is not available in this version of the app.", "Okay", "",).show()
         }
         settingsChangelog.setOnClickListener {
             it.findNavController().navigate(R.id.action_settingsFragment_to_changelog)
@@ -66,7 +71,7 @@ class SettingsFragment : Fragment() {
 
     private fun setupObservers() = with(viewmodel){
         getUserAdmin().observe(viewLifecycleOwner){
-            binding.settingsFabCreateUser.isVisible = it
+            // binding.settingsFabCreateUser.isVisible = it
         }
         getUserCreationState().observe(viewLifecycleOwner){
             Toast.makeText(context, "The user has been created!", Toast.LENGTH_SHORT).show()
@@ -145,6 +150,19 @@ class SettingsFragment : Fragment() {
             )
             dialog.dismiss()
         }
+    }
+
+    private fun showDialog(title: String, message: String, firstOpt: String, secondOpt: String) : AlertDialog {
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setTitle(title)
+        builder.setMessage(message)
+        builder.setPositiveButton(firstOpt) { dialog, which ->
+            dialog.dismiss()
+        }
+        builder.setNegativeButton(secondOpt) { dialog, which ->
+
+        }
+        return builder.create()
     }
 
 }
