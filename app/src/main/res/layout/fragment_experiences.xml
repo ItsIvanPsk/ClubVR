@@ -37,8 +37,8 @@
             android:layout_height="45dp"
             android:layout_marginVertical="10dp"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:visibility="invisible"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible"
             android:src="@drawable/ic_round_filter_alt_off_24"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -47,6 +47,7 @@
         android:id="@+id/experiences_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginHorizontal="5dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 </LinearLayout>

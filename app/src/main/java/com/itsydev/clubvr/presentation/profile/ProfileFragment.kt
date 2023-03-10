@@ -32,9 +32,6 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        //setupListeners()
-        //setupObservers()
-        //viewmodel.updateUsers()
         (requireActivity() as MainActivity).getActivityBinding().mainFloatingButton.visibility = View.VISIBLE
         (requireActivity() as MainActivity).getActivityBinding().bottomAppBar.visibility = View.VISIBLE
         showDialog("VR IETI App", "This functionality is not available in this version of the app.", "Okay", "",).show()
@@ -65,9 +62,7 @@ class ProfileFragment : Fragment() {
             dialog.dismiss()
             view?.findNavController()?.navigate(R.id.action_profileFragment_to_mainMenu)
         }
-        builder.setNegativeButton(secondOpt) { dialog, which ->
-
-        }
+        builder.setNegativeButton(secondOpt) { dialog, which -> }
         return builder.create()
     }
 

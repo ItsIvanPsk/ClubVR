@@ -21,6 +21,7 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
     lateinit var binding: FragmentExperiencesBinding
     val viewmodel: ExperiencesViewModel by activityViewModels()
     lateinit var adapter: ExperiencesAdapter
+    private var filter: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,7 +54,7 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
 
             override fun beforeTextChanged(s: CharSequence, start: Int,
                                            count: Int, after: Int) {
-                if (s.length == 0) {
+                if (s.isEmpty()) {
                     viewmodel.updateExperiences(requireContext(), "json/experiences.json")
                 } else {
                     viewmodel.filterByName(s, requireContext())
@@ -63,6 +64,9 @@ class ExperiencesFragment : Fragment(), ExperienceListeners {
             override fun onTextChanged(s: CharSequence, start: Int,
                                        before: Int, count: Int) { }
         })
+        binding.experienceFilter.setOnClickListener {
+
+        }
     }
 
     private fun setupObservers() = with(viewmodel){

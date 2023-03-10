@@ -1,5 +1,6 @@
 package com.itsydev.clubvr.presentation.experience_detail
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -18,7 +20,6 @@ import coil.transform.CircleCropTransformation
 import com.itsydev.clubvr.ExperiencesActivity
 import com.itsydev.clubvr.R
 import com.itsydev.clubvr.data.models.experiences.ExperienceConstants
-import com.itsydev.clubvr.data.models.headsets.HeadsetBo
 import com.itsydev.clubvr.databinding.FragmentExperienceDetailBinding
 import com.itsydev.clubvr.presentation.experiences.ExperiencesViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -56,7 +57,7 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
 
     private fun setupObservers() = with(viewmodel){
         getExperienceData().observe(viewLifecycleOwner){ it ->
-            var len = 0
+            var len = 0;
             binding.experienceDetailHeaderGameName.text = it.name
             binding.experienceDetailHeaderGameIcon.load(it.img[0].url) {
                 crossfade(true)
