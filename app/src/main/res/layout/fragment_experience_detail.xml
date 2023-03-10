@@ -159,27 +159,17 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/experience_detail_headsets"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/experience_detail_headsets_scroll"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginHorizontal="10dp"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:layout_marginVertical="10dp"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_corner_elevation"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="10dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/experience_detail_categories">
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/experience_detail_categories"/>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/experience_detail_headsets_scroll"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-
-
-
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/experience_detail_rating"
@@ -191,7 +181,7 @@
                 app:cardElevation="@dimen/card_corner_elevation"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/experience_detail_headsets">
+                app:layout_constraintTop_toBottomOf="@+id/experience_detail_headsets_scroll">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"

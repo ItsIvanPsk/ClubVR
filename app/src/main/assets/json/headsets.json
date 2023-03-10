@@ -6,11 +6,6 @@
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/htc_vive_2.webp",
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/htc_vive_3.png",
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/htc_vive_logo.png"
-    ],
-    "description": [
-      "",
-      "",
-      ""
     ]
   },
   "1": {
@@ -20,11 +15,6 @@
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/oculus_quest_2.jng",
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/oculus_quest_3.png",
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/oculus_quest_logo.png"
-    ],
-    "description": [
-      "",
-      "",
-      ""
     ]
   },
   "2": {
@@ -34,11 +24,6 @@
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/pico_neo_2.jpeg",
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/pico_neo_3.png",
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/pico_logo.png"
-    ],
-    "description": [
-      "",
-      "",
-      ""
     ]
   },
   "3": {
@@ -46,11 +31,6 @@
     "img": [
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/reverb_g2_1.png",
       "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/headsets/reverb_g2_3.png"
-    ],
-    "description": [
-      "",
-      "",
-      ""
     ]
   }
 }

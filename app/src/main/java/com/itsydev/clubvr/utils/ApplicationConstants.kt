@@ -5,7 +5,7 @@ import com.itsydev.clubvr.R
 class ApplicationConstants {
     companion object{
 
-        const val version: String = "v0.4"
+        const val version: String = "v1.0"
         const val discordLink: String = "https://discord.gg/pNXMwEsaCW"
 
         val lenguajes = listOf(

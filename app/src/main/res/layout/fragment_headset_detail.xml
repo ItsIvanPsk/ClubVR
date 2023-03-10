@@ -18,7 +18,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/Blue_Gray"
+                android:background="@color/Powder_blue"
                 android:orientation="vertical"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
@@ -53,7 +53,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/headset_detail_header_game_icon"
+                        android:id="@+id/headset_detail_header_icon"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/ic_baseline_person_24"
@@ -64,7 +64,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/headset_detail_header_game_name"
+                        android:id="@+id/headset_detail_header_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="20dp"
@@ -73,56 +73,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toEndOf="@+id/headset_detail_header_game_icon"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/headset_detail_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginVertical="10dp"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_corner_elevation"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/headset_detail_header">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/experience_detail_description_value"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginHorizontal="10dp"
-                        android:maxLines="100"
-                        tools:text="@string/LoremIpsum"
-                        android:textSize="@dimen/experience_detail_text"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.8"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0" />
-
-                    <TextView
-                        android:id="@+id/experience_detail_description_title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/description"
-                        android:textSize="@dimen/experience_detail_title"
-                        android:textStyle="bold"
-                        android:layout_marginTop="10dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/headset_detail_header_icon"
                         app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -139,14 +90,14 @@
                 app:cardElevation="@dimen/card_corner_elevation"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/headset_detail_description">
+                app:layout_constraintTop_toBottomOf="@id/headset_detail_header">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/experience_detail_images_label"
+                        android:id="@+id/headset_detail_images_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -162,7 +113,7 @@
                         app:layout_constraintVertical_bias="0.0" />
 
                     <org.imaginativeworld.whynotimagecarousel.ImageCarousel
-                        android:id="@+id/experience_detail_images_carousel"
+                        android:id="@+id/headset_detail_images_carousel"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -178,7 +129,7 @@
                         app:autoPlayDelay="3000"
                         app:infiniteCarousel="true"
                         app:touchToPause="true"
-                        app:layout_constraintTop_toBottomOf="@id/experience_detail_images_label"
+                        app:layout_constraintTop_toBottomOf="@id/headset_detail_images_label"
                         app:layout_constraintVertical_bias="1.0" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

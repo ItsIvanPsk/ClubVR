@@ -7,7 +7,6 @@ data class Headset(
 data class HeadsetBo(
     val id: Int,
     val name: String,
-    val description: List<String>,
     val img: List<HeadsetImages>
 )
 

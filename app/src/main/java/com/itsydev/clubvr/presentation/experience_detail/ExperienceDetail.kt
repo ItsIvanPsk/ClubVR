@@ -45,11 +45,10 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
         setupObservers()
         (requireActivity() as ExperiencesActivity).getActivityBinding().experiencesFloatingButton.visibility = View.GONE
         (requireActivity() as ExperiencesActivity).getActivityBinding().bottomAppBar.visibility = View.GONE
-
         return binding.root
     }
 
-    private fun setupListeners() = with(binding){
+    private fun setupListeners() = with(binding) {
         experienceDetailGoBack.setOnClickListener {
             it.findNavController().navigate(R.id.action_experienceDetail_to_experiencesFragment)
         }
@@ -57,7 +56,7 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
 
     private fun setupObservers() = with(viewmodel){
         getExperienceData().observe(viewLifecycleOwner){ it ->
-            var len = 0;
+            val len = 0;
             binding.experienceDetailHeaderGameName.text = it.name
             binding.experienceDetailHeaderGameIcon.load(it.img[0].url) {
                 crossfade(true)
@@ -68,8 +67,8 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
             binding.experienceDetailDescriptionValue.text = it.description[len]
             for(item in it.categories.indices){
                 val cardContainer = CardView(requireContext())
-                cardContainer.elevation = resources.getDimension(com.itsydev.clubvr.R.dimen.card_corner_elevation)
-                cardContainer.radius = resources.getDimension(com.itsydev.clubvr.R.dimen.card_corner_radius)
+                cardContainer.elevation = resources.getDimension(R.dimen.card_corner_elevation)
+                cardContainer.radius = resources.getDimension(R.dimen.card_corner_radius)
                 val categoryName = TextView(requireContext())
                 categoryName.text = resources.getText(
                     ExperienceConstants.CATEGORY[it.categories[item].id]
@@ -106,7 +105,7 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
             adapter.submitList(viewmodel.getAvaiableHeadsets(_context = requireContext(), headsetIds = headsetsListInt))
 
             val photoList = mutableListOf<CarouselItem>()
-            for (i in 0..it.img.size - 1) {
+            for (i in 0 until it.img.size) {
                 if (i != 0) {
                     photoList.add(
                         CarouselItem(
@@ -116,15 +115,14 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
                     )
                 }
             }
-
             binding.experienceDetailImagesCarousel.setData(photoList)
         }
     }
 
     override fun headsetsClicked(view: View, name: String) {
         Log.d("5cos", name)
+        viewmodel.setHeadsetName(name)
         view.findNavController().navigate(R.id.action_experienceDetail_to_headsetFragment)
-        viewmodel.setupHeadsetInfo(name)
     }
 
 }

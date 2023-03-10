@@ -9,12 +9,10 @@ import androidx.lifecycle.viewModelScope
 import com.itsydev.clubvr.data.models.experiences.*
 import com.itsydev.clubvr.data.models.headsets.HeadsetBo
 import com.itsydev.clubvr.data.models.headsets.HeadsetImages
-import com.itsydev.clubvr.domain.users.GetExperiencesByNameUseCase
 import com.itsydev.clubvr.domain.users.GetExperiencesByNameUseCaseImpl
 import kotlinx.coroutines.launch
 import org.json.JSONObject
 import javax.inject.Inject
-import kotlin.coroutines.coroutineContext
 
 class ExperiencesViewModel @Inject constructor(
 ) : ViewModel() {
@@ -22,14 +20,18 @@ class ExperiencesViewModel @Inject constructor(
     private var experiences = MutableLiveData<List<ExperienceBo>>()
     private var experienceToDetail = MutableLiveData<ExperienceBo>()
 
+    private var headsetToDetailName: String = ""
+    private var headsetToDetail = MutableLiveData<HeadsetBo>()
+
     fun getExperiencies(): LiveData<List<ExperienceBo>> = experiences
+    fun getHeadset(): LiveData<HeadsetBo> = headsetToDetail
+    fun setHeadsetName(name: String) { headsetToDetailName = name }
 
     fun updateExperiences(_context: Context, _fileName: String) {
         val inputStream = _context.assets.open(_fileName)
         val json = inputStream.bufferedReader().use { it.readText() }
         val jsonObject = JSONObject(json)
         val experienceList = mutableListOf<ExperienceBo>()
-
 
         for (key in jsonObject.keys()) {
             val itemJson = jsonObject.getJSONObject(key)
@@ -60,7 +62,6 @@ class ExperiencesViewModel @Inject constructor(
                         id = warning.toInt()
                     )
                 )
-                Log.d("5coos", warning)
             }
 
             for (i in 0 until itemJson.getJSONArray("categories").length()) {
@@ -131,22 +132,12 @@ class ExperiencesViewModel @Inject constructor(
         val jsonObject = JSONObject(json)
         val headsetsList = mutableListOf<HeadsetBo>()
 
-        Log.d("5cos", headsetIds.toString())
-
         for (key in jsonObject.keys()) {
             val itemJson = jsonObject.getJSONObject(key)
             val imageList = mutableListOf<HeadsetImages>()
-            val descriptionList = mutableListOf<String>()
-
-            Log.d("5cos", "json -> $itemJson")
 
             headsetIds.forEach {
-                if( key == it.toString()) {
-                    for (i in 0 until itemJson.getJSONArray("description").length()) {
-                        val image = itemJson.getJSONArray("description").get(i)
-                        descriptionList.add(image.toString())
-                    }
-
+                if(key == it.toString()) {
                     for (i in 0 until itemJson.getJSONArray("img").length()) {
                         val image = itemJson.getJSONArray("img").get(i)
                         imageList.add(
@@ -154,18 +145,13 @@ class ExperiencesViewModel @Inject constructor(
                         )
                     }
 
-                    Log.d("5cos", "description -> $descriptionList")
-                    Log.d("5cos", "images -> $imageList")
-
                     headsetsList.add(
                         HeadsetBo(
                             id = key.toInt(),
                             name = itemJson.getString("name"),
-                            description = descriptionList,
                             img = imageList,
                         )
                     )
-                    Log.d("5cos", "images -> $headsetsList")
                 }
             }
 
@@ -173,8 +159,31 @@ class ExperiencesViewModel @Inject constructor(
         return headsetsList
     }
 
-    fun setupHeadsetInfo(name: String) {
-        Log.d("5cos", name)
-    }
 
+    fun loadHeadsetData(context: Context) {
+        val inputStream = context.assets.open("json/headsets.json")
+        val json = inputStream.bufferedReader().use { it.readText() }
+        val jsonObject = JSONObject(json)
+
+        for (key in jsonObject.keys()) {
+            val itemJson = jsonObject.getJSONObject(key)
+            val imageList = mutableListOf<HeadsetImages>()
+
+            if (itemJson.get("name").toString() == headsetToDetailName) {
+                for (i in 0 until itemJson.getJSONArray("img").length()) {
+                    val image = itemJson.getJSONArray("img").get(i)
+                    imageList.add(
+                        HeadsetImages(i, image.toString())
+                    )
+                }
+
+                headsetToDetail.value =
+                    HeadsetBo(
+                        id = key.toInt(),
+                        name = itemJson.getString("name"),
+                        img = imageList,
+                    )
+            }
+        }
+    }
 }

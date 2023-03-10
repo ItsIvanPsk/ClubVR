@@ -43,6 +43,9 @@ class HeadSetsAdapter(
                 listeners.headsetsClicked(it, item.name)
             }
             binding.experienceHeadsetName.text = item.name
+            binding.experienceHeadsetImage.load(item.img[0].url){
+                crossfade(true)
+            }
 
         }
     }
