@@ -105,10 +105,6 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
             adapter.submitList(viewmodel.getAvaiableHeadsets(_context = requireContext(), headsetIds = headsetsListInt))
 
             val photoList = mutableListOf<CarouselItem>()
-            it.img.forEach { experiencePhoto ->
-
-            }
-
             for (i in 0..it.img.size - 1) {
                 if (i != 0) {
                     photoList.add(
@@ -126,6 +122,8 @@ class ExperienceDetail : Fragment(), HeadsetsListeners{
 
     override fun headsetsClicked(view: View, name: String) {
         Log.d("5cos", name)
+        view.findNavController().navigate(R.id.action_experienceDetail_to_headsetFragment)
+        viewmodel.setupHeadsetInfo(name)
     }
 
 }

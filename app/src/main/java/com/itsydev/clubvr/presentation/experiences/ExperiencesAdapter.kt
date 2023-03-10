@@ -17,8 +17,7 @@ import com.itsydev.clubvr.databinding.ItemMainMenuBinding
 class ExperiencesAdapter(
     private val context: Context,
     private val experienceListeners: ExperienceListeners
-) : ListAdapter<ExperienceBo, ExperiencesAdapter.ExperiencesViewHolder> (ExperiencesDiffCallBack)
-{
+) : ListAdapter<ExperienceBo, ExperiencesAdapter.ExperiencesViewHolder> (ExperiencesDiffCallBack) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExperiencesViewHolder {
         val binding = ItemLayoutExperienceBinding.inflate(LayoutInflater.from(parent.context), parent, false)

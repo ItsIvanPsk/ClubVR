@@ -172,4 +172,9 @@ class ExperiencesViewModel @Inject constructor(
         }
         return headsetsList
     }
+
+    fun setupHeadsetInfo(name: String) {
+        Log.d("5cos", name)
+    }
+
 }

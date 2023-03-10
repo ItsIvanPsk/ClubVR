@@ -8,8 +8,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import coil.Coil
+import coil.ImageLoader
+import coil.imageLoader
 import coil.load
+import coil.request.ImageRequest
 import coil.transform.CircleCropTransformation
+import com.itsydev.clubvr.R
 import com.itsydev.clubvr.data.models.experiences.ExperienceBo
 import com.itsydev.clubvr.data.models.experiences.ExperienceConstants
 import com.itsydev.clubvr.data.models.headsets.HeadsetBo
@@ -37,11 +42,8 @@ class HeadSetsAdapter(
             binding.experienceHeadset.setOnClickListener {
                 listeners.headsetsClicked(it, item.name)
             }
-            Log.d("5cosImage", item.img.toString())
-            binding.experienceHeadsetImage.load(item.img[0].url){
-                crossfade(true)
-            }
             binding.experienceHeadsetName.text = item.name
+
         }
     }
 }

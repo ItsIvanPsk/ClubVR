@@ -23,8 +23,8 @@ import dagger.hilt.android.AndroidEntryPoint
 class ExperiencesActivity : AppCompatActivity(){
 
     lateinit var binding: ActivityExperiencesBinding
-    lateinit var navController: NavController
-    lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var navController: NavController
+    private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,7 +57,6 @@ class ExperiencesActivity : AppCompatActivity(){
         }
     }
 
-    // Setup NavController with the NavHostFragment
     private fun setupNavController() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer) as NavHostFragment
         navController = navHostFragment.navController

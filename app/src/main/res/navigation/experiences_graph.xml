@@ -24,6 +24,17 @@
         <action
             android:id="@+id/action_experienceDetail_to_experiencesFragment"
             app:destination="@id/experiencesFragment" />
+        <action
+            android:id="@+id/action_experienceDetail_to_headsetFragment"
+            app:destination="@id/headsetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/headsetFragment"
+        android:name="com.itsydev.clubvr.presentation.headset_detail.HeadsetFragment"
+        android:label="HeadsetFragment" >
+        <action
+            android:id="@+id/action_headsetFragment_to_experienceDetail"
+            app:destination="@id/experienceDetail" />
     </fragment>
 
 </navigation>
