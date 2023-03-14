@@ -45,10 +45,11 @@
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/main_floatingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_person_24"
+        android:src="@drawable/ic_baseline_videogame_asset_24"
+        android:background="@color/Blue_Gray"
         app:layout_anchor="@id/bottomAppBar"
         android:contentDescription="p" />
 

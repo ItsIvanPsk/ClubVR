@@ -1,9 +1,9 @@
 package com.itsydev.clubvr
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
@@ -11,11 +11,12 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.itsydev.clubvr.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(){
 
-    private lateinit var binding: ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
 
@@ -24,13 +25,15 @@ class MainActivity : AppCompatActivity(){
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupNavController()
-        // setupBottomNavMenu(navController)
-
         val navView: BottomNavigationView = binding.bottomNavigationView
         setSupportActionBar(binding.toolbar)
-        appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.mainMenu, R.id.myClubFragment, R.id.profileFragment,
-            R.id.settingsFragment)
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.mainMenu,
+                R.id.myClubFragment,
+                R.id.profileFragment,
+                R.id.settingsFragment
+            )
         )
 
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -39,7 +42,13 @@ class MainActivity : AppCompatActivity(){
         binding.bottomNavigationView.background = null
         binding.bottomNavigationView.menu.getItem(2).isEnabled = false
         supportActionBar?.hide()
+
+        binding.mainFloatingButton.setOnClickListener {
+            startActivity(Intent(this, ExperiencesActivity()::class.java))
+        }
+
     }
+
 
     // Setup NavController with the NavHostFragment
     private fun setupNavController() {
@@ -48,12 +57,10 @@ class MainActivity : AppCompatActivity(){
         navController = navHostFragment.navController
     }
 
-    private fun setupBottomNavMenu(navController: NavController) {
-        binding.bottomAppBar.setupWithNavController(navController)
-    }
+    override fun onSupportNavigateUp(): Boolean { return navController.navigateUp(appBarConfiguration) }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp(appBarConfiguration)
+    fun getActivityBinding(): ActivityMainBinding {
+        return binding
     }
 
 }

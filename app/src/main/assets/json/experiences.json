@@ -1,0 +1,863 @@
+{
+    "1": {
+        "name": "Beat Saber",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_4.jpg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/beat_saber_5.png"
+        ],
+        "description": [
+            "Beat Saber is a VR rhythm game where you slice the beats out of pulsing music as they fly towards you, surrounded by a futuristic world.",
+            "Beat Saber es un juego rítmico de RV donde rebanas los ritmos de la palpitante música mientras vuelan hacia ti, rodeado de un mundo futurista.",
+            "Beat Saber és un joc rítmic de RV on llesques els ritmes de la palpitant música mentre volen cap a tu, envoltat d'un món futurista."
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            3
+        ],
+        "headsets_compatible": [
+            0,
+            1,
+            3
+        ]
+    },
+    "2": {
+        "name": "The Lab",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/the_lab_5.jpg"
+        ],
+        "description":[
+            "Welcome to The Lab, a compilation of Valve’s room-scale VR experiments set in a pocket universe within Aperture Science. Fix a robot, defend a castle, adopt a mechanical dog, and more.",
+            "Bienvenido a The Lab, una compilación de experimentos de realidad virtual a escala de habitación de Valve ambientados en un universo de bolsillo dentro de Aperture Science. Arregla un robot, defiende un castillo, adopta un perro mecánico y más.",
+            "Benvingut a The Lab, una recopilació d'experiments de realitat virtual a escala de sala de Valve ambientats en un univers de butxaca dins d'Aperture Science. Arregla un robot, defensa un castell, adopta un gos mecànic i molt més."
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            2,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "3": {
+        "name": "Blade and Sorcery",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/blade_sorcery_5.jpg"
+        ],
+        "description": [
+            "Blade & Sorcery is a built-for-VR medieval fantasy sandbox with full physics driven melee, ranged and magic combat. Become a powerful warrior, ranger or sorcerer and devastate your enemies.",
+            "Blade & Sorcery es una caja de arena de fantasía medieval construida para VR con combate cuerpo a cuerpo, a distancia y mágico impulsado por la física completa. Conviértete en un poderoso guerrero, guardabosques o hechicero y arrasa con tus enemigos.",
+            "Blade & Sorcery és una caixa de sorra de fantasia medieval creada per a la realitat virtual amb combat cos a cos, a distància i màgic impulsat per la física. Converteix-te en un poderós guerrer, guarda o bruixot i devasta els teus enemics."
+        ],
+        "warnings": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "headsets_compatible": [
+            0,
+            1,
+            3
+        ]
+    },
+    "4": {
+        "name": "VTOL VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/vtol_5.jpg"
+        ],
+        "description": [
+            "VTOL VR is a near-futuristic combat flight game built for Virtual Reality. Pilot advanced multi-role jets, using your hands to flip switches, press buttons, and manipulate the virtual flight controls.",
+            "VTOL VR es un juego de vuelo de combate casi futurista creado para realidad virtual. Pilote aviones multiusos avanzados, use solo siete botones para girar interruptores, presione botones y manipule los controles de vuelo virtuales.",
+            "VTOL VR és un joc de vol de combat gairebé futurista creat per a la realitat virtual. Pilot advanced multi-role jets, usant les seves eines per flip switches, press buttons, i manipular els controls de vol virtuals."
+        ],
+        "warnings": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            1,
+            2
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "5": {
+        "name": "Atlantis VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/atlantis_4.jpeg"
+        ],
+        "description": [
+            "Enter the underwater world thriving with life! Let the aquatic beings guide you trough the mystery deeps and explore nooks and crannies of beautiful ocean landscape!",
+            "¡Entra en el mundo submarino lleno de vida! ¡Deja que los seres acuáticos te guíen a través de las misteriosas profundidades y explora los rincones y grietas del hermoso paisaje marino!",
+            "Entra al món submarí ple de vida! Deixeu que els éssers aquàtics us guiïn a través de les profunditats misterioses i exploreu els racons i els racons del bell paisatge oceànic!"
+        ],
+        "warnings": [
+            0,
+            4
+        ],
+        "rating": 3,
+        "categories": [
+            0,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "6": {
+        "name": "Pavlov",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pavlov_3.jpeg"
+        ],
+        "description": [
+            "Pavlov vr is a multiplayer shooter in VR with heavy focus on community features. Realistic reloading features and fast paced combat as part of the core experience.",
+            "Pavlov vr es un juego de disparos multijugador en realidad virtual con un gran enfoque en las características de la comunidad. Funciones de recarga realistas y combate de ritmo rápido como parte de la experiencia principal.",
+            "Pavlov vr es un juego de disparos multijugador en realidad virtual con un gran enfoque en las características de la comunidad. Funciones de recarga realistas y combate de ritmo rápido como parte de la experiencia principal."
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            1,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            1,
+            3
+        ]
+    },
+    "7": {
+        "name": "Lightblade VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/light_blade_4.jpeg"
+        ],
+        "description": [
+            "Lightblade VR is a virtual reality training simulation for self-illumintated plasma blades. This is a childhood dream come true! Get trained by your personal robot and deflect all incoming laser beams!",
+            "Lightblade VR es una simulación de entrenamiento de realidad virtual para cuchillas de plasma autoiluminadas. ¡Este es un sueño de la infancia hecho realidad! ¡Entrena con tu robot personal y desvía todos los rayos láser entrantes!",
+            "Lightblade VR és una simulació d'entrenament de realitat virtual per a fulles de plasma autoil·luminades. Aquest és un somni infantil fet realitat! Entrena amb el teu robot personal i desvia tots els raigs làser entrants!"
+        ],
+        "warnings": [
+            0,
+            2,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            3,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "8": {
+        "name": "Superhot",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_4.jpg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/super_hot_5.jpg"
+        ],
+        "description": [
+            "Lose track of reality. Surrender your body and mind. Face the evocative and elegantly brutal world of SUPERHOT VR. Enemies are coming in from all directions, a dozen bullets are flying across the room... just a moment. Here's something different...",
+            "Pierde la noción de la realidad. Entrégate en cuerpo y mente. Enfréntate al evocativo y elegantemente brutal mundo de SUPERHOT VR. Los enemigos entran desde todas direcciones, una docena de balas cruza la estancia... un momento. Aquí hay algo distinto...",
+            "Perd la noció de la realitat. Lliura't en cos i ment. Enfronta't al evocativo i elegantment brutal món de SUPERHOT VR. Els enemics entren des de totes direccions, una dotzena de bales creua l'estada... un moment. Aquí hi ha una cosa diferent..."
+        ],
+        "warnings": [
+            0,
+            2,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            1,
+            3,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "9": {
+        "name": "Emily Wants to play",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/emily_4.jpeg"
+        ],
+        "description": [
+            "Emily Wants To play is a horror and survival game with elements of strategy. You play as a pizza delivery boy who gets trapped by Emily and her three dolls. The dolls are alive and walking around the house with you.",
+            "Emily Wants To play es un juego de terror y supervivencia con elementos de estrategia. Usted juega como un repartidor de pizza que queda atrapado por Emily y sus tres muñecas. Las muñecas están vivas y deambulan por la casa con usted.",
+            "Emily Wants To play és un joc de terror i supervivència amb elements d'estratègia. Usted juega como un repartidor de pizza que queda atrapado por Emily y sus tres muñecas. Las muñecas estan vivas y deambulan por la casa con usted."
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 4,
+        "categories": [
+            4,
+            5
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "10": {
+        "name": "Contractors",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/contractors_4.jpeg"
+        ],
+        "description": [
+            "Contractors is a team-based competitive multiplayer shooter game for virtual reality devices. Experience the next level virtual warfare with hardcore controls, lethal weapons, customizable load-outs, and intense firefights. BECOME AN OPERATOR.",
+            "Contractors es un juego de disparos multijugador competitivo basado en equipos para dispositivos de realidad virtual. Experimenta el siguiente nivel de la guerra virtual con controles duros, armas letales, cargas personalizables e intensos tiroteos. CONVIÉRTETE EN OPERADOR.",
+            "Contractors és un joc de tir multijugador competitiu basat en equips per a dispositius de realitat virtual. Experimenteu la guerra virtual del següent nivell amb controls més durs, armes letals, càrregues personalitzables i intensos tirs. CONVERTIR-SE EN UN OPERADOR."
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 4,
+        "categories": [
+            0,
+            1,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            2,
+            3
+        ]
+    },
+    "11": {
+        "name": "Arizona Sunshine",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_4.jpg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/arizona_sunshine_5.jpg"
+        ],
+        "description": [
+            "Developed for VR, Arizona Sunshine® puts you in the middle of a zombie apocalypse. Wield weapons with realistic movement, explore a post-apocalyptic world and test your survival skills in VR - putting the undead back to rest has never been more exciting.",
+            "Desarrollado para la RV, Arizona Sunshine® te sitúa en medio de un apocalipsis zombi. Maneja armas con movimientos realistas, explora un mundo post-apocalíptico y pon a prueba tus habilidades de supervivencia en la RV - devolver a su descanso a los no muertos nunca ha sido tan emocionante.",
+            "Desenvolupat per a la RV, Arizona Sunshine® te situa mitjà d'una apocalipsi zombi. Maneja armes con moviments realistes, explora un món taula-apocalíptic i posa a prova tus habilitats de supervivència en la RV - retornar al seu descans als no morts mai ha estat tan emocionant."
+        ],
+        "warnings": [
+            0,
+            1,
+            3,
+            4
+        ],
+        "rating": 4,
+        "categories": [
+            1,
+            5
+        ],
+        "headsets_compatible": [
+            0,
+            1,
+            3
+        ]
+    },
+    "12": {
+        "name": "Funny Archery",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/funny_archery_5.jpg"
+        ],
+        "description": [
+            "In the role of a brave and clever soldier, your mission is to protect the wall from enemy attacks till your last breath with a bow as the main weapon. The enemies become increasingly dangerous through each wave, so you must keep focusing on each shot to ensure no enemy will pass through the wall.",
+            "En el papel de un valiente e inteligente soldado, tu misión es proteger la muralla de los ataques enemigos hasta tu último aliento con un arco como arma principal. Los enemigos se vuelven cada vez más peligrosos con cada oleada, así que debes seguir concentrándote en cada disparo para asegurarte de que ningún enemigo atraviese la muralla.",
+            "En el paper d'un valent i intel·ligent soldat, la teva missió és protegir la muralla dels atacs enemics fins al teu últim alè amb un arc com a arma principal. Els enemics es tornen cada vegada més perillosos amb cada onada, així que has de continuar concentrant-te en cada tret per a assegurar-te que cap enemic travessi la muralla."
+        ],
+        "warnings": [
+            1,
+            3
+        ],
+        "rating": 4,
+        "categories": [
+            0,
+            3
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "13": {
+        "name": "Age Old Cities",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/old_cities_4.jpg"
+        ],
+        "description": [
+            "Age-Old Cities VR (from the Paris exhibition) brings six iconic monuments back to life. Walk through these revived ancient sites and feel the majestic splendor of places considered as a global duty to preserve. Don’t be a spectator, be an explorer!",
+            "Age-Old Cities VR (de la exposición de París) devuelve la vida a seis monumentos emblemáticos. Pasee por estos antiguos lugares revividos y sienta el majestuoso esplendor de lugares cuya conservación se considera un deber mundial. No sea un espectador, ¡sea un explorador!",
+            "Age-Old Cities VR (de l'exposició de París) retorna a la vida a sis monuments emblemàtics. Passegi per aquests antics llocs reviscuts i senti la majestuosa esplendor de llocs la conservació dels quals es considera un deure mundial. No sigui un espectador, sigui un explorador!"
+        ],
+        "warnings": [
+            0,
+            1
+        ],
+        "rating": 3,
+        "categories": [
+            0,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "14": {
+        "name": "Short Circuit",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/short_circuit_5.jpg"
+        ],
+        "description": [
+            "Short Circuit VR is an electronics lab simulator in Virtual Reality. You can build your own electronic circuits with the components provided, learn basic electronics by completing challenges and just have fun while experimenting and making awesome projects!",
+            "Short Circuit VR es un simulador de laboratorio de electrónica en Realidad Virtual. Puedes construir tus propios circuitos electrónicos con los componentes proporcionados, aprender electrónica básica completando desafíos y simplemente divertirte mientras experimentas y creas proyectos increíbles.",
+            "Short Circuit VR és un simulador de laboratori d'electrònica en Realitat Virtual. Pots construir els teus propis circuits electrònics amb els components proporcionats, aprendre electrònica bàsica completant desafiaments i simplement divertir-te mentre experimentes i crees projectes increïbles."
+        ],
+        "warnings": [
+            0,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "15": {
+        "name": "Experience: Colorblindness",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/color_blindness_4.jpeg"
+        ],
+        "description": [
+            "Have you ever wondered how colorblind people see the world? Now you can experience it yourself. Let yourself be guided in narrative mode, explore 3 immersive environments, try fruit shopping or painting. Color vision tests also included",
+            "¿Alguna vez se ha preguntado cómo ven el mundo los daltónicos? Ahora puedes experimentarlo tú mismo. Déjate guiar en modo narrativo, explora 3 entornos inmersivos, prueba a comprar fruta o a pintar. También se incluyen pruebas de visión cromática",
+            "Alguna vegada s'ha preguntat com veuen el món els daltònics? Ara pots experimentar-ho tu mateix. Deixa't guiar en manera narrativa, explora 3 entorns immersius, prova de comprar fruita o a pintar. També s'inclouen proves de visió cromàtica"
+        ],
+        "warnings": [
+            0,
+            1,
+            2
+        ],
+        "rating": 4,
+        "categories": [
+            0,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "16": {
+        "name": "Tank VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tank_5.jpg"
+        ],
+        "description": [
+            "TankVR is a open world arcade tank game, where you have to destroy all hostile tanks. The objective is to destroy all tanks on the map. After the game is finished, your score is now shown in the leaderboard. Challenge your friends, if you are brave enough.",
+            "TankVR es un juego arcade de tanques de mundo abierto, donde tienes que destruir todos los tanques hostiles. El objetivo es destruir todos los tanques del mapa. Una vez finalizado el juego, tu puntuación se mostrará en la tabla de clasificación. Desafía a tus amigos, si eres lo suficientemente valiente.",
+            "TankVR és un joc arcade de tancs de món obert, on has de destruir tots els tancs hostils. L'objectiu és destruir tots els tancs del mapa. Una vegada finalitzat el joc, la teva puntuació es mostrarà en la taula de classificació. Desafia als teus amics, si ets prou valent."
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 3,
+        "categories": [
+            0,
+            1
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "17": {
+        "name": "Defcon VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/defcon_4.jpeg"
+        ],
+        "description": [
+            "DEFCON VR allows you to spectate DEFCON games in the comfort of your own virtual War Room. Join others and marvel at total global annihilation as nuclear missiles arc over the globe on their path to destruction. Watch Armageddon unfold as everybody dies….",
+            "LA RV DE DEFCON os permite ver los juegos DE DEFCON en la comodidad de vuestra propia sala de guerra virtual. Únete a otros y maravilla-té por la aniquilación global total cuando los misiles nucleares se arriesgan por todo el mundo en su camino hacia la destrucción. Mira como se despliega Armageddon mientras todo el mundo muere...",
+            "DEFCON VR us permet veure els jocs DE DEFCON en la comoditat de la vostra pròpia sala de guerra virtual. Uneix-te a altres i meravella-te per l'anihilació global total quan els míssils nuclears s'arrisquen per tot el món en el seu camí cap a la destrucció. Mira com es desplega Armageddon mentre tothom mor..."
+        ],
+        "warnings": [
+            0,
+            2
+        ],
+        "rating": 2,
+        "categories": [
+            0,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "18": {
+        "name": "Experience: Colorblindness",
+        "img": [
+
+        ],
+        "description": [
+            "",
+            "",
+            ""
+        ],
+        "warnings": [
+
+        ],
+        "rating": 0,
+        "categories": [
+
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "19": {
+        "name": "Google Earth VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/goggle_earth_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/goggle_earth_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/google_earth_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/google_earth_4.jpeg"
+        ],
+        "description": [
+            "Explore the world from totally new perspectives. Stroll the streets of Tokyo, soar over Yosemite, or teleport across the globe.",
+            "Explora el mundo desde perspectivas totalmente nuevas. Echáis las calles de Tokyo, feudo un salto sobre Yosemite o teletransporteu-os por todo el mundo.",
+            "Explora el món des de perspectives totalment noves. Tireu els carrers de Tòquio, feu un salt sobre Yosemite o teletransporteu-vos per tot el món."
+        ],
+        "warnings": [
+            0,
+            1,
+            2
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            1,
+            3
+        ]
+    },
+    "20": {
+        "name": "PC Virtual Lab",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/pc_virtual_lab_4.jpeg"
+        ],
+        "description": [
+            "Virtual Lab is a video game for improving learning in basic computing concepts.",
+            "PC Virtual Lab es un videojuego para mejorar el aprendizaje en conceptos de informática básica.",
+            "PC Virtual Lab és un videojoc per a millorar l'aprenentatge en conceptes d'informàtica bàsica."
+        ],
+        "warnings": [
+            2,
+            3
+        ],
+        "rating": 2,
+        "categories": [
+            0,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "21": {
+        "name": "Webb VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/webb_5.jpg"
+        ],
+        "description": [
+            "Join the James Webb Space Telescope in its orbit beyond the Moon and explore the universe from its perspective. In front of your eyes, planetary systems will be born, galaxies will form and stars will emerge from colorful nebulae.",
+            "Únete al telescopio espacial James Webb en su órbita más allá de la Luna y explora el universo desde su perspectiva. Ante tus ojos, nacerán sistemas planetarios, se formarán galaxias y emergerán estrellas desde coloridas nebulosas.",
+            "Uneix-te al telescopi espacial James Webb en la seva òrbita més enllà de la Lluna i explora l'univers des de la seva perspectiva. Davant els teus ulls, naixeran sistemes planetaris, es formaran galàxies i emergiran estrelles des d'acolorides nebuloses."
+        ],
+        "warnings": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "22": {
+        "name": "Job Simlator VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/job_simulator_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/job_simulator_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/job_simulator_3.jpeg"
+        ],
+        "description": [
+            "In a world where robots have replaced all human jobs, step into the 'Job Simulator' to learn what it was like 'to job'.",
+            "En un mundo donde los robots han sustituido todos los trabajos humanos, vais al 'Job Simulator' para aprender como era 'trabajar'.",
+            "En un món on els robots han substituït tots els treballs humans, aneu al 'Job Simulator' per aprendre com era 'treballar'."
+        ],
+        "warnings": [
+            1,
+            3
+        ],
+        "rating": 0,
+        "categories": [
+            0,
+            1,
+            4,
+            5
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "23": {
+        "name": "Star Wars: Droid Repair",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/droid_repair_5.jpeg"
+        ],
+        "description": [
+            "En Star Wars: Droid Repair Bay by ILMxLAB, Poe Dameron's sidekick needs your help. Repair BB-8 and his astromech droid friends, each with their own unique personalities, so they can roll back into the fight against the First Order.",
+            "En Star Wars: Droid Repair Bay por ILMxLAB, el compañero de Poe Dameron necesita vuestra ayuda. Reparáis BB-8 y sus amigos droides astromeques, cada uno con sus propias personalidades únicas, de forma que puedan volver a la lucha contra la Primera Orden.",
+            "En Star Wars: Droid Repair Bay per ILMxLAB, el company de Poe Dameron necessita la vostra ajuda. Repareu BB-8 i els seus amics droides astromeques, cadascun amb les seves pròpies personalitats úniques, de manera que puguin tornar a la lluita contra la Primera Ordre."
+        ],
+        "warnings": [
+            0,
+            2
+        ],
+        "rating": 4,
+        "categories": [
+            0,
+            1,
+            2
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "24": {
+        "name": "The Last Hope",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/last_hope_4.jpeg"
+        ],
+        "description": [
+            "You're a scientist who was working on the development of a time machine. When the experiment began, a wormhole formed and humanity and most of wildlife disappeared. Now you're humanity's last hope because you're the last man alive. Your mission is to find the weather machine and save humanity",
+            "Eres un científico que estaba trabajando en el desarrollo de una máquina del tiempo. Cuando comenzó el experimento, se formó un agujero de gusano y desapareció la humanidad y la mayor parte de la vida silvestre. Ahora eres la última esperanza de la humanidad porque eres el último hombre vivo. Tu misión es encontrar la máquina del tiempo y salvar a la humanidad.",
+            "Ets un científic que estava treballant en el desenvolupament d'una màquina del temps. Quan va començar l'experiment, es va formar un forat de cuc i va desaparèixer la humanitat i la major part de la vida silvestre. Ara ets l'última esperança de la humanitat perquè ets l'últim home viu. La teva missió és trobar la màquina del temps i salvar a la humanitat"
+        ],
+        "warnings": [
+            0,
+            1,
+            4
+        ],
+        "rating": 5,
+        "categories": [
+            1,
+            2,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "25": {
+        "name": "Thrill of the Fight",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/thrill_fight_5.png"
+        ],
+        "description": [
+            "The Thrill of the Fight is a down-to-earth VR boxing game focused on authenticity. Enter a virtual gym and battle a series of unique challengers with their own styles and techniques. Use timing and skill to land the knockout blow. Evade swings, land jabs, and block punches to become the king of the ring!",
+            "The Thrill of the Fight es un juego de boxeo VR de tipo realista centrado en la autenticidad. Entra en un gimnasio virtual y lucha contra una serie de aspirantes únicos con sus propios estilos y técnicas. Utiliza el tiempo y la habilidad para aterrizar el golpe de efecto. El Evade se balancea, tierra y bloquea las veces para convertirse en el rey del ring!",
+            "The Thrill of the Fight és un joc de boxa VR de tipus realista centrat en l'autenticitat. Entra en un gimnàs virtual i lluita contra una sèrie d'aspirants únics amb els seus propis estils i tècniques. Utilitza el temps i l'habilitat per a aterrar el cop d'efecte. L'Evade es balanceja, terra i bloqueja els cops per convertir-se en el rei del ring!"
+        ],
+        "warnings": [
+            1,
+            2,
+            3
+        ],
+        "rating": 5,
+        "categories": [
+            0,
+            1,
+            4
+        ],
+        "headsets_compatible": [
+            0,
+            1,
+            3
+        ]
+    },
+    "26": {
+        "name": "Ultimechs VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_1.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_4.jpg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/ultimechs_5.jpg"
+        ],
+        "description": [
+            "Porteries areas are illuminated. The crowd roars. A perfect mech enters the sand under your control. Ultimechs is a free VR game that allows you to pilot high performance machines remotely. These men compete in a futuristic sport in which they ram, block and punch to the victory.",
+            "Las zonas de las porterías se iluminan. La multitud ruge. Un meca diseñado a la perfección entra a la arena bajo tu control. Ultimechs es un juego de VR gratis que te permite pilotar mecas de alto rendimiento de forma remota. Estos mecas compiten en un deporte futurista en el que embisten, bloquean y lanzan puñetazos para alzarse con la victoria.",
+            "Les zones de les porteries s'il·luminen. La multitud rugeix. Un meca dissenyat a la perfecció entra a la sorra sota el teu control. Ultimechs és un joc de VR gratis que et permet pilotar mecas d'alt rendiment de manera remota. Aquests mecas competeixen en un esport futurista en el qual envesteixen, bloquegen i llancen cops de puny per a alçar-se amb la victòria."
+        ],
+        "warnings": [
+            0,
+            1,
+            3
+        ],
+        "rating": 4,
+        "categories": [
+            0,
+            1
+        ],
+        "headsets_compatible": [
+            0,
+            2,
+            3
+        ]
+    },
+    "27": {
+        "name": "Chop & Drop",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/chop_drop_4.jpeg"
+        ],
+        "description": [
+            "Take on the job of a line worker removing troublesome trees! Get out your chainsaw and use your control levers to maneuver the utility bucket in all directions, but watch your head!",
+            "Cogéis el trabajo de un trabajador de línea que saca árboles problemáticos! Sale de la sierra y utiliza las palancas de control para maniobrar el cubo de utilidad en todas direcciones, pero vigila el jefe!",
+            "Agafeu la feina d'un treballador de línia que treu arbres problemàtics! Surt de la serra i utilitza les palanques de control per maniobrar la galleda d'utilitat en totes direccions, però vigila el cap!"
+        ],
+        "warnings": [
+            1
+        ],
+        "rating": 3,
+        "categories": [
+            0
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "28": {
+        "name": "Aim Lab VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/aim_lab_5.jpg"
+        ],
+        "description": [
+            "The #1 FPS Trainer of choice for over 20M players is now available in VR! Jump into immersive aim training environments featuring popular tasks, an exclusive Arcane experience, targets of terror survival & a music rhythm challenge.",
+            "El entrenador FPS #1 elegido para más de 20M jugadores ya está disponible a VR! Salta a entornos de entrenamiento de objetivo inmersivo con tareas populares, una experiencia exclusiva de Arcane, objetivos de supervivencia del terror y un reto del ritmo musical.",
+            "L'entrenador FPS #1 triat per a més de 20M jugadors ja està disponible a VR! Salta a entorns d'entrenament d'objectiu immersiu amb tasques populars, una experiència exclusiva d'Arcane, objectius de supervivència del terror i un repte del ritme musical."
+        ],
+        "warnings": [
+            1,
+            2,
+            3
+        ],
+        "rating": 3,
+        "categories": [
+            0,
+            1,
+            3
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "29": {
+        "name": "Home VR Spacewalk",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/space_walk_5.jpg"
+        ],
+        "description": [
+            "Throw yourself into the void 250 miles above Earth in this award-winning VR spacewalk inspired by NASA's training program and the astonishing experiences of it's astronauts. VR Spacewalk puts you at the centre of the story, taking you on an emotional journey while delivering beautiful, heart-stopping, and memorable moments.",
+            "Lanzaos al vacío a 250 millas por encima de la Tierra en este galardonado paseo espacial VR inspirado en el programa de entrenamiento de la NASA y las sorprendentes experiencias de sus astronautas. VR Spacewalk te sitúa en el centro de la historia, llevándote en un viaje emocional mientras ofrece momentos bonitos, parados y memorables.",
+            "Llanceu-vos al buit a 250 milles per sobre de la Terra en aquest guardonat passeig espacial VR inspirat en el programa d'entrenament de la NASA i les sorprenents experiències dels seus astronautes. VR Spacewalk et situa al centre de la història, portant-te en un viatge emocional mentre ofereix moments bonics, aturats i memorables."
+        ],
+        "warnings": [
+            1,
+            3
+        ],
+        "rating": 4,
+        "categories": [
+            1,
+            2
+        ],
+        "headsets_compatible": [
+            0,
+            3
+        ]
+    },
+    "30": {
+        "name": "Tenis League VR",
+        "img": [
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_1.png",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_2.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_3.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_4.jpeg",
+            "https://raw.githubusercontent.com/ItsIvanPsk/ClubVR/assets/images/experiences/tenis_league_5.jpeg"
+        ],
+        "description": [
+            "Designed for casual fans or aspiring pros, Tennis League VR delivers the thrill of intense rallies and the triumph of landing the perfect ace. Use real tennis techniques to dominate the leaderboards and smash the competition.",
+            "Diseñado para fans casuales o aspirantes a profesionales, la Liga de Tenis de la RV libra la emoción de las intensas manifestaciones y el triunfo del as perfecto. Utilizáis técnicas de tenis reales para dominar las tablas de clasificación y romper la competición.",
+            "Dissenyat per a fans casuals o aspirants a professionals, la Lliga de Tennis de la RV lliura l'emoció de les intenses manifestacions i el triomf de l'as perfecte. Utilitzeu tècniques de tennis reals per dominar les taules de classificació i trencar la competició."
+        ],
+        "warnings": [
+            1,
+            3
+        ],
+        "rating": 3,
+        "categories": [
+            0,
+            1
+        ],
+        "headsets_compatible": [
+            1
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/experiences_graph"
+    app:startDestination="@id/experiencesFragment">
+
+    <fragment
+        android:id="@+id/experiencesFragment"
+        android:name="com.itsydev.clubvr.presentation.experiences.ExperiencesFragment"
+        android:label="ExperiencesFragment" >
+
+        <action
+            android:id="@+id/action_experiencesFragment_to_experienceDetail"
+            app:destination="@id/experienceDetail" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/experienceDetail"
+        android:name="com.itsydev.clubvr.presentation.experience_detail.ExperienceDetail"
+        android:label="fragment_experience_detail"
+        tools:layout="@layout/fragment_experience_detail" >
+        <action
+            android:id="@+id/action_experienceDetail_to_experiencesFragment"
+            app:destination="@id/experiencesFragment" />
+        <action
+            android:id="@+id/action_experienceDetail_to_headsetFragment"
+            app:destination="@id/headsetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/headsetFragment"
+        android:name="com.itsydev.clubvr.presentation.headset_detail.HeadsetFragment"
+        android:label="HeadsetFragment" >
+        <action
+            android:id="@+id/action_headsetFragment_to_experienceDetail"
+            app:destination="@id/experienceDetail" />
+    </fragment>
+
+</navigation>
